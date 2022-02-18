@@ -1,16 +1,16 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Logan Thorneloe</title>
-        <link>http://example.org/</link>
+        <link>loganthorneloe.com/</link>
         <description>Logan Thorneloe</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 17 Feb 2022 13:40:13 -0600</lastBuildDate>
-            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+            <atom:link href="loganthorneloe.com/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Welcome to my website!</title>
-    <link>http://example.org/posts/my-first-post/</link>
+    <link>loganthorneloe.com/posts/my-first-post/</link>
     <pubDate>Thu, 17 Feb 2022 13:40:13 -0600</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/my-first-post/</guid>
+    <guid>loganthorneloe.com/posts/my-first-post/</guid>
     <description><![CDATA[Welcome to my website! I&rsquo;ll keep this up-to-date with all my writings, projects, socials, and other interesting things.]]></description>
 </item></channel>
 </rss>

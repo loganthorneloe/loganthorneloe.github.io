@@ -2,10 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://example.org/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>http://example.org/posts/my-first-post/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>http://example.org/projects/</loc><priority>0</priority></url><url>
-            <loc>http://example.org/resume/</loc><priority>0</priority></url><url>
-            <loc>http://example.org/categories/</loc></url><url>
-            <loc>http://example.org/tags/</loc></url></urlset>
+            <loc>loganthorneloe.com/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>loganthorneloe.com/posts/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>loganthorneloe.com/posts/my-first-post/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>loganthorneloe.com/projects/</loc><priority>0</priority></url><url>
+            <loc>loganthorneloe.com/resume/</loc><priority>0</priority></url><url>
+            <loc>loganthorneloe.com/categories/</loc></url><url>
+            <loc>loganthorneloe.com/tags/</loc></url></urlset>
