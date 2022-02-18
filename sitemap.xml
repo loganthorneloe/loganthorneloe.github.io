@@ -2,10 +2,10 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>loganthorneloe.com/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>loganthorneloe.com/posts/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>loganthorneloe.com/posts/my-first-post/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
-            <loc>loganthorneloe.com/projects/</loc><priority>0</priority></url><url>
-            <loc>loganthorneloe.com/resume/</loc><priority>0</priority></url><url>
-            <loc>loganthorneloe.com/categories/</loc></url><url>
-            <loc>loganthorneloe.com/tags/</loc></url></urlset>
+            <loc>https://lathorne.github.io/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>https://lathorne.github.io/posts/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>https://lathorne.github.io/posts/my-first-post/</loc><lastmod>2022-02-17T13:40:13-06:00</lastmod></url><url>
+            <loc>https://lathorne.github.io/projects/</loc><priority>0</priority></url><url>
+            <loc>https://lathorne.github.io/resume/</loc><priority>0</priority></url><url>
+            <loc>https://lathorne.github.io/categories/</loc></url><url>
+            <loc>https://lathorne.github.io/tags/</loc></url></urlset>
