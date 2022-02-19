@@ -4,6 +4,31 @@
     <title>Logan Thorneloe</title>
     <link>https://lathorne.github.io/</link>
     <description>Recent content on Logan Thorneloe</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://lathorne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://lathorne.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://lathorne.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 18 Feb 2022 19:55:15 -0600</lastBuildDate><atom:link href="https://lathorne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My first project</title>
+      <link>https://lathorne.github.io/projects/my-first-project/</link>
+      <pubDate>Fri, 18 Feb 2022 19:55:15 -0600</pubDate>
+      
+      <guid>https://lathorne.github.io/projects/my-first-project/</guid>
+      <description>This is my first project.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to my website!</title>
+      <link>https://lathorne.github.io/posts/my-first-post/</link>
+      <pubDate>Fri, 18 Feb 2022 19:55:15 -0600</pubDate>
+      
+      <guid>https://lathorne.github.io/posts/my-first-post/</guid>
+      <description>Welcome to my website! I&amp;rsquo;ll keep this up-to-date with all my writings, projects, socials, and other interesting things.</description>
+    </item>
+    
+    
+    
   </channel>
 </rss>

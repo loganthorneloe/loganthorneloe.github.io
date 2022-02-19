@@ -2,3 +2,162 @@ baseURL: "https://lathorne.github.io/"
 title: Logan Thorneloe
 paginate: 5
 theme: papermod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+googleAnalytics: UA-123-45
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+params:
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    title: Logan Thorneloe
+    description: "Logan Thorneloe's personal website"
+    keywords: [Blog, Portfolio, PaperMod]
+    author: Me
+    # author: ["Me", "You"] # multiple authors
+    images: ["<link or path of image for opengraph, twitter-cards>"]
+    DateFormat: "January 2, 2006"
+    defaultTheme: dark # dark, light
+    disableThemeToggle: false
+
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: false
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: false
+    hidemeta: false
+    hideSummary: false
+    showtoc: true
+    tocopen: false
+
+    # search options
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+
+    assets:
+        # disableHLJS: true # to disable highlight.js
+        # disableFingerprinting: true
+        favicon: "<link / abs url>"
+        favicon16x16: "<link / abs url>"
+        favicon32x32: "<link / abs url>"
+        apple_touch_icon: "<link / abs url>"
+        safari_pinned_tab: "<link / abs url>"
+
+    label:
+        text: "Logan Thorneloe"
+        icon: /face.png
+        iconHeight: 35
+    
+    # homeinfo-mode
+    homeInfoParams:
+        Title: "Hi, I'm Logan \U0001F44B"
+        Content: "I'm an engineer at Microsoft and I like to solve problems."
+
+    # profile-mode
+    profileMode:
+        enabled: false # needs to be explicitly set
+        title: Logan Thorneloe
+        subtitle: "Engineer @ Microsoft. Problem Solver. Father of 3."
+        imageUrl: "<img location>"
+        imageTitle: "Picture of Logan Thorneloe" # optional
+        imageWidth: 120
+        imageHeight: 120
+        imageTitle: my image
+        buttons:
+            - name: Posts
+              url: posts
+            - name: Projects
+              url: projects
+
+    socialIcons:
+        - name: linkedin
+          url: "https://linkedin.com/in/loganthorneloe/"
+        - name: github
+          url: "https://github.com/lathorne"
+        - name: twitter
+          url: "https://twitter.com/loganthorneloe"
+        - name: instagram
+          url: "https://instagram.com/loganthorneloe"
+        - name: medium
+          url: "https://medium.com/@loganthorneloe"
+        - name: buymeacoffee
+          url: "https://www.buymeacoffee.com/loganthorneloe"
+        # - name: other
+        #   url: "https://scholar.google.com/citations?user=zFntG6MAAAAJ&hl=en"
+
+    analytics:
+        google:
+            SiteVerificationTag: "XYZabc"
+        bing:
+            SiteVerificationTag: "XYZabc"
+        yandex:
+            SiteVerificationTag: "XYZabc"
+
+    cover:
+        hidden: true # hide everywhere but not in structured data
+        hiddenInList: true # hide on list pages and home
+        hiddenInSingle: true # hide on single page
+
+    editPost:
+        URL: "https://github.com/<path_to_repo>/content"
+        Text: "Suggest Changes" # edit text
+        appendFilePath: true # to append file path to Edit link
+
+    # for search
+    # https://fusejs.io/api/options.html
+    fuseOpts:
+        isCaseSensitive: false
+        shouldSort: true
+        location: 0
+        distance: 1000
+        threshold: 0.4
+        minMatchCharLength: 0
+        keys: ["title", "permalink", "summary", "content"]
+menu:
+    main:
+        - identifier: posts
+          name: posts
+          url: /posts/
+          weight: 10
+        - identifier: projects
+          name: projects
+          url: /projects/
+          weight: 20
+        - identifier: resume
+          name: resume
+          url: https://linkedin.com/in/loganthorneloe/
+          weight: 30
+        - identifier: search
+          name: search
+          url: /search/
+          weight: 40
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai

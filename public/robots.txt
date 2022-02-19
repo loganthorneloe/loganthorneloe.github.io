@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://lathorne.github.io/sitemap.xml
