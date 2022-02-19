@@ -1,1 +1,0 @@
-A description of projects coming soon.
