@@ -6,7 +6,7 @@ description: "A little understanding of dividends goes a long way."
 tags:
   - finances
 cover:
-    image: "posts/burning-money.jpg"
+    image: "/burning-money.jpg"
     alt: "Money burning in someone's hand."
     caption:
     relative: false # To use relative path for cover image, used in hugo Page-bundles
