@@ -2,16 +2,19 @@
 title: "Dividend Investors Have it All Wrong"
 date: 2022-03-30T8:40:13-06:00
 draft: false
-author: Logan Thorneloe
-authorLink:
 description: "A little understanding of dividends goes a long way."
+tags:
+  - finances
+cover:
+    image: "burning-money.jpg"
+    alt: "Money burning in someone's hand."
+    caption:
+    relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 "Dividends are free income." If you've ever spoken to anyone who advocates dividend investing, I'm sure you've heard that phrase. If you know anything about me, you'll know it's one of the phrases I despise the most - and if you're an investor, you probably should too.
 
 It's always clear to me which dividend investors understand how dividends actually work and which 'dividend investors' haven't done their research. The former understand the power of cash flow while the latter know how easy it is to sell something to others with the promise of free money. The truth is dividend investing is the **wrong** investing approach for most people. I'm going to explain why - but first, let's actually understand what a dividend is.
-
-!["Burning Money](./burning-money.jpg)
 
 # What is a dividend?
 
