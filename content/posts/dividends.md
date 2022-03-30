@@ -1,6 +1,6 @@
 ---
 title: "Dividend Investors Have it All Wrong"
-date: 2022-03-30T13:40:13-06:00
+date: 2022-03-30T8:40:13-06:00
 draft: false
 author: Logan Thorneloe
 authorLink:
