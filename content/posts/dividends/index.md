@@ -9,7 +9,7 @@ cover:
     image: "burning-money.jpg"
     alt: "Money burning in someone's hand."
     caption:
-    relative: false # To use relative path for cover image, used in hugo Page-bundles
+    relative: true # To use relative path for cover image, used in hugo Page-bundles
 ---
 
 "Dividends are free income." If you've ever spoken to anyone who advocates dividend investing, I'm sure you've heard that phrase. If you know anything about me, you'll know it's one of the phrases I despise the most - and if you're an investor, you probably should too.
