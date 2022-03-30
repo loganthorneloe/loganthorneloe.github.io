@@ -7,7 +7,7 @@ authorLink:
 description: "A little understanding of dividends goes a long way."
 ---
 
-<img style="float:right" src="./post-images/burning_money.jpeg" alt="drawing" width="400"/>
+<img style="float:right" src="./burning_money.jpeg" alt="drawing" width="400"/>
 
 "Dividends are free income." If you've ever spoken to anyone who advocates dividend investing, I'm sure you've heard that phrase. If you know anything about me, you'll know it's one of the phrases I despise the most - and if you're an investor, you probably should too.
 
