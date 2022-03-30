@@ -93,8 +93,8 @@ params:
           url: "https://twitter.com/loganthorneloe"
         - name: instagram
           url: "https://instagram.com/loganthorneloe"
-        - name: medium
-          url: "https://medium.com/@loganthorneloe"
+        # - name: medium
+        #   url: "https://medium.com/@loganthorneloe"
         - name: buymeacoffee
           url: "https://www.buymeacoffee.com/loganthorneloe"
         # - name: other

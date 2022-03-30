@@ -7,11 +7,11 @@ authorLink:
 description: "A little understanding of dividends goes a long way."
 ---
 
-<img style="float:right" src="./burning_money.jpeg" alt="drawing" width="400"/>
-
 "Dividends are free income." If you've ever spoken to anyone who advocates dividend investing, I'm sure you've heard that phrase. If you know anything about me, you'll know it's one of the phrases I despise the most - and if you're an investor, you probably should too.
 
 It's always clear to me which dividend investors understand how dividends actually work and which 'dividend investors' haven't done their research. The former understand the power of cash flow while the latter know how easy it is to sell something to others with the promise of free money. The truth is dividend investing is the **wrong** investing approach for most people. I'm going to explain why - but first, let's actually understand what a dividend is.
+
+!["Burning Money](./burning-money.jpg)
 
 # What is a dividend?
 
@@ -57,6 +57,6 @@ There was a lot covered here and a good amount of it is nuanced. Here are some k
 
 3. Dividends are excellent for cash flow. If you want consistent cash flow to supplement your budget or to cash flow into other investments, dividends are an excellent way to do this. Just make sure you research your investment instead of only deciding by the dividend.
 
-Phew, that was a lot to cover. Hopefully this clears up how dividends actually work and why dividend investing is much less appealing than many make it out to be. 
+Hopefully this clears up how dividends actually work and why dividend investing is much less appealing than many make it out to be. 
 
 Good luck with your investing! If you're interested in studying the financials of individual stocks, check the free web app I made to make accessing financial statements easier: [stockboy.app](https://stockboy.app). If you found this at all helpful, [buy me a coffee](https://www.buymeacoffee.com/loganthorneloe) to encourage me to stop being lazy and to write more articles like this.
