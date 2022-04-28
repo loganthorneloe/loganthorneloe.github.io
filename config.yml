@@ -66,7 +66,7 @@ params:
     # homeinfo-mode
     homeInfoParams:
         Title: "Hi, I'm Logan \U0001F44B"
-        Content: "I'm an engineer at Microsoft and I like to solve problems."
+        Content: "I'm an engineer at Microsoft and I like making life a little bit better."
 
     # profile-mode
     profileMode:
