@@ -66,7 +66,7 @@ params:
     # homeinfo-mode
     homeInfoParams:
         Title: "Hi, I'm Logan \U0001F44B"
-        Content: "I'm an engineer at Microsoft and I like making life a little bit better."
+        Content: "I'm an engineer at Microsoft and I like to solve problems."
 
     # profile-mode
     profileMode:
@@ -97,6 +97,8 @@ params:
         #   url: "https://medium.com/@loganthorneloe"
         - name: buymeacoffee
           url: "https://www.buymeacoffee.com/loganthorneloe"
+        - name: email
+          url: "http://newsletter.loganthorneloe.com"
         # - name: other
         #   url: "https://scholar.google.com/citations?user=zFntG6MAAAAJ&hl=en"
 
@@ -141,6 +143,10 @@ menu:
         - identifier: resume
           name: resume
           url: https://linkedin.com/in/loganthorneloe/
+          weight: 30
+        - identifier: newsletter
+          name: newsletter
+          url: http://newsletter.loganthorneloe.com
           weight: 30
         - identifier: search
           name: search

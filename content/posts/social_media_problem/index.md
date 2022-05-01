@@ -16,3 +16,5 @@ cover:
 # they start out great and all converge
 # how do we fix this
 # no social media is genuine interaction
+
+# not an issue with the user, an issue with the platform

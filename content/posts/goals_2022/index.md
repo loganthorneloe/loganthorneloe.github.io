@@ -1,61 +1,63 @@
 ---
-title: "May 2022 Goals: Focusing on others and the little things"
-date: 2022-03-30T8:40:13-06:00
-draft: true
-description: "An annual state-of-life update look toward the future."
+title: "May 2022 Goals: Focusing on the little things"
+date: 2022-05-01
+draft: false
+description: "An annual state-of-life update and look toward the future."
 tags:
   - personal
 cover:
-    image: "little-things.jpg"
+    image: "little_things.jpg"
     alt: "A plant in sand."
     caption:
     relative: false # To use relative path for cover image, used in hugo Page-bundles
 ---
 
-Recently, I've spent some time reflecting on my interests and what activities I do where I actually feel enjoyment. I've been trying to determining what it is I actually enjoy doing and distinguishing those things from what *I want to enjoy doing*. There are plenty of things I find fascinating, but in reality I don't actually enjoy doing them. They just aren't for me. 
+Recently, I've spent some time reflecting on my interests and which activities I actually enjoy. I've been trying to distinguish between things I actually enjoy doing and things *I want to enjoy doing*. There are plenty of things I find fascinating, but in reality I don't actually enjoy doing them. They just aren't for me. 
 
-For example, I think video game content on YouTube is super entertaining and spend a good amount of time watching it. But I *hate* making that content myself. I tried uploading gaming clips to YouTube and TikTok for others to watch. At first, I really enjoyed it but after only three weeks I realized I couldn't stand constantly assessing what would make good content when playing games. It entirely took the enjoyment out of playing the games for me. They were something I enjoyed entirely stress free-- adding the responsibility of content creation ruined that. I also realized there was only one aspect of the process I enjoyed and it didn't have to do with uploading videos, but I'll get to that later. 
+For example, I think video game content on YouTube is super entertaining and spend a good amount of time watching it. But I *hate* making that content myself. I tried uploading gaming clips to YouTube and TikTok for others to watch. At first, I really enjoyed it but after only three weeks I realized I couldn't stand constantly assessing what would make good content when playing games. It entirely took the enjoyment out of playing the games for me. They were something I enjoyed entirely stress free and adding the responsibility of content creation ruined that. 
 
-Another example of something I think is awesome but probably isn't for me is mixing electronic music. I've had an interest in mixing music for 5 years or more and purchase FL Studio years ago so I could try it out. I figured I wouldn't have any excuses not to do it if I owned the software necessary. I still plan on trying it out, but I figure if I would have been that interested in mixing music I probably would have done it by now.
+Another example of something I think is awesome but probably isn't for me is mixing electronic music. I've had an interest in mixing music for 5 years or more and purchased FL Studio years ago so I could try it out. Purchasing this software meant there was nothing stopping me from actually doing it. I still plan to try it out, but I figure if I would have been that interested in mixing music I probably would have done already done so.
 
-So I've spent a bit of time reflecting on what I want to do and created some goals to make that happen over the year. 
+Now, I'm not saying there's anything wrong with trying things out. In fact, I think it's important to do so. But I do think there's something wrong with forcing yourself to do something you don't like because you feel like you should. 
+
+So, with a focus on things I *actually* enjoy and not things I *want* to enjoy -- this is what I've decided I want to focus on for the next 12 months.
 
 # Learn how to tell a story.
-When I wanted to try out YouTube there was one thing I agonized over: what would I create videos about? It appears all "successful" channels had some sort of brand to them. All videos were topical to a certain degree. I tried to figure out a topic I would enjoying sharing information about without losing interest and could never come up with one single topic. So I decided to look at the videos I enjoyed and I realized something: there wasn't a single topic or group of topics I related to-- I related to interesting stories.
+When I wanted to try out YouTube there was one thing I agonized over: what would I create videos about? It appears all "successful" channels had some sort of brand to them. All videos were topical to a certain degree. I tried to figure out a topic I would enjoying sharing information about without losing interest and could never come up with one single topic (I tried with gaming content, but that didn't work). So I looked at the videos I enjoyed and I realized something: there wasn't a single topic or group of topics I related to-- I relate to interesting stories.
 
-The topic of the video didn't matter as much as if an interesting story was present. The greatest content creators and entertainers were those who could tell an interesting story about anything. But that's just what YouTube videos are: stories told in video format. In fact, that's just what communication is: stories with a purpose. The greatest communicators are those who can captivate their audience no matter their topic. Maybe I'm stretching it a bit here-- there aren't a lot of stories to in work meetings, for example. But the easiest way to share information and entertaing is through storytelling.
+Those who succeed via video communication are those who develop the greatest stories. This is because videos give us more creative opportunities to tell our stories. Instead of just telling it, we can *show* it. Even further, those who are really great at making videos don't jsut *show* it, but make their audience feel truly involved. A great example of this is how successful vlogging is. Individuals use videos to bring others with them throughout their day. This creative storytelling is why I love YouTube.
 
-My goal: I'd like to explore different ways of telling stories and learn how to improve my own storytelling and communicative abilities. I'd like to write more like this and also explore other mediums of storytelling. I'm always on the pursuit to improve my ability to communicate and I think this fits perfectly.
+But this creative storytelling goes much further than making entertaining videos to post online. Stories are how people communicate with one another. The most effective communicators are, in essence, the best storytellers. They're able to captivate their audience while conveying their message. Think of your most boring teacher and your most exciting teacher. Who would you consider the better communicator and who did you learn more from?
+
+My goal: I'd like to improve my storytelling abilities and explore different ways of telling stories. I'd like to write more (similar to what I'm doing now) but also explore other creative mediums such as videos and podcasts. I'm always on the pursuit to improve my ability to communicate and I think this fits perfectly.
 
 # Collaborate with others.
-I recently received an email at work about someone joining my team. In their introduction they said they were super interested in Tetris and for anyone interested in playing a game to get in contact with them. It would be to awesome to learn the nuances of Tetris from someone experienced in the game. Of course, the fact that I work remote makes it difficult to meet with coworkers (or most people I communicate with) to do things like this. But that's one of the reasons I've made this a goal.
+I recently received an intro email at work I found really interesting. Someone was joining our team and in their introduction they expressed their love for Tetris and told anyone else interested in Tetris should reach out to them. Their isn't a more time-tested video game than Tetris and to learn about it from someone very knowledgeable would be incredible. However, I work remote and it makes it very difficult to connect with others like this. Sure, I can set up a call but for non-work related connections this doesn't work nearly as well as sitting down and chatting in person.
 
-The newly remote world we live in can make it difficult to meet up with and have meaningful interactions wth others. There are still ways to do it and some can even be better than in person, but I think it'll take more time and effort to get used to this. I've realized just how impactful the remote world is as I've thought about this further. There are so many things I want to learn and the easiest way to do this is to learn from others who already have those skills and enjoy doing those things with them. Even if one learns a skill, if there isn't a way to enjoy it, it usually isn't practiced and will soon be forgotten.
+The newly remote world we live in makes it difficult to have meaningful interactions wth others. Over time this will get easier but it will still take time to get used to it. I don't think most people realize just how impactful the remote world will be on relationships. Most people only think about the positive impact the remote world has but now I actually had to go out of my way to have *any* interaction. 
 
-I've also come to realize how much I enjoy discussing things I find interesting with others and learning from their perspective. I'd consider myself an introvert, but with strong social skills. (I call myself an introvert because I don't usually enjoy being in forced social situations. But maybe extroverts don't like that either. They seem to enjoy it more than I do anyway.) I really realized this when I was replying to comments on the YouTube videos I had uploaded. This was the part I really enjoyed about the YouTube content creation process: the community. I loved replying to each comment and seeing what others had to say. Luckily, I didn't have many toxic individuals because I know that can get out of hand online, but I really enjoyed the community aspect of YouTube. 
+There are so many things I want to learn and I've found the easiest way to learn them is from others who already have the skills I'm looking to acquire. This makes it super easy to discuss things with others and learn from their perspective. However, the remote world means we have to put a lot more effort into making this happen. Things like this don't happen *organically* anymore.
 
-My goal: I want to collaborate with others this year to learn and enjoy things I wouldn't otherwise enjoy on my own. I don't know how I'm going to do this and how this will happen, but I have a year not to let 2023 Logan down.
+My goal: I want to focus on collaborating with others. I'm hoping this will also help me learn things I wouldn't otherwise learn from those I collaborate with.
 
 # Enjoy the little things.
-An even easier way to look at this is I want to *enjoy the journey*. I've realized recently that I spend too much time looking into the future about what's *next* that I don't enjoy what's *now*.
+Or, better put: I want to *enjoy the journey*. I've realized recently that I spend too much time looking into the future about what's *next* that I don't enjoy what's *now*.
 
-Growing up I was incredibly goal oriented. I knew I wanted to succeed. I knew I wanted to do well. But I never really learned how to define to those things. When you're a kid there's a pre-determined formula for success. Much of this is defined by the public education system. But how do we know if an adult is doing well? Is it just that they're happy? But how do we become happy when we're taught as a child that happiness comes from success? There's no roadmap to success as an adult and for people like me who just followed the societal roadmap for successful children, it's much harder to figure this out now.
+Growing up I was incredibly goal oriented. I knew I wanted to succeed. I knew I wanted to do well. But I never really learned how to define those things. When you're a kid there's a pre-determined formula for success-- much of which is defined by the public education system. When you're an adult this roadmap doesn't exist -- or it might, but it's a lot murkier.
 
-That's why I've been reflecting on what I really enjoy. What makes me content? It isn't the things I build or my achievements that make me content. I know because I often stress over those. Instead, those things are meant to make it so I have more time to enjoy what makes me content in the future. But I've been spending so much time trying to achieve them, that I don't even take the time to enjoy things now. Instead, even when I take time to take a break and enjoy things, I still think about how I could be productive during that time. I always have this nagging feeling of things that I *should* be doing instead of enjoying the things I am doing.
+My childhood trained me to want to accomplish things -- but that doesn't mean much as an adult. A child's accomplishments are defined and set them up for adulthood. An adult accomplishing *things* doesn't mean much (if the ambiguous *things* were more easily defined then they might mean more). So like many adults I'm figuring out my roadmap. 
 
-My goal: focusing on the present to enjoy the little moments I find myself content in. I want to take more time to figure out the moments I'm actually content and focus on them.
+I think there are two default adult roadmaps many assume are the way to go:
 
-# Complete projects
+* **Money.** Some adults think the goal is to make a ton of money. I would hate to get to the end of my life with a ton of money but missed out on many experiences along the way.
 
-Following up on my previous goal, I think it's best to scope my projects so I don't always feel like I need to pushing them forward. These are my manageable goals for my projects this year.
+* **Fame.** Some adults think the goal is to be famous or have a lot of "followers" or strangers who care about their life. There's nothing wrong with this, but I've found I get much more satisfaction from fewer, deeper relationships than many meaningless relationships.
 
-### Stock Boy
+In truth, I don't really know what my roadmap looks like but I know I want to enjoy every moment of my life, if possible. And that's why I started thinking about what I enjoy -- regardless of external factors that make me want to spend time on other things. Regardless of money, societal pressure, or the opinions of others. And that's why I've been thinking about what I enjoy instead of what I want to enjoy.
 
-I'd like the Stock Boy app to be in full force. The goal is a free app that helps retail investors better understand financial statements and does a baseline analysis for them. The goal is to get retail investors to stop being suckers and investing in meme stocks that cause them to lose money. I want to pull each US stock's balance sheet, income statement, and cash flow statement and make them easily available to investors. There will also be a section that reads through them to pull information relevant to a company's well-being and explains what each tells about the stock. So far, the financial statements are available in the app, I'm just working on the analysis and way for the app to pay for its own servers without impeding the user experience or costing the user anything.  
+My goal: Enjoy the little things that make me content without the external pressure of other things. I want to live in the here-and-now to figure out what I really enjoy and focus on those things.  
 
-### 2 more on the horizon
+---
 
-I'd like to have a clear roadmap created on two projects on the horizon. I don't want to talk too much about them here because they'll likely change. One is an automated information sharing channel/podcast. I'd like to see how AI can help drive this effort forward. I'd also like to explore how AI generated artwork but we'll see how that goes.
-
-I'm going to take a look at this May 2023 and reflect back on how I feel about life. I want to know if my perspective has changed and I've been able to accomplish these goals and if I have, reflect on how they've impacted my life. Feel free to do this with me!
+I'm going to take a look at this in May 2023 and reflect back on how things have changed so I can rewrite another set of goals for the next year. Feel free to do it with me!
 
