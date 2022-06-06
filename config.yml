@@ -66,13 +66,13 @@ params:
     # homeinfo-mode
     homeInfoParams:
         Title: "Hi, I'm Logan \U0001F44B"
-        Content: "I'm an engineer at Microsoft and I like to solve problems."
+        Content: "I'm an engineer at Google and I like to solve problems."
 
     # profile-mode
     profileMode:
         enabled: false # needs to be explicitly set
         title: Logan Thorneloe
-        subtitle: "Engineer @ Microsoft. Problem Solver. Father of 3."
+        subtitle: "Engineer @ Google. Problem Solver. Father of 3."
         imageUrl: "<img location>"
         imageTitle: "Picture of Logan Thorneloe" # optional
         imageWidth: 120
