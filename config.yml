@@ -53,10 +53,10 @@ params:
     assets:
         # disableHLJS: true # to disable highlight.js
         # disableFingerprinting: true
-        favicon: "./static/favicon.ico"
-        favicon16x16: "<link / abs url>"
-        favicon32x32: "<link / abs url>"
-        apple_touch_icon: "<link / abs url>"
+        favicon: "/favicon/favicon.ico"
+        favicon16x16: "/favicon/favicon-16x16.ico"
+        favicon32x32: "/favicon/favicon-32x32.ico"
+        apple_touch_icon: "/favicon/apple-touch-icon.png"
         safari_pinned_tab: "<link / abs url>"
 
     label:
@@ -96,8 +96,8 @@ params:
           url: "https://instagram.com/loganthorneloe"
         # - name: medium
         #   url: "https://medium.com/@loganthorneloe"
-        - name: buymeacoffee
-          url: "https://www.buymeacoffee.com/loganthorneloe"
+        # - name: buymeacoffee
+        #   url: "https://www.buymeacoffee.com/loganthorneloe"
         - name: email
           url: "http://newsletter.loganthorneloe.com"
         # - name: other
