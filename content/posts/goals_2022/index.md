@@ -6,7 +6,7 @@ description: "An annual state-of-life update and look toward the future."
 tags:
   - personal
 cover:
-    image: "little_things.jpg"
+    image: "cover.jpg"
     alt: "A plant in sand."
     caption:
     relative: false # To use relative path for cover image, used in hugo Page-bundles
