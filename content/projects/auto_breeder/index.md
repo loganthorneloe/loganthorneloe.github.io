@@ -7,7 +7,7 @@ tags:
   - dev
   - projects
 cover:
-    image: nintendo-switch_cover.jpg
+    image: cover.jpg
     alt: A Nintendo Switch sitting on a wood table in it's dock. 
     caption: Photo by [Erik Mclean](https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/nintendo-switch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
     relative: false # To use relative path for cover image, used in hugo Page-bundles
