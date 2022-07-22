@@ -9,7 +9,16 @@
       <link>https://lathorne.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lathorne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lathorne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Nintendo Switch plays itself</title>
+      <link>https://lathorne.github.io/projects/auto_breeder/</link>
+      <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://lathorne.github.io/projects/auto_breeder/</guid>
+      <description>A triumphant journey of allowing oneself to both have a family and play video games.</description>
+    </item>
+    
     <item>
       <title>May 2022 Goals: Focusing on the little things</title>
       <link>https://lathorne.github.io/posts/goals_2022/</link>
@@ -26,15 +35,6 @@
       
       <guid>https://lathorne.github.io/posts/dividends/</guid>
       <description>A little understanding of dividends goes a long way.</description>
-    </item>
-    
-    <item>
-      <title>My first project</title>
-      <link>https://lathorne.github.io/projects/my-first-project/</link>
-      <pubDate>Fri, 18 Feb 2022 19:55:15 -0600</pubDate>
-      
-      <guid>https://lathorne.github.io/projects/my-first-project/</guid>
-      <description>This is my first project.</description>
     </item>
     
     <item>
