@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Logan Thorneloe</title>
-    <link>https://lathorne.github.io/</link>
+    <link>https://loganthorneloe.com/</link>
     <description>Recent content on Logan Thorneloe</description>
     <image>
-      <url>https://lathorne.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://lathorne.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://loganthorneloe.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://loganthorneloe.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://lathorne.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://loganthorneloe.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Nintendo Switch plays itself</title>
-      <link>https://lathorne.github.io/projects/auto_breeder/</link>
+      <link>https://loganthorneloe.com/projects/auto_breeder/</link>
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://lathorne.github.io/projects/auto_breeder/</guid>
+      <guid>https://loganthorneloe.com/projects/auto_breeder/</guid>
       <description>A triumphant journey of allowing oneself to both have a family and play video games.</description>
     </item>
     
     <item>
       <title>May 2022 Goals: Focusing on the little things</title>
-      <link>https://lathorne.github.io/posts/goals_2022/</link>
+      <link>https://loganthorneloe.com/posts/goals_2022/</link>
       <pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://lathorne.github.io/posts/goals_2022/</guid>
+      <guid>https://loganthorneloe.com/posts/goals_2022/</guid>
       <description>An annual state-of-life update and look toward the future.</description>
     </item>
     
     <item>
       <title>Dividend Investors Have it All Wrong</title>
-      <link>https://lathorne.github.io/posts/dividends/</link>
+      <link>https://loganthorneloe.com/posts/dividends/</link>
       <pubDate>Wed, 30 Mar 2022 08:40:13 -0600</pubDate>
       
-      <guid>https://lathorne.github.io/posts/dividends/</guid>
+      <guid>https://loganthorneloe.com/posts/dividends/</guid>
       <description>A little understanding of dividends goes a long way.</description>
     </item>
     
     <item>
       <title>Welcome to my website!</title>
-      <link>https://lathorne.github.io/posts/my-first-post/</link>
+      <link>https://loganthorneloe.com/posts/my-first-post/</link>
       <pubDate>Fri, 18 Feb 2022 19:55:15 -0600</pubDate>
       
-      <guid>https://lathorne.github.io/posts/my-first-post/</guid>
+      <guid>https://loganthorneloe.com/posts/my-first-post/</guid>
       <description>Welcome to my website! I&amp;rsquo;ll keep this up-to-date with all my writings, projects, socials, and other interesting things.</description>
     </item>
     
