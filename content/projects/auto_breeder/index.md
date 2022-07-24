@@ -3,12 +3,12 @@ title: "My Nintendo Switch plays itself"
 date: 2022-07-22
 draft: false
 description: "A triumphant journey of allowing oneself to both have a family and play video games."
-images: ["cover.jpg"]
+images: "cover.jpg"
 tags:
   - dev
   - projects
 cover:
-    image: cover.jpg
+    image: /projects/auto_breeder/cover.jpg
     alt: A Nintendo Switch sitting on a wood table in it's dock. 
     caption: Photo by [Erik Mclean](https://unsplash.com/@introspectivedsgn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/nintendo-switch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
     relative: false # To use relative path for cover image, used in hugo Page-bundles
