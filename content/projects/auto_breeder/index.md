@@ -3,7 +3,7 @@ title: "My Nintendo Switch plays itself"
 date: 2022-07-22
 draft: false
 description: "A triumphant journey of allowing oneself to both have a family and play video games."
-images: "cover.jpg"
+images: ["/projects/auto_breeder/cover.jpg"]
 tags:
   - dev
   - projects
