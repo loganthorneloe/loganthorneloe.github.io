@@ -1,5 +1,5 @@
 baseURL: "https://loganthorneloe.com/"
-title: Logan Thorneloe
+title: 
 paginate: 5
 theme: papermod
 
@@ -16,7 +16,7 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: Logan Thorneloe
+    title:
     description: "Logan Thorneloe's personal website"
     keywords: [Blog, Portfolio, PaperMod]
     author: Me
@@ -60,8 +60,7 @@ params:
         safari_pinned_tab: "<link / abs url>"
 
     label:
-        text: "Logan Thorneloe"
-        icon: /face.png
+        text: ""
         iconHeight: 35
     
     # homeinfo-mode
@@ -71,19 +70,21 @@ params:
 
     # profile-mode
     profileMode:
-        enabled: false # needs to be explicitly set
+        enabled: true # needs to be explicitly set
         title: Logan Thorneloe
         subtitle: "Engineer @ Google. Problem Solver. Father of 3."
-        imageUrl: "<img location>"
+        imageUrl: "/face.png"
         imageTitle: "Picture of Logan Thorneloe" # optional
-        imageWidth: 120
-        imageHeight: 120
-        imageTitle: my image
+        imageWidth: 240
+        imageHeight: 240
+        imageTitle: my face
         buttons:
             - name: Posts
               url: posts
             - name: Projects
               url: projects
+            - name: Search
+              url: search
 
     socialIcons:
         - name: linkedin
@@ -98,10 +99,10 @@ params:
         #   url: "https://medium.com/@loganthorneloe"
         # - name: buymeacoffee
         #   url: "https://www.buymeacoffee.com/loganthorneloe"
-        - name: email
-          url: "http://newsletter.loganthorneloe.com"
-        # - name: other
-        #   url: "https://scholar.google.com/citations?user=zFntG6MAAAAJ&hl=en"
+        # - name: email
+        #   url: "http://newsletter.loganthorneloe.com"
+        - name: googlescholar
+          url: "https://scholar.google.com/citations?user=zFntG6MAAAAJ&hl=en"
 
     analytics:
         google:
@@ -131,28 +132,28 @@ params:
         threshold: 0.4
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
-menu:
-    main:
-        - identifier: posts
-          name: posts
-          url: /posts/
-          weight: 10
-        - identifier: projects
-          name: projects
-          url: /projects/
-          weight: 20
-        - identifier: resume
-          name: resume
-          url: https://linkedin.com/in/loganthorneloe/
-          weight: 30
-        - identifier: newsletter
-          name: newsletter
-          url: http://newsletter.loganthorneloe.com
-          weight: 30
-        - identifier: search
-          name: search
-          url: /search/
-          weight: 40
+# menu:
+#     main:
+#         - identifier: posts
+#           name: posts
+#           url: /posts/
+#           weight: 10
+#         - identifier: projects
+#           name: projects
+#           url: /projects/
+#           weight: 20
+#         - identifier: resume
+#           name: resume
+#           url: https://linkedin.com/in/loganthorneloe/
+#           weight: 30
+#         - identifier: newsletter
+#           name: newsletter
+#           url: http://newsletter.loganthorneloe.com
+#           weight: 30
+#         - identifier: search
+#           name: search
+#           url: /search/
+#           weight: 40
 
 outputs:
     home:
