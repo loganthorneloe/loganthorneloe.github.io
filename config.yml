@@ -20,7 +20,7 @@ params:
     description: "Logan Thorneloe's personal website"
     keywords: [Blog, Portfolio, PaperMod]
     author: Me
-    mainSections: ['posts', 'projects']
+    mainSections: ['posts', 'dev', 'recipes', 'letters']
     # author: ["Me", "You"] # multiple authors
     images: ["/full-cover.png"]
     DateFormat: "January 2, 2006"
@@ -81,8 +81,12 @@ params:
         buttons:
             - name: Posts
               url: posts
-            - name: Projects
-              url: projects
+            - name: Dev
+              url: dev
+            - name: Recipes
+              url: recipes
+            - name: Letters
+              url: letters
             - name: Search
               url: search
 
