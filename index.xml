@@ -9,13 +9,31 @@
       <link>https://loganthorneloe.com/full-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 22 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://loganthorneloe.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 29 Dec 2022 19:55:15 -0600</lastBuildDate><atom:link href="https://loganthorneloe.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Welcome to my letters!</title>
+      <link>https://loganthorneloe.com/letters/my-first-post/</link>
+      <pubDate>Thu, 29 Dec 2022 19:55:15 -0600</pubDate>
+      
+      <guid>https://loganthorneloe.com/letters/my-first-post/</guid>
+      <description>I&amp;rsquo;m going to add lessons I&amp;rsquo;ve learned as letters to my kids.</description>
+    </item>
+    
+    <item>
+      <title>Welcome to my recipes!</title>
+      <link>https://loganthorneloe.com/recipes/my-first-post/</link>
+      <pubDate>Thu, 29 Dec 2022 19:55:15 -0600</pubDate>
+      
+      <guid>https://loganthorneloe.com/recipes/my-first-post/</guid>
+      <description>I can&amp;rsquo;t eat anything so I&amp;rsquo;m compiling simple, easy, (hopefully) inexpensive recipes here.</description>
+    </item>
+    
     <item>
       <title>My Nintendo Switch plays itself</title>
-      <link>https://loganthorneloe.com/projects/auto_breeder/</link>
+      <link>https://loganthorneloe.com/dev/auto_breeder/</link>
       <pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://loganthorneloe.com/projects/auto_breeder/</guid>
+      <guid>https://loganthorneloe.com/dev/auto_breeder/</guid>
       <description>A triumphant journey of allowing oneself to both have a family and play video games.</description>
     </item>
     
