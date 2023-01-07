@@ -1,5 +1,5 @@
 ---
-title: "Easy AF Wings"
+title: "Wings"
 date: 2023-01-05
 draft: false
 description: "Chicken-based. 5 min to prepare. 18 min to cook."

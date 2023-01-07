@@ -1,5 +1,5 @@
 ---
-title: "Easy AF Enchiladas"
+title: "Enchiladas"
 date: 2023-01-05
 draft: false
 description: "Chicken-based. 10 min to prepare. 20 min to cook."
