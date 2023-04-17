@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fried on </title>
+    <link>https://loganthorneloe.com/tags/fried/</link>
+    <description>Recent content in fried on </description>
+    <image>
+      <url>https://loganthorneloe.com/full-cover.png</url>
+      <link>https://loganthorneloe.com/full-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 16 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://loganthorneloe.com/tags/fried/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dairy-Free Chicken-Fried Steak</title>
+      <link>https://loganthorneloe.com/recipes/chicken_fried_steak/</link>
+      <pubDate>Sun, 16 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://loganthorneloe.com/recipes/chicken_fried_steak/</guid>
+      <description>Steak based. Brine for 30&#43; min. Cook for ~15 min.</description>
+    </item>
+    
+  </channel>
+</rss>
