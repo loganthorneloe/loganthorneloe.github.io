@@ -38,7 +38,7 @@ ignoreErrors = ["error-remote-getjson"]
   # Note: and set "math: true" at front matter in your Markdown file
   ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
   stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
-  commandDelay = 20 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+  commandDelay = 10 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
 
   # terminalDelay = 20 : deprecated
 
@@ -70,7 +70,7 @@ ignoreErrors = ["error-remote-getjson"]
   folderName = "content"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
-    ["Posts", "https://www.example.com/"],
+    ["Posts", "/posts.md"],
     ["Projects", "/projects.md"],
     ["About", "/about.md"],
   ]
