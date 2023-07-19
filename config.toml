@@ -41,8 +41,6 @@ ignoreErrors = ["error-remote-getjson"]
   stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
   commandDelay = 30 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
 
-  # terminalDelay = 20 : deprecated
-
   # Note: speed at which text is displayed on the activity pages
   # Note: if set to 0, typing animation will be disabled
   # Note: 
@@ -50,8 +48,6 @@ ignoreErrors = ["error-remote-getjson"]
   # Note: and set "math: true" at front matter in your Markdown file
   titleDelay = 0 # title speed : "title" in front matter
   contentDelay = 0 # content speed : content in .md file
-
-  # activityDelay = 5 : deprecated
 
   description = """
 
