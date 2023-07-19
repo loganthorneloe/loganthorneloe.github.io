@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: today
-draft: true
+draft: false
 ---
 
 This about me.

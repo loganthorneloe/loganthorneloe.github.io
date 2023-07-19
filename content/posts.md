@@ -1,7 +1,7 @@
 ---
 title: "Posts"
 date: today
-draft: true
+draft: false
 ---
 
 Coming Soon.

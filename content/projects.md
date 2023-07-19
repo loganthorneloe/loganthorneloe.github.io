@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 date: today
-draft: true
+draft: false
 ---
 
 Coming Soon.
