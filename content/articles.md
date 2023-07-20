@@ -1,5 +1,5 @@
 ---
-title: "Posts"
+title: "Articles"
 date: today
 draft: false
 ---
