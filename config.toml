@@ -69,6 +69,7 @@ ignoreErrors = ["error-remote-getjson"]
   files = [ 
     ["Posts", "/posts.md"],
     ["Projects", "/projects.md"],
+    ["Work", "/work.md"],
     ["About", "/about.md"],
   ]
 
@@ -81,7 +82,7 @@ ignoreErrors = ["error-remote-getjson"]
     ["GitHub", "https://github.com/lathorne"],
     ["LinkedIn", "https://www.linkedin.com/in/loganthorneloe/"],
     ["YouTube", "https://www.youtube.com/channel/UC3H55I0SqNKQgJU77LsFiBw"],
-    ["Twitter", "https://twitter.com/LoganThorneloe"],
+    ["Reddit", "https://www.reddit.com/user/lathorne"],
   ]
 
 [module]
