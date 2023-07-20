@@ -70,7 +70,6 @@ ignoreErrors = ["error-remote-getjson"]
     ["Posts", "/posts.md"],
     ["Projects", "/projects.md"],
     ["Work", "/work.md"],
-    ["About", "/about.md"],
   ]
 
   [Params.Tree2]
