@@ -39,7 +39,7 @@ ignoreErrors = ["error-remote-getjson"]
   # Note: and set "math: true" at front matter in your Markdown file
   ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
   stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
-  commandDelay = 30 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+  commandDelay = 15 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
 
   # Note: speed at which text is displayed on the activity pages
   # Note: if set to 0, typing animation will be disabled

@@ -569,6 +569,8 @@ body {
 
     
 
+    
+
 
 
 body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}body #dir{color:#D08010}body .Typewriter__cursor{color:#BBBBBB}a{color:#BBBBBB}
@@ -756,7 +758,7 @@ body{background:#1B1D1E}body #terminal{color:#BBBBBB}body #user{color:#23E298}bo
 
     const ps1Delay = parseDelay("0"),
         stdoutDelay = parseDelay("0"),
-        commandDelay = parseDelay("30");
+        commandDelay = parseDelay("15");
     const typeeffetct = async () => {
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003elogan@dev\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd src\u003c\/span\u003e", "cd", commandDelay);
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003elogan@dev\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/src\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat readme.md\u003c\/span\u003e", "cat", commandDelay);
