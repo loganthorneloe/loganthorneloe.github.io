@@ -77,7 +77,7 @@ ignoreErrors = ["error-remote-getjson"]
   folderName = "socials"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [
-    ["Substack", "https://loganthorneloe.substack.com/"],
+    ["Substack", "https://societysbackend.substack.com/"],
     ["GitHub", "https://github.com/lathorne"],
     ["LinkedIn", "https://www.linkedin.com/in/loganthorneloe/"],
     ["YouTube", "https://www.youtube.com/channel/UC3H55I0SqNKQgJU77LsFiBw"],
