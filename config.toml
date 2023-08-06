@@ -74,10 +74,11 @@ ignoreErrors = ["error-remote-getjson"]
 
   [Params.Tree2]
   use = true
-  folderName = "socials"
+  folderName = "join_me"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [
     ["Substack", "https://substack.com/@loganthorneloe"],
+    ["Twitter/X", "https://twitter.com/@loganthorneloe"],
     ["GitHub", "https://github.com/lathorne"],
     ["LinkedIn", "https://www.linkedin.com/in/loganthorneloe/"],
     ["YouTube", "https://www.youtube.com/channel/UC3H55I0SqNKQgJU77LsFiBw"],
