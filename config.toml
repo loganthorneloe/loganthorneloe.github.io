@@ -74,7 +74,7 @@ ignoreErrors = ["error-remote-getjson"]
 
   [Params.Tree2]
   use = true
-  folderName = "join_me"
+  folderName = "connect"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [
     ["Substack", "https://substack.com/@loganthorneloe"],
