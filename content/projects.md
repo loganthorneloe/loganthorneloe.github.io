@@ -9,7 +9,7 @@ A progressive web app that pulls financial data directly from SEC filings and de
 
 A user could search the PWA for a stock by name, ticker, or CIK. A table would then display ~25 markers for stock growth for that stock and use the scores of each marker to determine a percent confidence. The markers would display data for each year that could be retrieved from the SEC.
 
-**Uses react.js, firebase, nosql, and google cloud platform.**
+**Uses react.js, firebase, nosql, automation, and google cloud platform.**
 
 ## **Self-Playing Nintendo Switch** ([repo](https://www.linkedin.com/in/loganthorneloe/details/projects/1635536301436/single-media-viewer?type=LINK&profileId=ACoAACCXi0QBtoiJ7yjbk0l56QXNhUiFrM-g12U&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_projects_details%3B%2FK5f9XonQUmM919F6wdxIw%3D%3D))
 
