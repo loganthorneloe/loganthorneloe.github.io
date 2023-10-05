@@ -1,4 +1,4 @@
-loganthorneloe.com
+# loganthorneloe.com
 
 This is a professional personal website/portfolio. It can be used for blocking or just for links. Feel free to fork it and use as you'd like.
 
