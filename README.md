@@ -1,3 +1,5 @@
 # lathorne.github.io
 
-This is code for a simple personal website. Feel free to yoink it.
+This is a professional personal website/portfolio. It can be used for blocking or just for links. Feel free to fork it and use as you'd like.
+
+You can see it in action at https://loganthorneloe.com.
