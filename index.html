@@ -63,33 +63,22 @@
       <div class="title">More...</div>
     </a></button>
     <h2 class="section">writing</h2>
-    <nav>
-      <ul class="no-bullets">
-        <button><li><a href="https://societysbackend.com/p/ask-stupid-questions"><div class="title">An Overview of Text Summarization Methods from Simple to Complex</div>
-          <div class="mute">Research into text summarization methods and their pros and cons</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/ask-stupid-questions"><div class="title">Ask Stupid Questions</div>
-          <div class="mute">The more stupid the question, the greater the reason to ask</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/why-everyone-loves-spider-man"><div class="title">Why everyone loves Spider-Man</div>
-          <div class="mute">Lessons anyone can learn from our friendly neighborhood web-crawler</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/technical-interviews"><div class="title">I Enjoy Technical Interviews and You Can Too</div>
-          <div class="mute">A simple change in mindset that completely changed the way I interview</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/a-privacy-review-tiktok"><div class="title">A Privacy Review: TikTok</div>
-          <div class="mute">Stick to Instagram Reels and YouTube Shorts</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/anti-social-media"><div class="title">Anti-Social Media</div>
-          <div class="mute">How our technology habituates the paradoxical relationship between social media and social isolation</div>
-        </li></a></button>
-        <button><li><a href="https://societysbackend.com/p/the-slow-painful-death-of-the-free"><div class="title">The Slow, Painful Death of the Free Content Creator</div>
-          <div class="mute">It's happening as you read this</div>
-        </li></a></button>
-      </ul>
-    </nav>
+    <div id="substack-feed-embed"></div>
+    <script>
+      window.SubstackFeedWidget = {
+        substackUrl: "societysbackend.com",
+        posts: 6,
+        hidden: ["author","subtitle","image"],
+        colors: {
+          primary: "#FFFFFF",
+          secondary: "#808080",
+          background: "#000000",
+        }
+      };
+    </script>
     <button><a href="https://substack.com/@loganthorneloe">
       <div class="title">More...</div>
     </a></button>
+    <script src="https://substackapi.com/embeds/feed.js" async></script>
 </body>
 </html>

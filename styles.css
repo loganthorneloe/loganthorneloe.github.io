@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: hsla(0, 0%, 100%, 0.466);
+  color: #808080;
 }
 
 h2 {
@@ -45,7 +45,7 @@ li::marker {
 }
 
 .mute {
-  color: #aaa;
+  color: #808080;
   text-decoration: none;
 }
 
