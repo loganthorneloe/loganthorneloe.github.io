@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+a:hover .title {
+  color: #fff;
+}
+
 a:hover {
   color: #808080;
 }
@@ -47,17 +51,20 @@ li::marker {
 .mute {
   color: #808080;
   text-decoration: none;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .title {
-  text-decoration: underline;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
 button {
   margin-bottom: 10px;
+  padding: .75rem;
   background-color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -70,4 +77,8 @@ button {
   list-style-type: none; 
   padding: 0; 
   margin: 0; 
+}
+
+iframe {
+  overflow: hidden;
 }
