@@ -41,8 +41,7 @@ h2, h3 {
 
 .section {
   font-weight: 1;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  padding: 1rem;
 }
 
 li::marker {
@@ -62,28 +61,28 @@ li::marker {
 }
 
 .headshot {
-  border-radius: 20px;
-  width: 75px;
-  height: 75px;
-  margin-right: 20px;
-}
-
-.handle{
-  font-weight: 1;
+  border-radius: 150px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
 }
 
 .profile-container {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.user-info {
+  padding: 1rem;
 }
 
 .user-info h2 {
-    margin: 0;
+  margin: 0;
 }
 
 button {
-  padding: .75rem;
+  padding: 1rem;
   background-color: #000000;
   font-size: 18px;
   color: #ffffff;
@@ -102,4 +101,10 @@ button {
 
 iframe {
   overflow: hidden;
+}
+
+@media (max-width: 600px) {
+  .profile-container {
+      flex-direction: column;
+  }
 }
