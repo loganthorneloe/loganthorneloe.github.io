@@ -35,8 +35,7 @@ h2, h3 {
 }
 
 .icons {
-  margin-top: 5px; 
-  padding-bottom: 10px;
+  margin-top: 5px;
 }
 
 .section {
@@ -55,6 +54,10 @@ li::marker {
   font-weight: 100;
 }
 
+.red:hover {
+  color: #eb5757;
+}
+
 .title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -64,7 +67,7 @@ li::marker {
   border-radius: 150px;
   width: 150px;
   height: 150px;
-  margin: 10px;
+  padding: 1em;
 }
 
 .profile-container {
@@ -99,12 +102,82 @@ button {
   margin: 0; 
 }
 
-iframe {
-  overflow: hidden;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* start or center */
+  align-items: center;
+  padding: 1rem;
+}
+
+.thumbnail {
+  margin: 5px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.filler {
+  margin: 5px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filler img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.no-click-cursor {
+  cursor: default;
 }
 
 @media (max-width: 600px) {
   .profile-container {
       flex-direction: column;
   }
+  body {
+    padding: 1rem;
+  }
 }
+
+/* @media (min-width: 1100px) {
+  .thumbnail {
+    width: calc(96% / 3);
+  }
+  .filler {
+    width: calc(96% / 3);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1100px) {
+  .thumbnail {
+    width: calc(96% / 2);
+  }
+  .filler {
+    width: calc(96% / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .thumbnail {
+    width: 100%;
+  }
+  .filler {
+    width: 100%;
+  }
+} */
