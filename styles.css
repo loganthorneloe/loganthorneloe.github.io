@@ -40,7 +40,7 @@ h2, h3 {
 
 .section {
   font-weight: 1;
-  padding: 1rem;
+  padding-top: .75rem;
 }
 
 li::marker {
@@ -65,8 +65,8 @@ li::marker {
 
 .headshot {
   border-radius: 150px;
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   padding: 1em;
 }
 
@@ -77,7 +77,7 @@ li::marker {
 }
 
 .user-info {
-  padding: 1rem;
+  padding: .75rem;
 }
 
 .user-info h2 {
@@ -85,7 +85,7 @@ li::marker {
 }
 
 button {
-  padding: 1rem;
+  padding: .75rem;
   background-color: #000000;
   font-size: 18px;
   color: #ffffff;
@@ -146,6 +146,18 @@ button {
   cursor: default;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+}
+
+@media (min-width: 600px) {
+  .thumbnail {
+    width: 90%;
+  }
+}
+
 @media (max-width: 600px) {
   .profile-container {
       flex-direction: column;
@@ -153,31 +165,7 @@ button {
   body {
     padding: 1rem;
   }
-}
-
-/* @media (min-width: 1100px) {
-  .thumbnail {
-    width: calc(96% / 3);
-  }
-  .filler {
-    width: calc(96% / 3);
+  .headshot{
+    padding: .5em;
   }
 }
-
-@media (min-width: 600px) and (max-width: 1100px) {
-  .thumbnail {
-    width: calc(96% / 2);
-  }
-  .filler {
-    width: calc(96% / 2);
-  }
-}
-
-@media (max-width: 600px) {
-  .thumbnail {
-    width: 100%;
-  }
-  .filler {
-    width: 100%;
-  }
-} */
