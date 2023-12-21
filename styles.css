@@ -3,8 +3,11 @@ body {
   color: #fff; 
   max-width: 600px;
   margin: 5% auto;
+  margin-bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  padding: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
   font-weight: 300;
 }
 
@@ -84,18 +87,6 @@ li::marker {
   margin: 0;
 }
 
-button {
-  padding: .75rem;
-  background-color: #000000;
-  font-size: 18px;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-}
-
 .no-bullets {
   list-style-type: none; 
   padding: 0; 
@@ -150,6 +141,11 @@ hr {
   border: none;
   height: 1px;
   background-color: #333;
+}
+
+footer {
+  padding-top: 1.5rem;
+  padding-bottom: .75rem;
 }
 
 @media (min-width: 600px) {
