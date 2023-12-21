@@ -108,7 +108,10 @@ li::marker {
   color: white;
   border-radius: 5px;
   cursor: pointer;
+  border: 1px solid;
+  box-shadow: 2px 2px 0px 0px #eb5757;
 }
+
 
 .thumbnail img {
   max-width: 100%;
@@ -117,6 +120,7 @@ li::marker {
 
 .thumbnail:hover {
   transform: scale(1.05);
+  box-shadow: 4px 4px 0px 0px #eb5757;
 }
 
 .filler {
@@ -146,6 +150,10 @@ hr {
 footer {
   padding-top: 1.5rem;
   padding-bottom: .75rem;
+}
+
+.card-fill {
+  padding: .25em;
 }
 
 @media (min-width: 600px) {
