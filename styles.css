@@ -1,3 +1,8 @@
+:root {
+  --main-red: #eb5757;
+  --button-corners: 20px;
+}
+
 body {
   background-color: #000000; 
   color: #fff; 
@@ -21,7 +26,7 @@ a:hover .title {
 }
 
 a:hover {
-  color: #eb5757;
+  color: var(--main-red);
 }
 
 h2, h3 {
@@ -58,7 +63,7 @@ li::marker {
 }
 
 .red:hover {
-  color: #eb5757;
+  color: var(--main-red);
 }
 
 .title {
@@ -106,21 +111,21 @@ li::marker {
   font-size: 16px;
   background-color: black;
   color: white;
-  border-radius: 5px;
+  border-radius: var(--button-corners);
   cursor: pointer;
   border: 1px solid;
-  box-shadow: 2px 2px 0px 0px #eb5757;
+  box-shadow: 2px 2px 0px 0px var(--main-red);
 }
 
 
 .thumbnail img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: var(--button-corners);
 }
 
 .thumbnail:hover {
   transform: scale(1.05);
-  box-shadow: 4px 4px 0px 0px #eb5757;
+  box-shadow: 4px 4px 0px 0px var(--main-red);
 }
 
 .filler {
