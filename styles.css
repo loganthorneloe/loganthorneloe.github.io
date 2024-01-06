@@ -21,12 +21,9 @@ a {
   text-decoration: none;
 }
 
-a:hover .title {
-  color: #fff;
-}
-
 a:hover {
   color: var(--main-red);
+  background-color: var(--main-grey);
 }
 
 h2, h3 {
@@ -51,8 +48,10 @@ p {
 }
 
 .section {
+  color: var(--main-red);
   font-weight: 1;
   padding-top: .75rem;
+  padding-bottom: .25rem;
 }
 
 li::marker {
