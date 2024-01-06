@@ -33,6 +33,10 @@ h2, h3 {
   margin: 0px;
 }
 
+p {
+  margin-top: .25em;
+}
+
 .element {
   padding: 5px 0 5px 0;
 }
