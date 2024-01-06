@@ -1,12 +1,13 @@
 :root {
   --main-red: #eb5757;
+  --main-grey: #333;
   --button-corners: 20px;
 }
 
 body {
   background-color: #000000; 
   color: #fff; 
-  max-width: 600px;
+  max-width: 800px;
   margin: 5% auto;
   margin-bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -31,6 +32,36 @@ a:hover {
 
 h2, h3 {
   margin: 0px;
+}
+
+.card {
+  border: 1px solid var(--main-grey);
+  background-color: var(--main-grey);
+  border-radius: 5px;
+  padding: .5em;
+  margin: .5em;
+}
+
+.width-full {
+  width: 100%;
+}
+
+.width-half {
+  width: 48%;
+}
+
+.width-quarter {
+  width: 22%;
+}
+
+.card:hover {
+  border: 1px solid var(--main-red);
+  color: var(--main-red);
+}
+
+.across {
+  display: flex;
+  justify-content: space-between;
 }
 
 .element {
@@ -72,8 +103,8 @@ li::marker {
 
 .headshot {
   border-radius: 150px;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   padding: 1em;
 }
 
@@ -105,29 +136,6 @@ li::marker {
   padding: 1rem;
 }
 
-.thumbnail {
-  margin: 5px;
-  margin-bottom: 10px;
-  font-size: 16px;
-  background-color: black;
-  color: white;
-  border-radius: var(--button-corners);
-  cursor: pointer;
-  border: 0px solid;
-  box-shadow: 2px 2px 0px 0px var(--main-red);
-}
-
-
-.thumbnail img {
-  max-width: 100%;
-  border-radius: var(--button-corners);
-}
-
-.thumbnail:hover {
-  transform: scale(1.05);
-  box-shadow: 4px 4px 5px 0px var(--main-red);
-}
-
 .filler {
   margin: 5px;
   font-size: 16px;
@@ -155,10 +163,6 @@ hr {
 footer {
   padding-top: 1.5rem;
   padding-bottom: .75rem;
-}
-
-.card-fill {
-  padding: .25em;
 }
 
 @media (min-width: 600px) {
