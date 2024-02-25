@@ -1,5 +1,6 @@
 :root {
   --main-red: #eb5757;
+  --main-purple: #8c52ff;
   --button-corners: 20px;
 }
 
@@ -18,8 +19,12 @@ a {
   text-decoration: none;
 }
 
+a.subscrubby:hover {
+  color: #ffea00;
+}
+
 a:hover {
-  color: var(--main-red);
+  color: var(--main-purple);
   background-color: var(--main-grey);
 }
 
@@ -46,7 +51,6 @@ p {
 
 .section {
   color: var(--main-red);
-  font-weight: 1;
   padding-top: .75rem;
   padding-bottom: .25rem;
 }
