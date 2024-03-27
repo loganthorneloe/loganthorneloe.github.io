@@ -20,6 +20,18 @@ h2 {
   margin-bottom: 5px;
 }
 
+span {
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+span:hover {
+  color:#fff;
+}
+
 h3 {
   margin: 0px;
   color: var(--primary-color);
