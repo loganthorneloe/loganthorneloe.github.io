@@ -172,11 +172,6 @@ p a:hover {
   padding-top: 10px;
 }
 
-.projects .card {
-  border-radius: 80px;
-  text-align: center;
-}
-
 .card {
   border: 1px solid #ccc;
   padding: 20px;
@@ -186,12 +181,41 @@ p a:hover {
   width: 100%;
 }
 
+.projects .card {
+  border-radius: 80px;
+  text-align: center;
+}
+
+.research .card {
+  box-shadow: 3px 3px 0px var(--secondary-color);
+}
+
+.quotes .card {
+  box-shadow: none;
+  color: var(--text-color);
+  border-color: var(--background-color);
+  border-left: 2px solid var(--secondary-color);
+}
+
 .card:hover {
   background-color: var(--primary-color);
   color: var(--background-color);
   box-shadow: 3px 3px 0px var(--secondary-color);
   border: 1px solid var(--background-color);
 }
+
+.research .card:hover{
+  box-shadow: 3px 3px 0px var(--text-color);
+  color: var(--text-color);
+}
+
+.quotes .card:hover{
+  box-shadow: none;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border-left: 2px solid var(--primary-color);
+}
+
 
 /* tags */
 
