@@ -201,12 +201,13 @@ p a:hover {
   border: 1px solid var(--background-color);
 }
 
-.research .card:hover{
-  box-shadow: 3px 3px 0px var(--text-color);
+.research .card:hover {
+  box-shadow: 3px 3px 0px var(--primary-color);
   color: var(--text-color);
+  background-color: var(--secondary-color);
 }
 
-.quotes .card:hover{
+.quotes .card:hover {
   box-shadow: none;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -222,6 +223,10 @@ span {
   border-radius: 10px;
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.research span {
+  background-color: var(--primary-color);
 }
 
 span:hover {
