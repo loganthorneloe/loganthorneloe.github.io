@@ -27,13 +27,6 @@ html {
   scroll-behavior: smooth;
 }
 
-nav {
-  color: var(--text-color);
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 25px;
-}
-
 .headshot {
   border-radius: 150px;
   width: 175px;
@@ -191,6 +184,10 @@ p a:hover {
 }
 
 .quotes .card {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
   box-shadow: none;
   color: var(--text-color);
   border-color: var(--background-color);
