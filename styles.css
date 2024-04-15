@@ -196,14 +196,13 @@ p a:hover {
 
 .card:hover {
   background-color: var(--primary-color);
-  color: var(--background-color);
+  color: var(--text-color);
   box-shadow: 3px 3px 0px var(--secondary-color);
   border: 1px solid var(--background-color);
 }
 
 .research .card:hover {
   box-shadow: 3px 3px 0px var(--primary-color);
-  color: var(--text-color);
   background-color: var(--secondary-color);
 }
 
