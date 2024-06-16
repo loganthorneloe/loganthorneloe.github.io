@@ -140,8 +140,14 @@ h3 {
   padding-top: 2px;
 }
 
+h3 a:hover {
+  color: var(--primary-color);
+  text-shadow: 1px 1px 0px var(--secondary-color);
+  text-decoration: none;
+}
+
 .link {
-  color:var(--text-color);
+  /* color:var(--text-color); */
   /* text-decoration: underline; */
   font-weight: bold;
 }
