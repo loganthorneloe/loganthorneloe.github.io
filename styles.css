@@ -136,9 +136,11 @@ p {
   padding-top: 5px;
 }
 
+h3 {
+  padding-top: 2px;
+}
+
 .link {
-  padding-top: 5px;
-  padding-bottom: 5px;
   color:var(--text-color);
   /* text-decoration: underline; */
   font-weight: bold;
