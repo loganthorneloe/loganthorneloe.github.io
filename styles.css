@@ -50,10 +50,15 @@ h2 {
 
 h3 {
   font-weight: 700;
-  padding-top: 7px;
+  padding-top: 2px;
   margin: 0px;
-  color: var(--primary-color);
   /* padding-bottom: .75rem; */
+}
+
+h3 a:hover {
+  color: var(--primary-color);
+  text-shadow: 1px 1px 0px var(--secondary-color);
+  text-decoration: none;
 }
 
 ol {
@@ -134,16 +139,6 @@ a {
 
 p {
   padding-top: 5px;
-}
-
-h3 {
-  padding-top: 2px;
-}
-
-h3 a:hover {
-  color: var(--primary-color);
-  text-shadow: 1px 1px 0px var(--secondary-color);
-  text-decoration: none;
 }
 
 .link {
