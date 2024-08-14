@@ -31,59 +31,24 @@ html {
   border-radius: 150px;
   width: 150px;
   height: 150px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
-.title {
-  /* font-size: 56px; */
-  color: var(--primary-color);
-  text-shadow: 3px 3px 0px var(--secondary-color);
-  padding-bottom: 3px;
+.heading {
+  margin: 10px;
 }
 
-h1 {
-  font-size: 36px;
+.description {
+  margin: 10px;
+}
+
+.icons {
+  margin: 10px;
 }
 
 h2 {
   font-weight: 300;
-}
-
-h3 {
-  font-weight: 700;
-  padding-top: 2px !important;
-  margin: 0px;
-  /* padding-bottom: .75rem; */
-}
-
-h3 a:hover {
-  color: var(--primary-color);
-  text-shadow: 1px 1px 0px var(--secondary-color);
-  text-decoration: none;
-}
-
-ol {
-  margin-left: 0;
-  padding-left: 1em; /* Set the desired indentation */
-}
-
-.button {
-  display: inline-flex;  
-  align-items: center; 
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border: solid 1px;
-  padding: 10px 20px;
-  border-radius: var(--button-corners);
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 3px 3px 0px var(--primary-color);
-}
-
-.button:hover {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  box-shadow: 3px 3px 0px var(--secondary-color);
-  border: 1px solid var(--background-color);
 }
 
 svg {
@@ -103,22 +68,14 @@ svg:hover {
   display: flex;
   align-items: center;
   justify-content: center; /* Horizontal alignment */
+  text-align: center;
   min-height: 100vh;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-.content {
-  width: 700px;
-  justify-content: left;
-}
-
-.inner-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.mute {
+.footer {
+  margin-top: 20px;
   font-weight: 100;
   color: var(--mute-color);
 }
@@ -142,8 +99,6 @@ p {
 }
 
 .link {
-  /* color:var(--text-color); */
-  /* text-decoration: underline; */
   font-weight: bold;
 }
 
@@ -151,19 +106,6 @@ p a:hover {
   color: var(--primary-color);
   text-shadow: 1px 1px 0px var(--secondary-color);
   text-decoration: none;
-}
-
-.speaker {
-  text-align: right;
-  padding-top: 10px;
-}
-
-/* cards */
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
 }
 
 .cards {
@@ -183,67 +125,9 @@ p a:hover {
   width: 100%;
 }
 
-.projects .card {
-  border-radius: 80px;
-  text-align: center;
-}
-
-.research .card {
-  box-shadow: 3px 3px 0px var(--secondary-color);
-}
-
-.quotes .card {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-shadow: none;
-  color: var(--text-color);
-  border-color: var(--background-color);
-  border-left: 2px solid var(--secondary-color);
-}
-
 .card:hover {
   background-color: var(--primary-color);
   color: var(--text-color);
   box-shadow: 3px 3px 0px var(--secondary-color);
   border: 1px solid var(--background-color);
-}
-
-.research .card:hover {
-  box-shadow: 3px 3px 0px var(--primary-color);
-  background-color: var(--secondary-color);
-}
-
-.quotes .card:hover {
-  box-shadow: none;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  border-left: 2px solid var(--primary-color);
-}
-
-
-/* tags */
-
-span {
-  color: #fff;
-  background-color: var(--secondary-color);
-  border-radius: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.research span {
-  background-color: var(--primary-color);
-}
-
-span:hover {
-  color:#fff;
-}
-
-/* mobile */
-@media (max-width: 500px) {
-  .container {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
