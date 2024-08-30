@@ -94,15 +94,24 @@
         
         console.log('DOM loaded, tiltElement:', tiltElement);
 
-        VanillaTilt.init(tiltElement, {
-          max: 15,
-          speed: 400,
-          glare: true,
-          "max-glare": 0.5,
-          gyroscope: true
-        });
+        // Function to check if the device is touch-capable
+        function isTouchDevice() {
+          return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+        }
+
+        // Initialize VanillaTilt only for non-touch devices
+        if (!isTouchDevice()) {
+          VanillaTilt.init(tiltElement, {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+            gyroscope: true
+          });
+        }
 
         let isTouching = false;
+        let touchStartX, touchStartY;
 
         tiltElement.addEventListener('touchstart', function(e) {
           console.log('Touch start');
