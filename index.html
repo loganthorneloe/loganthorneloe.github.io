@@ -146,25 +146,19 @@
           isTouching = false;
           touchStartX = null;
           touchStartY = null;
-          // We don't reset the tilt here, so it stays in place
         });
 
         function updateTilt() {
           tiltElement.style.transform = `perspective(1000px) rotateX(${currentTiltX}deg) rotateY(${currentTiltY}deg)`;
         }
 
-        // Double tap to reset tilt
-        let lastTap = 0;
-        tiltElement.addEventListener('touchend', function(e) {
-          const currentTime = new Date().getTime();
-          const tapLength = currentTime - lastTap;
-          if (tapLength < 500 && tapLength > 0) {
+        // Reset tilt when tapping outside the card
+        document.addEventListener('touchstart', function(e) {
+          if (!tiltElement.contains(e.target)) {
             currentTiltX = 0;
             currentTiltY = 0;
             updateTilt();
-            e.preventDefault();
           }
-          lastTap = currentTime;
         });
 
         // Prevent scrolling on the body only when touching the card
