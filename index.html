@@ -102,11 +102,11 @@
           gyroscope: true
         });
 
-        // Add touch event listeners for mobile devices
-        let touchStartX, touchStartY;
+        let isTouching = false;
 
         tiltElement.addEventListener('touchstart', function(e) {
           console.log('Touch start');
+          isTouching = true;
           const touch = e.touches[0];
           touchStartX = touch.clientX;
           touchStartY = touch.clientY;
@@ -114,6 +114,9 @@
 
         tiltElement.addEventListener('touchmove', function(e) {
           console.log('Touch move');
+          if (isTouching) {
+            e.preventDefault(); // Prevent scrolling only when touching the card
+          }
           if (!touchStartX || !touchStartY) {
             return;
           }
@@ -132,10 +135,18 @@
 
         tiltElement.addEventListener('touchend', function() {
           console.log('Touch end');
+          isTouching = false;
           tiltElement.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
           touchStartX = null;
           touchStartY = null;
         });
+
+        // Prevent scrolling on the body only when touching the card
+        document.body.addEventListener('touchmove', function(e) {
+          if (isTouching) {
+            e.preventDefault();
+          }
+        }, { passive: false });
 
         document.querySelectorAll('.flip-button').forEach(button => {
           button.addEventListener('click', (e) => {
