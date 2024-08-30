@@ -94,12 +94,10 @@
         
         console.log('DOM loaded, tiltElement:', tiltElement);
 
-        // Function to check if the device is touch-capable
         function isTouchDevice() {
           return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
         }
 
-        // Initialize VanillaTilt only for non-touch devices
         if (!isTouchDevice()) {
           VanillaTilt.init(tiltElement, {
             max: 15,
@@ -112,6 +110,7 @@
 
         let isTouching = false;
         let touchStartX, touchStartY;
+        let currentTiltX = 0, currentTiltY = 0;
 
         tiltElement.addEventListener('touchstart', function(e) {
           console.log('Touch start');
@@ -134,20 +133,38 @@
           const deltaX = touch.clientX - touchStartX;
           const deltaY = touch.clientY - touchStartY;
 
-          const tiltX = (deltaY / tiltElement.offsetHeight) * 30;
-          const tiltY = -(deltaX / tiltElement.offsetWidth) * 30;
+          currentTiltX = (deltaY / tiltElement.offsetHeight) * 30;
+          currentTiltY = -(deltaX / tiltElement.offsetWidth) * 30;
 
-          console.log('Touch move:', { deltaX, deltaY, tiltX, tiltY });
+          console.log('Touch move:', { deltaX, deltaY, currentTiltX, currentTiltY });
 
-          tiltElement.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+          updateTilt();
         });
 
         tiltElement.addEventListener('touchend', function() {
           console.log('Touch end');
           isTouching = false;
-          tiltElement.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
           touchStartX = null;
           touchStartY = null;
+          // We don't reset the tilt here, so it stays in place
+        });
+
+        function updateTilt() {
+          tiltElement.style.transform = `perspective(1000px) rotateX(${currentTiltX}deg) rotateY(${currentTiltY}deg)`;
+        }
+
+        // Double tap to reset tilt
+        let lastTap = 0;
+        tiltElement.addEventListener('touchend', function(e) {
+          const currentTime = new Date().getTime();
+          const tapLength = currentTime - lastTap;
+          if (tapLength < 500 && tapLength > 0) {
+            currentTiltX = 0;
+            currentTiltY = 0;
+            updateTilt();
+            e.preventDefault();
+          }
+          lastTap = currentTime;
         });
 
         // Prevent scrolling on the body only when touching the card
