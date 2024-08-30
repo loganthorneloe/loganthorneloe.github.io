@@ -91,7 +91,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const tiltElement = document.querySelector(".card");
-        
+      
         function isTouchDevice() {
           return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
         }
@@ -139,9 +139,6 @@
           isTouching = false;
           touchStartX = null;
           touchStartY = null;
-          currentTiltX = 0;
-          currentTiltY = 0;
-          updateTilt();
         });
 
         function updateTilt() {
