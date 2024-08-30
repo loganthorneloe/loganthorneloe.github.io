@@ -141,16 +141,10 @@
           if (isTouching) {
             const touch = e.changedTouches[0];
             const deltaX = touch.clientX - touchStartX;
-            const deltaY = touch.clientY - touchStartY;
 
             if (Math.abs(deltaX) > swipeThreshold) {
-              if (deltaX > 0) {
-                // Swipe right
-                document.documentElement.classList.remove('card-flipped');
-              } else {
-                // Swipe left
-                document.documentElement.classList.add('card-flipped');
-              }
+              // Swipe detected, toggle the card flip
+              document.documentElement.classList.toggle('card-flipped');
               localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
             }
           }
