@@ -90,106 +90,27 @@
     </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const tiltElement = document.querySelector(".card");
-      
-        function isTouchDevice() {
-          return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
-        }
+        const card = document.querySelector(".card");
+        let touchStartX, touchStartTime;
+        const swipeThreshold = 50; // Minimum distance for a swipe
+        const swipeDuration = 300; // Maximum duration for a quick swipe in milliseconds
 
-        if (!isTouchDevice()) {
-          VanillaTilt.init(tiltElement, {
-            max: 15,
-            speed: 400,
-            glare: true,
-            "max-glare": 0.5,
-            gyroscope: true
-          });
-        }
-
-        let isTouching = false;
-        let touchStartX, touchStartY, touchStartTime;
-        let currentTiltX = 0, currentTiltY = 0;
-        const flickThreshold = 30; // Minimum distance for a flick
-        const flickDuration = 300; // Maximum duration for a flick in milliseconds
-
-        tiltElement.addEventListener('touchstart', function(e) {
-          isTouching = true;
-          const touch = e.touches[0];
-          touchStartX = touch.clientX;
-          touchStartY = touch.clientY;
+        card.addEventListener('touchstart', function(e) {
+          touchStartX = e.touches[0].clientX;
           touchStartTime = new Date().getTime();
         });
 
-        tiltElement.addEventListener('touchmove', function(e) {
-          if (isTouching) {
-            e.preventDefault(); // Prevent scrolling only when touching the card
-          }
-          if (!touchStartX || !touchStartY) {
-            return;
-          }
-
-          const touch = e.touches[0];
-          const deltaX = touch.clientX - touchStartX;
-          const deltaY = touch.clientY - touchStartY;
-
-          currentTiltX = (deltaY / tiltElement.offsetHeight) * 30;
-          currentTiltY = -(deltaX / tiltElement.offsetWidth) * 30;
-
-          updateTilt();
-        });
-
-        tiltElement.addEventListener('touchend', function(e) {
-          isTouching = false;
-          if (isTouchDevice()) {
-            const touch = e.changedTouches[0];
-            const deltaX = touch.clientX - touchStartX;
-            const deltaY = touch.clientY - touchStartY;
-            const deltaTime = new Date().getTime() - touchStartTime;
-
-            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > flickThreshold && deltaTime < flickDuration) {
-              // Horizontal flick detected
-              const direction = deltaX > 0 ? 'right' : 'left';
-              flipCard(direction);
-            }
-          }
-          touchStartX = null;
-          touchStartY = null;
-        });
-
-        function flipCard(direction) {
-          const currentRotation = getComputedStyle(tiltElement).getPropertyValue('--rotate-y');
-          const newRotation = direction === 'right' ? '180deg' : '-180deg';
+        card.addEventListener('touchend', function(e) {
+          const touchEndX = e.changedTouches[0].clientX;
+          const touchEndTime = new Date().getTime();
           
-          tiltElement.style.transition = 'transform 0.6s';
-          tiltElement.style.transform = `rotateY(${newRotation})`;
-          
-          setTimeout(() => {
-            document.documentElement.classList.toggle('card-flipped');
-            tiltElement.style.transition = '';
-            tiltElement.style.transform = '';
-            localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
-          }, 300);
-        }
+          const distanceX = touchEndX - touchStartX;
+          const duration = touchEndTime - touchStartTime;
 
-        function updateTilt() {
-          tiltElement.style.transform = `perspective(1000px) rotateX(${currentTiltX}deg) rotateY(${currentTiltY}deg)`;
-        }
-
-        // Reset tilt when tapping outside the card
-        document.addEventListener('touchstart', function(e) {
-          if (!tiltElement.contains(e.target)) {
-            currentTiltX = 0;
-            currentTiltY = 0;
-            updateTilt();
+          if (Math.abs(distanceX) > swipeThreshold && duration < swipeDuration) {
+            card.classList.toggle('card-flipped');
           }
         });
-
-        // Prevent scrolling on the body only when touching the card
-        document.body.addEventListener('touchmove', function(e) {
-          if (isTouching) {
-            e.preventDefault();
-          }
-        }, { passive: false });
 
         document.querySelectorAll('.flip-button').forEach(button => {
           button.addEventListener('click', (e) => {
