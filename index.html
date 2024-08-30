@@ -91,9 +91,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const tiltElement = document.querySelector(".card");
-        
-        console.log('DOM loaded, tiltElement:', tiltElement);
-
+      
         function isTouchDevice() {
           return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
         }
@@ -109,19 +107,20 @@
         }
 
         let isTouching = false;
-        let touchStartX, touchStartY;
+        let touchStartX, touchStartY, touchEndX, touchEndY;
         let currentTiltX = 0, currentTiltY = 0;
+        const swipeThreshold = 50; // Minimum distance for a swipe
 
         tiltElement.addEventListener('touchstart', function(e) {
-          console.log('Touch start');
           isTouching = true;
           const touch = e.touches[0];
           touchStartX = touch.clientX;
           touchStartY = touch.clientY;
+          touchEndX = touchStartX;
+          touchEndY = touchStartY;
         });
 
         tiltElement.addEventListener('touchmove', function(e) {
-          console.log('Touch move');
           if (isTouching) {
             e.preventDefault(); // Prevent scrolling only when touching the card
           }
@@ -136,16 +135,27 @@
           currentTiltX = (deltaY / tiltElement.offsetHeight) * 30;
           currentTiltY = -(deltaX / tiltElement.offsetWidth) * 30;
 
-          console.log('Touch move:', { deltaX, deltaY, currentTiltX, currentTiltY });
+          touchEndX = touch.clientX;
+          touchEndY = touch.clientY;
 
           updateTilt();
         });
 
         tiltElement.addEventListener('touchend', function() {
-          console.log('Touch end');
           isTouching = false;
           touchStartX = null;
           touchStartY = null;
+
+          if (isTouchDevice()) {
+            const deltaX = touchEndX - touchStartX;
+            const deltaY = touchEndY - touchStartY;
+
+            if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > swipeThreshold) {
+              // Horizontal swipe detected
+              document.documentElement.classList.toggle('card-flipped');
+              localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
+            }
+          }
         });
 
         function updateTilt() {
@@ -170,15 +180,12 @@
 
         document.querySelectorAll('.flip-button').forEach(button => {
           button.addEventListener('click', (e) => {
-            console.log('Flip button clicked');
             e.stopPropagation();
             document.documentElement.classList.toggle('card-flipped');
             localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
           });
         });
       });
-
-      console.log('Script loaded');
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   </body>
