@@ -168,6 +168,11 @@
             localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
           });
         });
+
+        // Add this at the end of the DOMContentLoaded event listener
+        const card = document.querySelector('.card');
+        card.classList.add('shine-on-load');
+        setTimeout(() => card.classList.remove('shine-on-load'), 1000);
       });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>

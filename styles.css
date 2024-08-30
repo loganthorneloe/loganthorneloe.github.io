@@ -1,4 +1,4 @@
-/* CSS Reset - Helps normalize styles across browsers */
+/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +55,6 @@ svg {
 }
 
 .footer {
-  height: auto;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -98,7 +97,6 @@ a:hover:not(.icon-link) {
 }
 
 p {
-  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -157,7 +155,7 @@ p a:hover, li a:hover {
 }
 
 .card-back {
-  background: linear-gradient(225deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(315deg, var(--primary-color), var(--secondary-color));
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
@@ -243,7 +241,6 @@ section:last-child {
 }
 
 .card-back ul {
-  list-style-type: none;
   padding-left: 20px;
   text-align: left;
 }
