@@ -91,7 +91,6 @@
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         const tiltElement = document.querySelector(".card");
-        const cardInner = document.querySelector(".card-inner");
         
         function isTouchDevice() {
           return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
@@ -110,11 +109,8 @@
         let isTouching = false;
         let touchStartX, touchStartY;
         let currentTiltX = 0, currentTiltY = 0;
-        let swipeThreshold = 50; // Minimum distance for a swipe
-        let isFlipping = false; // Flag to prevent multiple flips
 
         tiltElement.addEventListener('touchstart', function(e) {
-          if (isFlipping) return; // Prevent new touch events during flip
           isTouching = true;
           const touch = e.touches[0];
           touchStartX = touch.clientX;
@@ -122,7 +118,6 @@
         });
 
         tiltElement.addEventListener('touchmove', function(e) {
-          if (isFlipping) return; // Prevent tilting during flip
           if (isTouching) {
             e.preventDefault(); // Prevent scrolling only when touching the card
           }
@@ -140,30 +135,7 @@
           updateTilt();
         });
 
-        tiltElement.addEventListener('touchend', function(e) {
-          if (isFlipping) return; // Prevent new flips during ongoing flip
-          if (isTouching) {
-            const touch = e.changedTouches[0];
-            const deltaX = touch.clientX - touchStartX;
-
-            if (Math.abs(deltaX) > swipeThreshold) {
-              isFlipping = true;
-              const newRotation = deltaX > 0 ? 'rotateY(-180deg)' : 'rotateY(180deg)';
-              
-              cardInner.style.transition = 'transform 0.6s';
-              cardInner.style.transform = newRotation;
-              
-              // Toggle the card-flipped class after the animation
-              setTimeout(() => {
-                document.documentElement.classList.toggle('card-flipped');
-                cardInner.style.transition = '';
-                cardInner.style.transform = '';
-                localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
-                isFlipping = false; // Reset the flipping flag
-              }, 600);
-            }
-          }
-
+        tiltElement.addEventListener('touchend', function() {
           isTouching = false;
           touchStartX = null;
           touchStartY = null;
@@ -194,14 +166,9 @@
 
         document.querySelectorAll('.flip-button').forEach(button => {
           button.addEventListener('click', (e) => {
-            if (isFlipping) return; // Prevent button click during flip
             e.stopPropagation();
-            isFlipping = true;
             document.documentElement.classList.toggle('card-flipped');
             localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
-            setTimeout(() => {
-              isFlipping = false;
-            }, 600);
           });
         });
       });
