@@ -143,9 +143,19 @@
             const deltaX = touch.clientX - touchStartX;
 
             if (Math.abs(deltaX) > swipeThreshold) {
-              // Swipe detected, toggle the card flip
-              document.documentElement.classList.toggle('card-flipped');
-              localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
+              const currentRotation = getComputedStyle(cardInner).getPropertyValue('transform');
+              const newRotation = deltaX > 0 ? 'rotateY(-180deg)' : 'rotateY(180deg)';
+              
+              cardInner.style.transition = 'transform 0.6s';
+              cardInner.style.transform = newRotation;
+              
+              // Toggle the card-flipped class after the animation
+              setTimeout(() => {
+                document.documentElement.classList.toggle('card-flipped');
+                cardInner.style.transition = '';
+                cardInner.style.transform = '';
+                localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
+              }, 600);
             }
           }
 
