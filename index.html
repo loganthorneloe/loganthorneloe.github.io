@@ -90,27 +90,98 @@
     </div>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const card = document.querySelector(".card");
-        let touchStartX, touchStartTime;
-        const swipeThreshold = 50; // Minimum distance for a swipe
-        const swipeDuration = 300; // Maximum duration for a quick swipe in milliseconds
+        const tiltElement = document.querySelector(".card");
+        const cardInner = document.querySelector(".card-inner");
+        
+        function isTouchDevice() {
+          return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0);
+        }
 
-        card.addEventListener('touchstart', function(e) {
-          touchStartX = e.touches[0].clientX;
-          touchStartTime = new Date().getTime();
+        if (!isTouchDevice()) {
+          VanillaTilt.init(tiltElement, {
+            max: 15,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.5,
+            gyroscope: true
+          });
+        }
+
+        let isTouching = false;
+        let touchStartX, touchStartY;
+        let currentTiltX = 0, currentTiltY = 0;
+        let swipeThreshold = 50; // Minimum distance for a swipe
+
+        tiltElement.addEventListener('touchstart', function(e) {
+          isTouching = true;
+          const touch = e.touches[0];
+          touchStartX = touch.clientX;
+          touchStartY = touch.clientY;
         });
 
-        card.addEventListener('touchend', function(e) {
-          const touchEndX = e.changedTouches[0].clientX;
-          const touchEndTime = new Date().getTime();
-          
-          const distanceX = touchEndX - touchStartX;
-          const duration = touchEndTime - touchStartTime;
+        tiltElement.addEventListener('touchmove', function(e) {
+          if (isTouching) {
+            e.preventDefault(); // Prevent scrolling only when touching the card
+          }
+          if (!touchStartX || !touchStartY) {
+            return;
+          }
 
-          if (Math.abs(distanceX) > swipeThreshold && duration < swipeDuration) {
-            card.classList.toggle('card-flipped');
+          const touch = e.touches[0];
+          const deltaX = touch.clientX - touchStartX;
+          const deltaY = touch.clientY - touchStartY;
+
+          currentTiltX = (deltaY / tiltElement.offsetHeight) * 30;
+          currentTiltY = -(deltaX / tiltElement.offsetWidth) * 30;
+
+          updateTilt();
+        });
+
+        tiltElement.addEventListener('touchend', function(e) {
+          if (isTouching) {
+            const touch = e.changedTouches[0];
+            const deltaX = touch.clientX - touchStartX;
+            const deltaY = touch.clientY - touchStartY;
+
+            if (Math.abs(deltaX) > swipeThreshold) {
+              if (deltaX > 0) {
+                // Swipe right
+                document.documentElement.classList.remove('card-flipped');
+              } else {
+                // Swipe left
+                document.documentElement.classList.add('card-flipped');
+              }
+              localStorage.setItem('cardFlipped', document.documentElement.classList.contains('card-flipped'));
+            }
+          }
+
+          isTouching = false;
+          touchStartX = null;
+          touchStartY = null;
+          currentTiltX = 0;
+          currentTiltY = 0;
+          updateTilt();
+        });
+
+        function updateTilt() {
+          tiltElement.style.transform = `perspective(1000px) rotateX(${currentTiltX}deg) rotateY(${currentTiltY}deg)`;
+        }
+
+        // Reset tilt when tapping outside the card
+        document.addEventListener('touchstart', function(e) {
+          if (!tiltElement.contains(e.target)) {
+            currentTiltX = 0;
+            currentTiltY = 0;
+            updateTilt();
           }
         });
+
+        // Prevent scrolling on the body only when touching the card
+        document.body.addEventListener('touchmove', function(e) {
+          if (isTouching) {
+            e.preventDefault();
+          }
+        }, { passive: false });
 
         document.querySelectorAll('.flip-button').forEach(button => {
           button.addEventListener('click', (e) => {
