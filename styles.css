@@ -51,6 +51,13 @@ svg {
   width: 25px;
   height: 25px;
   fill: transparent;
+  stroke: var(--text-color);
+  stroke-width: 1px;
+  filter: 
+    drop-shadow(-1px -1px 0 var(--background-color))
+    drop-shadow(1px -1px 0 var(--background-color))
+    drop-shadow(-1px 1px 0 var(--background-color))
+    drop-shadow(1px 1px 0 var(--background-color));
   transition: all 0.3s ease;
 }
 
@@ -93,7 +100,8 @@ a:hover:not(.icon-link) {
 }
 
 .icon-link:hover svg {
-  color: var(--text-color) !important;
+  stroke: var(--background-color);
+  filter: none;
 }
 
 p {
