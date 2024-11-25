@@ -248,18 +248,12 @@ section:last-child {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }
 
-.card-back ul {
-  padding-left: 20px;
-  text-align: left;
-}
-
 .card-back li {
   position: relative;
   margin-bottom: 10px;
 }
 
 .card-back li::before {
-  content: "•";
   position: absolute;
   left: -20px;
   color: var(--background-color);
