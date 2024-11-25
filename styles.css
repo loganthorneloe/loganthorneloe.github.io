@@ -95,7 +95,7 @@ a {
 }
 
 a:hover:not(.icon-link) {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -158,12 +158,12 @@ p a:hover, li a:hover {
 }
 
 .card-front {
-  background: var(--background-color);
+  background: var(--primary-color);
   z-index: 2;
 }
 
 .card-back {
-  background: var(--background-color);
+  background: var(--primary-color);
   transform: rotateY(180deg);
   display: flex;
   justify-content: center;
