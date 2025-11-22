@@ -15,22 +15,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Navbar */
-.navbar {
+/* Header (replaces previous navbar) */
+.site-header {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px 30px;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar a {
+.site-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #f5f5dc;
+  text-decoration: none;
+}
+
+.site-nav a {
   color: #eb5757;
   text-decoration: none;
+  margin-left: 15px;
   font-size: 20px;
 }
 
-.navbar a:hover {
+.site-nav a:hover {
   text-decoration: underline;
+}
+
+/* Responsive adjustments for the header/navbar */
+@media (max-width: 600px) {
+  /* Stack the title and navigation vertically */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
+  }
+
+  /* Separate navigation from the title */
+  .site-nav {
+    margin-top: 10px;
+  }
+
+  /* Reduce spacing and font size on small screens */
+  .site-nav a {
+    margin-left: 0;
+    margin-right: 12px;
+    font-size: 18px;
+  }
 }
 
 /* Container */
@@ -108,6 +140,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Prevent underline on hover for the site title (name) */
+.site-title:hover {
+  text-decoration: none;
 }
 
 /* Footer */
