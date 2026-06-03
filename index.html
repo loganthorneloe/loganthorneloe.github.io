@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Logan Thorneloe</title>
+  <meta name="description" content="Logan Thorneloe - ML Infrastructure & Agents Engineer at Google.">
+  <!-- Sora Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-link" id="logo-link">
+        <!-- Modern minimalist L wordmark SVG -->
+        <svg class="wordmark-logo" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
+          <path d="M40 30 V70 H65" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="70" r="5" fill="white"/>
+        </svg>
+        <span>Logan Thorneloe</span>
+      </a>
+      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+      <label for="menu-toggle" class="menu-button-container">
+        <div class="menu-button"></div>
+      </label>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-about active">About</a></li>
+          <li><a href="projects.html" class="nav-projects ">Projects</a></li>
+          <li><a href="blog.html" class="nav-blog ">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="about-content animate-fade-in" style="padding: 3.5rem 0;">
+  <p style="color: var(--text-primary); margin-bottom: 2.5rem;">
+    I am an ML infrastructure engineer at Google Ads, partnering with researchers to design high-performance workflows, optimize fleet-wide efficiency, and develop agentic tools. I am also the founder of <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">AI for Software Engineers</a>, a weekly publication on production ML systems read by over 13,000 developers.
+  </p>
+  
+  <div class="about-section">
+    <h2>What I'm working on</h2>
+    <ul class="about-list">
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Co-developing an <strong>MLE Agent</strong> with Google DeepMind, building an ML research context engine for automated trajectory analysis across <strong>100,000+ experiments</strong> (C++, Flume, Python).</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Integrating ML experimentation tooling into <strong>Antigravity</strong> via <strong>MCP</strong> and <strong>Skills</strong>, enabling <strong>50+ ML research teams</strong> and <strong>200+ infrastructure engineers</strong> to automate experimentation and platform troubleshooting.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Publishing <strong>AI for Software Engineers</strong>, educating hundreds of thousands of developers worldwide on ML infrastructure, systems, and operations, and growing a newsletter community to <strong>13,000+ subscribers</strong>.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="about-section">
+    <h2>What I've done</h2>
+    <ul class="about-list">
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Created a <strong>20+ TB</strong> machine learning event store at Google processing <strong>1M+ events/hour</strong> across data, training, and serving, increasing platform observability metrics by <strong>over 50%</strong>.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Diagnosed a critical fleet-wide priority inversion issue at Google, introducing <strong>10+ key metrics</strong> and resolving bottlenecks to deliver <strong>2x faster automation operations</strong> and <strong>~50% fewer failures</strong>.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Designed and built a Kubernetes compute microservice at Microsoft Azure to scale compute access, and connected ML pipelines to an asset sharing service for cross-project feature reuse.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Developed an open-source monitoring crate in <strong>Rust</strong> at Microsoft Security Response Center, providing memory-safe monitoring for critical data center rack hardware components.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Authored CNN-based MRI semantic segmentation research at BYU to automate and reduce image labeling times by hundreds of man-hours, earning a <strong>Magna Cum Laude Award (Top 15%)</strong> at the ISMRM annual meeting.</span>
+      </li>
+      <li class="about-item">
+        <span class="about-bullet">&bull;</span>
+        <span>Awarded the prestigious <strong>Google Lime Scholarship</strong> for high-achieving student developers with disabilities.</span>
+      </li>
+    </ul>
+  </div>
+  
+  <p style="margin-top: 2.5rem;">
+    I am motivated by bridging the gap between advanced ML research and robust systems engineering. I love building developer-centric platforms that eliminate friction, maximize compute efficiency, and empower engineers to solve complex AI problems at scale.
+  </p>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 Logan Thorneloe.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        <a href="https://linkedin.com/in/loganthorneloe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

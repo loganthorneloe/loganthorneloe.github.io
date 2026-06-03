@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | Logan Thorneloe</title>
+  <meta name="description" content="{{ description }}">
+  <!-- Sora Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-link" id="logo-link">
+        <!-- Modern minimalist L wordmark SVG -->
+        <svg class="wordmark-logo" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
+          <path d="M40 30 V70 H65" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="70" r="5" fill="white"/>
+        </svg>
+        <span>Logan Thorneloe</span>
+      </a>
+      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+      <label for="menu-toggle" class="menu-button-container">
+        <div class="menu-button"></div>
+      </label>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-about {% if active_page == 'about' %}active{% endif %}">About</a></li>
+          <li><a href="projects.html" class="nav-projects {% if active_page == 'projects' %}active{% endif %}">Projects</a></li>
+          <li><a href="blog.html" class="nav-blog {% if active_page == 'blog' %}active{% endif %}">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    {{ content }}
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 Logan Thorneloe.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        <a href="https://linkedin.com/in/loganthorneloe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

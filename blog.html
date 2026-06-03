@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Logan Thorneloe</title>
+  <meta name="description" content="Read the latest articles from AI for Software Engineers by Logan Thorneloe.">
+  <!-- Sora Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-link" id="logo-link">
+        <!-- Modern minimalist L wordmark SVG -->
+        <svg class="wordmark-logo" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
+          <path d="M40 30 V70 H65" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="70" r="5" fill="white"/>
+        </svg>
+        <span>Logan Thorneloe</span>
+      </a>
+      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+      <label for="menu-toggle" class="menu-button-container">
+        <div class="menu-button"></div>
+      </label>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-about ">About</a></li>
+          <li><a href="projects.html" class="nav-projects ">Projects</a></li>
+          <li><a href="blog.html" class="nav-blog active">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero animate-fade-in">
+  <h1>Writing</h1>
+  <p>Articles on the infrastructure, systems, and engineering of AI, from my newsletter AI for Software Engineers.</p>
+</section>
+
+<section class="animate-fade-in delay-1">
+  <div class="section-title">
+    <h2>Featured</h2>
+  </div>
+  <div class="card-grid" style="margin-bottom: 4rem;">
+    
+    <a href="https://www.aiforswes.com/p/the-real-way-to-make-agentic-development" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substackcdn.com/image/fetch/$s_!irax!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57108c2d-9907-4d52-9afa-2e509d489b38_1280x720.png" alt="Don't Tokenmax—Do This Instead" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">Don't Tokenmax—Do This Instead</h3>
+        <p class="card-desc">Dispelling the myth that more tokens = better productivity</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>May 07, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>13</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>4</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  
+  <div class="section-title">
+    <h2>Articles</h2>
+  </div>
+  <div class="card-grid">
+    
+    <a href="https://www.aiforswes.com/p/the-next-era-of-ai-for-software-engineers" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substackcdn.com/image/fetch/$s_!yiMq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28c2bcd3-ab08-491c-afe6-4ddddebcb07e_1280x720.png" alt="The Next Era of AI for Software Engineers" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">The Next Era of AI for Software Engineers</h3>
+        <p class="card-desc">A clearer focus, a new AI Field Guide, and updated benefits</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>May 26, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>9</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>0</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.aiforswes.com/p/decoupled-diloco" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substackcdn.com/image/fetch/$s_!Ov0f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6484f879-5544-4a21-8e69-934020be14c0_1280x720.png" alt="Decoupled DiLoCo: How Google Is Enabling Multi-Region, Distributed LLM Pretraining" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">Decoupled DiLoCo: How Google Is Enabling Multi-Region, Distributed LLM Pretraining</h3>
+        <p class="card-desc">An overview of Google’s new multi-region, distributed AI training methodology and its practical impact</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>Apr 30, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>13</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>0</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.aiforswes.com/p/devin-has-exposed-software-engineers" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substackcdn.com/image/fetch/$s_!a64v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cd7a4d1-98be-42d5-843e-cab0d749f834_1280x720.png" alt="Devin Has Exposed a Major Issue with Software Engineering" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">Devin Has Exposed a Major Issue with Software Engineering</h3>
+        <p class="card-desc">And isn't that we're all going to lose our jobs</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>Apr 17, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>64</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>19</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.aiforswes.com/p/understanding-open-model-licenses" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substackcdn.com/image/fetch/$s_!Oj4f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24361f1d-c43b-4fd9-a9f7-003053e937d9_1280x720.png" alt="Understanding Open Model Licenses" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">Understanding Open Model Licenses</h3>
+        <p class="card-desc">And what to look for in custom licenses</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>Apr 15, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>15</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>1</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://cameronrwolfe.substack.com/cp/192732554" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="https://substack-post-media.s3.amazonaws.com/public/images/56cd7776-e590-4fe6-82ca-34a65900b409_2124x1192.png" alt="The Anatomy of an LLM Benchmark" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">The Anatomy of an LLM Benchmark</h3>
+        <p class="card-desc">Common patterns used to create the most effective LLM evaluation datasets...</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            <div class="stat-item" title="Publication Date">
+              <span>Mar 31, 2026</span>
+            </div>
+            <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
+            <div class="stat-item" title="Likes">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>108</span>
+            </div>
+            <div class="stat-item" title="Comments">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>8</span>
+            </div>
+          </div>
+          <span>Read &rarr;</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div style="margin-top: 4rem; text-align: center;">
+    <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer" class="section-link" style="font-size: 1rem; color: var(--text-primary); text-decoration: underline; text-underline-offset: 6px;">
+      Read more at aiforswes.com &rarr;
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 Logan Thorneloe.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        <a href="https://linkedin.com/in/loganthorneloe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,550 @@
+/* Premium Dark Theme Stylesheet for Logan Thorneloe's Personal Site */
+
+:root {
+  --font-sans: 'Sora', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Color Palette */
+  --bg-primary: #101527;
+  --bg-secondary: #0a0e1c;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  
+  --text-primary: #ffffff;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  
+  --accent-color: #ffffff;
+  --accent-glow: rgba(255, 255, 255, 0.05);
+  
+  /* Transitions */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Layout container */
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Sticky Header with Frosted Glass */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(16, 21, 39, 0.7);
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition-smooth);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  font-size: 1.125rem;
+}
+
+.wordmark-logo {
+  transition: var(--transition-smooth);
+}
+
+.logo-link:hover .wordmark-logo {
+  transform: rotate(5deg) scale(1.05);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+nav a:hover, nav a.active {
+  color: var(--text-primary);
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-primary);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Hamburger toggle container styling for desktop (hidden by default) */
+.menu-button-container {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: var(--text-primary);
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  transition: var(--transition-smooth);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -6px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 6px;
+}
+
+/* Transform hamburger lines to X when checked */
+#menu-toggle:checked ~ .menu-button-container .menu-button {
+  background-color: transparent;
+}
+#menu-toggle:checked ~ .menu-button-container .menu-button::before {
+  transform: rotate(45deg);
+  margin-top: 0;
+}
+#menu-toggle:checked ~ .menu-button-container .menu-button::after {
+  transform: rotate(-45deg);
+  margin-top: 0;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0 3rem 0;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 3rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-link {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.section-link:hover {
+  color: var(--text-primary);
+}
+
+/* About / Content styling */
+.about-content {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.about-content a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: var(--transition-smooth);
+}
+
+.about-content a:hover {
+  color: var(--text-primary);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.about-section {
+  margin-bottom: 2.5rem;
+}
+
+.about-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-item {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.about-bullet {
+  color: var(--text-primary);
+  font-weight: bold;
+  margin-top: 0.2rem;
+}
+
+/* Card Lists */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  text-decoration: none;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  background-color: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Blog Post Card specific */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .blog-card.has-image {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.blog-card-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+@media (min-width: 640px) {
+  .blog-card-image {
+    width: 160px;
+    height: 90px;
+    flex-shrink: 0;
+  }
+}
+
+.blog-card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+  transition: var(--transition-smooth);
+}
+
+.card:hover .card-title {
+  color: #ffffff;
+}
+
+.card-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.card-stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Projects page grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Footer styling */
+footer {
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 640px) {
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.footer-socials a:hover {
+  color: var(--text-primary);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-1 { animation-delay: 0.1s; opacity: 0; }
+.delay-2 { animation-delay: 0.2s; opacity: 0; }
+.delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+@media (max-width: 639px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .menu-button-container {
+    display: flex;
+  }
+  
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(16, 21, 39, 0.98);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-color);
+    display: none;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  #menu-toggle:checked ~ .nav-menu {
+    display: flex;
+  }
+  
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .nav-menu a {
+    font-size: 1rem;
+    display: block;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  
+  nav a.active::after {
+    display: none;
+  }
+  
+  .hero {
+    padding: 4rem 0 2rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .about-content {
+    padding: 3.5rem 0 !important;
+  }
+  
+  .about-content p {
+    font-size: 1.125rem !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .card-grid {
+    gap: 1.25rem;
+  }
+  
+  .card {
+    padding: 1.25rem;
+  }
+  
+  footer {
+    padding: 3rem 0;
+  }
+}

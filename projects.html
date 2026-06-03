@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Logan Thorneloe</title>
+  <meta name="description" content="Open source projects and development libraries built by Logan Thorneloe.">
+  <!-- Sora Font from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="static/styles.css">
+  <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo-link" id="logo-link">
+        <!-- Modern minimalist L wordmark SVG -->
+        <svg class="wordmark-logo" width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="20" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="2"/>
+          <path d="M40 30 V70 H65" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="65" cy="70" r="5" fill="white"/>
+        </svg>
+        <span>Logan Thorneloe</span>
+      </a>
+      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
+      <input type="checkbox" id="menu-toggle" style="display: none;">
+      <label for="menu-toggle" class="menu-button-container">
+        <div class="menu-button"></div>
+      </label>
+      
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-about ">About</a></li>
+          <li><a href="projects.html" class="nav-projects active">Projects</a></li>
+          <li><a href="blog.html" class="nav-blog ">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero animate-fade-in">
+  <h1>Projects</h1>
+  <p>Some of the open-source libraries, tools, and educational guides I maintain.</p>
+</section>
+
+<section class="animate-fade-in delay-1">
+  <div class="card-grid">
+    
+    <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="static/aiforswes_logo.png" alt="AI for Software Engineers" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">AI for Software Engineers</h3>
+        <p class="card-desc">A technical newsletter read by over 13,000 software engineers, covering the systems, architecture, and infrastructure behind modern production AI.</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            
+          <div class="stat-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>13,000+ subscribers</span>
+          </div>
+          </div>
+          <span>Subscribe &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/loganthorneloe/ml-basics" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="static/mlbasics_logo.png" alt="ml-basics" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">ml-basics</h3>
+        <p class="card-desc">The fastest way to get up-to-speed on machine learning fundamentals for free.</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            
+          <div class="stat-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>1308</span>
+          </div>
+          <div class="stat-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            <span>156</span>
+          </div>
+          </div>
+          <span>GitHub &rarr;</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://github.com/loganthorneloe/swsh-pokemon-breeder" target="_blank" rel="noopener noreferrer" class="card blog-card has-image">
+      <img class="blog-card-image" src="static/pokemon_logo.png" alt="swsh-pokemon-breeder" loading="lazy">
+      <div class="blog-card-content">
+        <h3 class="card-title">swsh-pokemon-breeder</h3>
+        <p class="card-desc">Automated Pokemon breeding for quick comp breeding and shiny hunting</p>
+        <div class="card-meta">
+          <div class="card-stats">
+            
+          <div class="stat-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <span>3</span>
+          </div>
+          <div class="stat-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            <span>1</span>
+          </div>
+          </div>
+          <span>GitHub &rarr;</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 Logan Thorneloe.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>
+        <a href="https://linkedin.com/in/loganthorneloe" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

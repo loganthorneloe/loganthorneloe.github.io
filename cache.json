@@ -1,0 +1,209 @@
+{
+  "posts": [
+    {
+      "title": "The Next Era of AI for Software Engineers",
+      "link": "https://www.aiforswes.com/p/the-next-era-of-ai-for-software-engineers",
+      "pub_date": "May 26, 2026",
+      "description": "A clearer focus, a new AI Field Guide, and updated benefits",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!yiMq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F28c2bcd3-ab08-491c-afe6-4ddddebcb07e_1280x720.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "Don't Tokenmax\u2014Do This Instead",
+      "link": "https://www.aiforswes.com/p/the-real-way-to-make-agentic-development",
+      "pub_date": "May 07, 2026",
+      "description": "Dispelling the myth that more tokens = better productivity",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!irax!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F57108c2d-9907-4d52-9afa-2e509d489b38_1280x720.png",
+      "reaction_count": 13,
+      "comment_count": 4
+    },
+    {
+      "title": "Decoupled DiLoCo: How Google Is Enabling Multi-Region, Distributed LLM Pretraining",
+      "link": "https://www.aiforswes.com/p/decoupled-diloco",
+      "pub_date": "Apr 30, 2026",
+      "description": "An overview of Google\u2019s new multi-region, distributed AI training methodology and its practical impact",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Ov0f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6484f879-5544-4a21-8e69-934020be14c0_1280x720.png",
+      "reaction_count": 13,
+      "comment_count": 0
+    },
+    {
+      "title": "Devin Has Exposed a Major Issue with Software Engineering",
+      "link": "https://www.aiforswes.com/p/devin-has-exposed-software-engineers",
+      "pub_date": "Apr 17, 2026",
+      "description": "And isn't that we're all going to lose our jobs",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!a64v!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6cd7a4d1-98be-42d5-843e-cab0d749f834_1280x720.png",
+      "reaction_count": 64,
+      "comment_count": 19
+    },
+    {
+      "title": "Understanding Open Model Licenses",
+      "link": "https://www.aiforswes.com/p/understanding-open-model-licenses",
+      "pub_date": "Apr 15, 2026",
+      "description": "And what to look for in custom licenses",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Oj4f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F24361f1d-c43b-4fd9-a9f7-003053e937d9_1280x720.png",
+      "reaction_count": 15,
+      "comment_count": 1
+    },
+    {
+      "title": "The Anatomy of an LLM Benchmark",
+      "link": "https://cameronrwolfe.substack.com/cp/192732554",
+      "pub_date": "Mar 31, 2026",
+      "description": "Common patterns used to create the most effective LLM evaluation datasets...",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/56cd7776-e590-4fe6-82ca-34a65900b409_2124x1192.png",
+      "reaction_count": 108,
+      "comment_count": 8
+    },
+    {
+      "title": "The Difficulties of Scaling Autoresearch | AI for Software Engineers 83",
+      "link": "https://www.aiforswes.com/p/83",
+      "pub_date": "Mar 28, 2026",
+      "description": "And agentic engineering's scaling impact on the software development and the internet",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!vGCF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F444f55e0-024d-4c0f-a8a5-6e494e34a7d1_1280x720.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "20 Years of Code Optimized in Two Days | Weekend Reads 4",
+      "link": "https://www.aiforswes.com/p/wr-4",
+      "pub_date": "Mar 15, 2026",
+      "description": "Your AI reading list 03-15-2026",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!gAf_!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a94b282-7ac8-4b5b-b0e9-e16ad5751e6b_1280x720.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "ICE Has an AI Problem",
+      "link": "https://www.aiforswes.com/p/ice-has-an-ai-problem",
+      "pub_date": "Mar 11, 2026",
+      "description": "And a note on surveillance states",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!63n8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F532ff3f8-00f0-4533-8d4e-d6a55e888fc1_1280x720.png",
+      "reaction_count": 24,
+      "comment_count": 3
+    },
+    {
+      "title": "Better Agents Mean Better Surveillance | Weekend Reads 3",
+      "link": "https://www.aiforswes.com/p/wr-3",
+      "pub_date": "Mar 01, 2026",
+      "description": "Your reading list to keep up with AI 03-01-2026",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!qwRs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fefa0cd4a-7fa0-4b9d-baf6-52b0ac51c1e5_1280x720.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "What you should know about AI speculation",
+      "link": "https://www.aiforswes.com/p/what-you-should-know-about-ai-speculation",
+      "pub_date": "Feb 24, 2026",
+      "description": "Thoughts on software engineering careers looking forward",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Xym-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d13f1ce-6565-4a82-acff-e426076d231d_1280x720.png",
+      "reaction_count": 20,
+      "comment_count": 3
+    },
+    {
+      "title": "AI\u2019s Biggest Cost Is Cognitive, Not Compute | Weekend Reads 2",
+      "link": "https://www.aiforswes.com/p/wr-2",
+      "pub_date": "Feb 22, 2026",
+      "description": "Your reading list to keep up with AI 02-22-2026",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!61Gp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd50248f-c13b-4b11-b8f6-7a5b77bcd064_1280x720.png",
+      "reaction_count": 13,
+      "comment_count": 0
+    },
+    {
+      "title": "When Agents Go Rogue | Weekend Reads 1",
+      "link": "https://www.aiforswes.com/p/weekend-reads-1",
+      "pub_date": "Feb 15, 2026",
+      "description": "Your reading list to keep up with AI 02-15-2026",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!YI82!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0220afe-c230-48f2-b498-e4f866723000_1280x720.png",
+      "reaction_count": 8,
+      "comment_count": 0
+    },
+    {
+      "title": "The Mistakes Most Entry-Level Candidates Make in Technical Interviews",
+      "link": "https://www.aiforswes.com/p/the-mistakes-most-entry-level-candidates",
+      "pub_date": "Feb 12, 2026",
+      "description": "And how to set yourself apart from the other entry-level candidates",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!K3J5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2a69ad90-59ed-4918-b8b2-d698b4e2604f_1280x720.png",
+      "reaction_count": 6,
+      "comment_count": 0
+    },
+    {
+      "title": "How to Learn AI from Scratch for Free",
+      "link": "https://www.aiforswes.com/p/how-to-learn-ai-from-scratch-for",
+      "pub_date": "Jan 28, 2026",
+      "description": "A roadmap to learn AI fundamentals for free including prerequisites, AI engineering, ML engineering, and more",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!2S2X!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3104d4ce-05e8-44a9-b948-d66a4d8b9ab1_1280x720.png",
+      "reaction_count": 16,
+      "comment_count": 3
+    },
+    {
+      "title": "AI\u2019s Economic Impact Is Real | AI for Software Engineers 78",
+      "link": "https://www.aiforswes.com/p/78",
+      "pub_date": "Jan 22, 2026",
+      "description": "This week: AI means more software engineers, young adults trust AI with financial decisions, tips on agent safety, and more",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!repY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc7e617ac-c51b-46f1-9369-fcfc25579490_1280x720.png",
+      "reaction_count": 5,
+      "comment_count": 3
+    },
+    {
+      "title": "AI Can Do Your Job - Now What? | AI for Software Engineers 77",
+      "link": "https://www.aiforswes.com/p/77",
+      "pub_date": "Jan 15, 2026",
+      "description": "This week: AI killed Tailwind\u2019s business model, Apple admits Siri needs Google, Anthropic blocks the competition, and more.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!QgNz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0c01c07-2408-47ac-8dd5-9c7c362dca95_1280x720.png",
+      "reaction_count": 15,
+      "comment_count": 0
+    },
+    {
+      "title": "No, Claude Code doesn\u2019t need a better UI",
+      "link": "https://www.aiforswes.com/p/no-claude-code-doesnt-need-a-better",
+      "pub_date": "Jan 10, 2026",
+      "description": "The mindset shift needed to get the most out of Claude Code",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!wY38!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F85a95d16-168a-46a2-90bf-14b959f49b60_1280x720.png",
+      "reaction_count": 17,
+      "comment_count": 5
+    },
+    {
+      "title": "AI's Role in Maduro's Capture | AI for Software Engineers 76",
+      "link": "https://www.aiforswes.com/p/76",
+      "pub_date": "Jan 07, 2026",
+      "description": "Plus: Half of AI code has security flaws, how to fix AI in education, Nvidia acquihires Groq, AI safety concerns grow, and more",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!MTSy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F199317ce-7a6d-4672-98e7-0b65e6bbdcfc_1280x720.png",
+      "reaction_count": 7,
+      "comment_count": 0
+    },
+    {
+      "title": "AI for Software Engineers: Looking Forward to 2026",
+      "link": "https://www.aiforswes.com/p/looking-forward-2026",
+      "pub_date": "Jan 01, 2026",
+      "description": "Plus, help me improve the newsletter!",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!bFIJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff342fadf-9a07-4f07-a3f8-0179b733666f_1280x720.png",
+      "reaction_count": 6,
+      "comment_count": 0
+    }
+  ],
+  "projects": {
+    "loganthorneloe/ml-roadmap": {
+      "name": "ml-basics",
+      "description": "The fastest way to get up-to-speed on machine learning fundamentals for free.",
+      "stars": 1308,
+      "forks": 156,
+      "html_url": "https://github.com/loganthorneloe/ml-basics",
+      "image_url": "static/mlbasics_logo.png"
+    },
+    "loganthorneloe/awesome-ml-ai-engineering-books": {
+      "name": "awesome-ml-ai-engineering-books",
+      "description": "Essential books engineers should read to learn the topics they need to know about building machine learning systems.",
+      "stars": 9,
+      "forks": 1,
+      "html_url": "https://github.com/loganthorneloe/awesome-ml-ai-engineering-books"
+    },
+    "loganthorneloe/swsh-pokemon-breeder": {
+      "name": "swsh-pokemon-breeder",
+      "description": "Automated Pokemon breeding for quick comp breeding and shiny hunting",
+      "stars": 3,
+      "forks": 1,
+      "html_url": "https://github.com/loganthorneloe/swsh-pokemon-breeder",
+      "image_url": "static/pokemon_logo.png"
+    }
+  }
+}
