@@ -223,7 +223,7 @@ def build_page(page_name, title, description, content_html):
     # Replace navigation active classes
     base_html = base_html.replace("{% if active_page == 'about' %}active{% endif %}", "active" if page_name == "about" else "")
     base_html = base_html.replace("{% if active_page == 'projects' %}active{% endif %}", "active" if page_name == "projects" else "")
-    base_html = base_html.replace("{% if active_page == 'blog' %}active{% endif %}", "active" if page_name == "blog" else "")
+    base_html = base_html.replace("{% if active_page == 'articles' %}active{% endif %}", "active" if page_name == "articles" else "")
     
     # Replace placeholders
     page_html = base_html.replace("{{ title }}", title)
@@ -310,12 +310,12 @@ def main():
         content_html=projects_content
     )
     
-    # Blog Page (blog.html)
-    with open("templates/blog.html", "r") as f:
-        blog_template = f.read()
+    # Articles Page (articles.html)
+    with open("templates/articles.html", "r") as f:
+        articles_template = f.read()
         
     featured_posts_html = ""
-    blog_list_html = ""
+    articles_list_html = ""
     
     if posts:
         # Match featured articles by their URL slugs
@@ -364,16 +364,16 @@ def main():
             </div>"""
             groups_html.append(group_html)
             
-        blog_list_html = "\n".join(groups_html)
+        articles_list_html = "\n".join(groups_html)
         
-    blog_content = blog_template.replace("{{ featured_posts }}", featured_posts_html)
-    blog_content = blog_content.replace("{{ blog_list }}", blog_list_html)
+    articles_content = articles_template.replace("{{ featured_posts }}", featured_posts_html)
+    articles_content = articles_content.replace("{{ blog_list }}", articles_list_html)
     
     build_page(
-        page_name="blog",
-        title="Blog",
+        page_name="articles",
+        title="Articles",
         description="Read the latest articles from AI for Software Engineers by Logan Thorneloe.",
-        content_html=blog_content
+        content_html=articles_content
     )
 
 if __name__ == "__main__":
