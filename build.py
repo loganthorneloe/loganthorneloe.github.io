@@ -102,6 +102,7 @@ def fetch_substack_posts(base_url):
                     "title": title,
                     "link": link,
                     "pub_date": pub_date,
+                    "raw_date": post_date_raw,
                     "description": description,
                     "image_url": image_url,
                     "reaction_count": reaction_count,
@@ -326,8 +327,44 @@ def main():
         remaining = [p for p in posts if p not in featured]
         
         featured_posts_html = "\n".join(render_post_card(p, has_image=True) for p in featured)
-        # Limit previous articles section to 5 posts
-        blog_list_html = "\n".join(render_post_card(p, has_image=True) for p in remaining[:5])
+        
+        # Group remaining posts by Month Year
+        from collections import OrderedDict
+        grouped = OrderedDict()
+        for p in remaining:
+            raw_date = p.get("raw_date")
+            if raw_date:
+                try:
+                    date_str = raw_date.split(".")[0].replace("Z", "")
+                    dt = datetime.datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S")
+                    month_year = dt.strftime("%B %Y")
+                except Exception:
+                    month_year = "Archive"
+            else:
+                try:
+                    dt = datetime.datetime.strptime(p["pub_date"], "%b %d, %Y")
+                    month_year = dt.strftime("%B %Y")
+                except Exception:
+                    month_year = "Archive"
+                    
+            if month_year not in grouped:
+                grouped[month_year] = []
+            grouped[month_year].append(p)
+            
+        # Format grouped articles into separate monthly sections
+        groups_html = []
+        for month_year, group_posts in grouped.items():
+            posts_html = "\n".join(render_post_card(p, has_image=True) for p in group_posts)
+            group_html = f"""
+            <div class="month-group" style="margin-top: 3.5rem; margin-bottom: 2.5rem;">
+              <h3 style="font-size: 1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">{month_year}</h3>
+              <div class="card-grid">
+                {posts_html}
+              </div>
+            </div>"""
+            groups_html.append(group_html)
+            
+        blog_list_html = "\n".join(groups_html)
         
     blog_content = blog_template.replace("{{ featured_posts }}", featured_posts_html)
     blog_content = blog_content.replace("{{ blog_list }}", blog_list_html)
