@@ -10,7 +10,7 @@ import urllib.request
 import datetime
 import re
 
-SUBSTACK_JSON_URL = "https://aiforswes.com/api/v1/archive?limit=20"
+SUBSTACK_JSON_BASE_URL = "https://aiforswes.com/api/v1/archive?limit=20"
 GITHUB_REPOS = [
     "loganthorneloe/ml-roadmap",
     "loganthorneloe/swsh-pokemon-breeder"
@@ -19,8 +19,8 @@ CACHE_FILE = "cache.json"
 
 # Key articles to feature on the blog page
 FEATURED_POST_SLUGS = [
-    "the-real-way-to-make-agentic-development",
-    "you-dont-need-to-spend-100mo-on-claude"
+    "machine-learning-infra",
+    "the-real-way-to-make-agentic-development"
 ]
 
 # Manual projects (incorporating the newsletter) with visual assets
@@ -30,7 +30,7 @@ MANUAL_PROJECTS = [
         "description": "A technical newsletter read by over 13,000 software engineers, covering the systems, architecture, and infrastructure behind modern production AI.",
         "custom_stat": "13,000+ subscribers",
         "html_url": "https://aiforswes.com",
-        "image_url": "static/aiforswes_logo.png"
+        "image_url": "https://substackcdn.com/image/fetch/w_256,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F656213f4-4ebe-4864-9979-a2b65a21f3e3%2Fapple-touch-icon-1024x1024.png"
     }
 ]
 
@@ -64,48 +64,57 @@ def clean_desc(desc):
         return clean[:157].strip() + "..."
     return clean.strip()
 
-def fetch_substack_posts(url):
-    print(f"Fetching Substack posts via JSON API from {url}...")
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=10) as response:
-            data = json.loads(response.read().decode())
-        
-        posts = []
-        for item in data:
-            title = item.get('title', '')
-            link = item.get('canonical_url', '')
-            post_date_raw = item.get('post_date', '')
-            description = item.get('description', '')
-            image_url = item.get('cover_image', '')
-            reaction_count = item.get('reaction_count', 0)
-            comment_count = item.get('comment_count', 0)
+def fetch_substack_posts(base_url):
+    import time
+    posts = []
+    # Fetch 5 pages of 20 posts to cover the top 100 posts and older highly liked articles
+    for offset in range(0, 100, 20):
+        url = f"{base_url}&offset={offset}"
+        print(f"Fetching Substack posts offset {offset} via JSON API...")
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=10) as response:
+                data = json.loads(response.read().decode())
+            if not data:
+                break
             
-            # Format date: "2026-05-26T14:03:40.450Z" -> "May 26, 2026"
-            pub_date = post_date_raw
-            try:
-                date_str = post_date_raw.split(".")[0].replace("Z", "")
-                dt = datetime.datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S")
-                pub_date = dt.strftime("%b %d, %Y")
-            except Exception:
-                pass
+            for item in data:
+                title = item.get('title', '')
+                link = item.get('canonical_url', '')
+                post_date_raw = item.get('post_date', '')
+                description = item.get('description', '')
+                image_url = item.get('cover_image', '')
+                reaction_count = item.get('reaction_count', 0)
+                comment_count = item.get('comment_count', 0)
                 
-            posts.append({
-                "title": title,
-                "link": link,
-                "pub_date": pub_date,
-                "description": description,
-                "image_url": image_url,
-                "reaction_count": reaction_count,
-                "comment_count": comment_count
-            })
-        return posts
-    except Exception as e:
-        print(f"Error fetching Substack JSON API: {e}")
-        return None
+                # Format date: "2026-05-26T14:03:40.450Z" -> "May 26, 2026"
+                pub_date = post_date_raw
+                try:
+                    date_str = post_date_raw.split(".")[0].replace("Z", "")
+                    dt = datetime.datetime.strptime(date_str, "%Y-%m-%dT%H:%M:%S")
+                    pub_date = dt.strftime("%b %d, %Y")
+                except Exception:
+                    pass
+                    
+                posts.append({
+                    "title": title,
+                    "link": link,
+                    "pub_date": pub_date,
+                    "description": description,
+                    "image_url": image_url,
+                    "reaction_count": reaction_count,
+                    "comment_count": comment_count
+                })
+            # Brief sleep to avoid hammer warning
+            time.sleep(0.2)
+        except Exception as e:
+            print(f"Error fetching Substack JSON API at offset {offset}: {e}")
+            break
+            
+    return posts if posts else None
 
 def fetch_github_project(repo):
     print(f"Fetching GitHub repo stats for {repo}...")
@@ -152,7 +161,7 @@ def render_post_card(post, has_image=True):
             </div>
             <div style="width: 1px; height: 10px; background-color: var(--border-color); margin: 0 4px;"></div>
             <div class="stat-item" title="Likes">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <svg class="heart-icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
               <span>{reaction_count}</span>
             </div>
             <div class="stat-item" title="Comments">
@@ -169,7 +178,7 @@ def render_project_card(proj):
     img_tag = ""
     has_image_class = ""
     if proj.get("image_url"):
-        img_tag = f'<img class="blog-card-image" src="{proj["image_url"]}" alt="{proj["name"]}" loading="lazy">'
+        img_tag = f'<img class="project-card-image" src="{proj["image_url"]}" alt="{proj["name"]}" loading="lazy">'
         has_image_class = "has-image"
 
     # Check if this is a manual project with custom stats
@@ -183,7 +192,7 @@ def render_project_card(proj):
     else:
         stat_block = f"""
           <div class="stat-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg class="star-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
             <span>{proj["stars"]}</span>
           </div>
           <div class="stat-item">
@@ -193,7 +202,7 @@ def render_project_card(proj):
         link_label = "GitHub"
 
     return f"""
-    <a href="{proj["html_url"]}" target="_blank" rel="noopener noreferrer" class="card blog-card {has_image_class}">
+    <a href="{proj["html_url"]}" target="_blank" rel="noopener noreferrer" class="card project-card {has_image_class}">
       {img_tag}
       <div class="blog-card-content">
         <h3 class="card-title">{proj["name"]}</h3>
@@ -202,7 +211,6 @@ def render_project_card(proj):
           <div class="card-stats">
             {stat_block}
           </div>
-          <span>{link_label} &rarr;</span>
         </div>
       </div>
     </a>"""
@@ -232,7 +240,7 @@ def main():
     cache = load_cache()
     
     # 1. Fetch Substack newsletter feed via JSON API
-    posts = fetch_substack_posts(SUBSTACK_JSON_URL)
+    posts = fetch_substack_posts(SUBSTACK_JSON_BASE_URL)
     if posts:
         cache["posts"] = posts
     else:
@@ -247,17 +255,15 @@ def main():
     for repo in GITHUB_REPOS:
         proj_data = fetch_github_project(repo)
         if proj_data:
-            # Map visual asset URLs
-            if "ml-roadmap" in repo or "ml-basics" in repo:
-                proj_data["image_url"] = "static/mlbasics_logo.png"
-            elif "swsh-pokemon-breeder" in repo:
-                proj_data["image_url"] = "static/pokemon_logo.png"
+            # Map visual asset URLs dynamically to GitHub Open Graph previews
+            proj_data["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
                 
             cache["projects"][repo] = proj_data
             projects.append(proj_data)
         else:
             cached_proj = cache.get("projects", {}).get(repo)
             if cached_proj:
+                cached_proj["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
                 projects.append(cached_proj)
                 print(f"Using cached stats for {repo}.")
             else:

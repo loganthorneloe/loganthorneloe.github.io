@@ -403,6 +403,42 @@ section {
   gap: 0.25rem;
 }
 
+.heart-icon {
+  color: #cc3333;
+}
+
+.star-icon {
+  color: #ffd700;
+}
+
+/* Project Card layout with image to the left on all screen sizes */
+.project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: left;
+}
+
+.project-card-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
+}
+
+@media (min-width: 640px) {
+  .project-card {
+    gap: 1.75rem;
+  }
+  .project-card-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
 /* Projects page grid */
 .projects-grid {
   display: grid;

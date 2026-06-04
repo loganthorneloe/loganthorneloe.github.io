@@ -179,6 +179,726 @@
       "image_url": "https://substackcdn.com/image/fetch/$s_!bFIJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff342fadf-9a07-4f07-a3f8-0179b733666f_1280x720.png",
       "reaction_count": 6,
       "comment_count": 0
+    },
+    {
+      "title": "AI Can\u2019t Fix a Broken Engineering Culture\u2014It Can Only Make it Worse",
+      "link": "https://www.aiforswes.com/p/ai-cant-fix-a-broken-engineering",
+      "pub_date": "Dec 30, 2025",
+      "description": "Notes on Google\u2019s findings about how AI has impacted software development in 2025 and what your team needs to do to ensure AI works for you instead of against you",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Ju15!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe8853990-a4ea-47b9-99e6-eb68a033d17e_1280x720.png",
+      "reaction_count": 5,
+      "comment_count": 1
+    },
+    {
+      "title": "What are World Models? | AI for Software Engineers 75",
+      "link": "https://www.aiforswes.com/p/75",
+      "pub_date": "Dec 23, 2025",
+      "description": "Highlights, current events, industry trends, and career resources for 12/23/2025",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!aeuC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F082f01bf-a0cc-4628-926f-eacc6453611e_1280x720.png",
+      "reaction_count": 10,
+      "comment_count": 1
+    },
+    {
+      "title": "[Revised] You Don\u2019t Need to Spend $100/mo on Claude Code: Your Guide to Local Coding Models",
+      "link": "https://www.aiforswes.com/p/you-dont-need-to-spend-100mo-on-claude",
+      "pub_date": "Dec 20, 2025",
+      "description": "What you need to know about local model tooling and the steps for setting one up yourself",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!mPD6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb99fdabf-b349-4feb-a141-f4dd546b52d3_1280x720.png",
+      "reaction_count": 60,
+      "comment_count": 21
+    },
+    {
+      "title": "What You Need to Know for 2026 | AI for Software Engineers 74",
+      "link": "https://www.aiforswes.com/p/74",
+      "pub_date": "Dec 16, 2025",
+      "description": "In-demand job skills, MCP goes to The Linux Foundation, OpenAI\u2019s Code Red, and more",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!8XQ2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faf98e245-a726-4a77-8ac5-735cf0be3157_1280x720.png",
+      "reaction_count": 18,
+      "comment_count": 3
+    },
+    {
+      "title": "AI for SWEs 73: What Ilya Saw and the Time of TPUs",
+      "link": "https://www.aiforswes.com/p/73",
+      "pub_date": "Dec 02, 2025",
+      "description": "Plus, the White House unifies US AI research and Antigravity exposes why agents are so hard to build",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/b1c8f9f3-cd0c-4a69-96a5-caaf7ae78c18_1280x720.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "DMs Are the New Cover Letter: How to Get Hired in AI in 2025/2026",
+      "link": "https://www.aiforswes.com/p/get-hired-2025-2026",
+      "pub_date": "Nov 29, 2025",
+      "description": "How you should go about DM'ing others for job opportunities and a few other tips to stand out",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!IEnV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F05c969d3-5ab5-4cd6-9a51-c67d2110ab04_1280x720.png",
+      "reaction_count": 26,
+      "comment_count": 2
+    },
+    {
+      "title": "AI for SWEs 72: Gemini 3 Pro, Claude Opus 4.5, and Olmo 3",
+      "link": "https://www.aiforswes.com/p/72",
+      "pub_date": "Nov 25, 2025",
+      "description": "Intelligence just got a whole lot smarter",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/b7a1fecd-53d6-4394-83fc-eafedac56620_1280x720.png",
+      "reaction_count": 20,
+      "comment_count": 1
+    },
+    {
+      "title": "ML for SWEs 71: The IDE For Gambling",
+      "link": "https://www.aiforswes.com/p/71",
+      "pub_date": "Nov 18, 2025",
+      "description": "Yann LeCun was right, Chad is abhorrent, and you\u2019re sleeping on local coding models",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Db7B!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F66c63bc0-e275-4fd3-b5d1-249999140bf5_1280x720.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "How to Build Your First Recommendation System (Easy)",
+      "link": "https://www.aiforswes.com/p/collaborative-filtering",
+      "pub_date": "Nov 11, 2025",
+      "description": "A step-by-step guide to training and serving a collaborative filtering model to serve users content",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!UUKR!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff39aac63-172e-4900-9f8d-4d6fa8e7efb5_500x559.jpeg",
+      "reaction_count": 23,
+      "comment_count": 5
+    },
+    {
+      "title": "ML for SWEs 69: This is how top AI research labs will make money",
+      "link": "https://www.aiforswes.com/p/69",
+      "pub_date": "Oct 08, 2025",
+      "description": "My thoughts on OpenAI's Dev Day killing startups and monetizing top AI research labs",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!kKkV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a70c3b1-a070-4c86-b73a-a5cd85050bf0_717x348.jpeg",
+      "reaction_count": 13,
+      "comment_count": 3
+    },
+    {
+      "title": "The Top 10 AI Skills Software Engineers Should Focus On (In Order)",
+      "link": "https://www.aiforswes.com/p/the-top-10-2025",
+      "pub_date": "Oct 03, 2025",
+      "description": "A straightforward list from my market research",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!OL_f!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffa411764-0fb3-4503-a74d-56e3679588e8_1280x720.png",
+      "reaction_count": 17,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs 68: 43 Years Later, Developer Productivity Is Still a Billion-Dollar Problem",
+      "link": "https://www.aiforswes.com/p/68",
+      "pub_date": "Oct 01, 2025",
+      "description": "43 years later and we still can't measure developer productivity",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!CwBu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4f9a860e-c5fd-4951-a957-778df69d783a_1280x720.png",
+      "reaction_count": 20,
+      "comment_count": 3
+    },
+    {
+      "title": "ML for SWEs 67: No, there won't be a 3-day work week",
+      "link": "https://www.aiforswes.com/p/67",
+      "pub_date": "Sep 17, 2025",
+      "description": "CEOs predict AI will create a 3-day workweek",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!T13O!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdba30f44-3b5f-4874-b77b-eaf12ace1a3c_1280x720.png",
+      "reaction_count": 17,
+      "comment_count": 0
+    },
+    {
+      "title": "The 5 AI-Related Jobs Every Software Engineer Should Know About",
+      "link": "https://www.aiforswes.com/p/the-5-ai-related-jobs",
+      "pub_date": "Sep 12, 2025",
+      "description": "What each role actually entails and the qualifications to work each",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!q5Iz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faeec1ffd-a25c-43a4-90b2-db98278dceba_1280x720.png",
+      "reaction_count": 27,
+      "comment_count": 5
+    },
+    {
+      "title": "ML for SWEs 66: Safety is a fundamental AI engineering requirement",
+      "link": "https://www.aiforswes.com/p/66",
+      "pub_date": "Sep 10, 2025",
+      "description": "The debate about prioritizing speed or safety is over and reality has made the decision for us.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!L1oV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb5a717d9-17ba-4cba-a7cc-697ef21e851b_1280x720.png",
+      "reaction_count": 15,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs 65: The AI bubble is popping and why that's a good thing",
+      "link": "https://www.aiforswes.com/p/65",
+      "pub_date": "Aug 27, 2025",
+      "description": "The future of the industry and how to get the most out of your AI coding assistant",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!cheO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F49128454-e083-4c7e-9240-fb672e11009a_1280x720.png",
+      "reaction_count": 57,
+      "comment_count": 0
+    },
+    {
+      "title": "The Strange Reality of AI and SWE Hiring in 2025",
+      "link": "https://www.aiforswes.com/p/the-strange-reality-of-ai-hiring-2025",
+      "pub_date": "Aug 22, 2025",
+      "description": "Understanding the job market beyond 'the market is bad' is",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Y5gd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1ebed63-87e0-4a26-970d-8d30ca6feed0_1280x720.png",
+      "reaction_count": 13,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs 64: What AI really means for software engineering jobs",
+      "link": "https://www.aiforswes.com/p/64",
+      "pub_date": "Aug 20, 2025",
+      "description": "The realistic take on 'software engineers being cooked' because AI can write code",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Q7cE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdd193729-d00d-4933-a81d-35a02ea9f3cc_1920x1080.png",
+      "reaction_count": 21,
+      "comment_count": 3
+    },
+    {
+      "title": "ML for SWEs 63: Engineers just got a whole lot more important",
+      "link": "https://www.aiforswes.com/p/63",
+      "pub_date": "Aug 13, 2025",
+      "description": "Welcome to machine learning for software engineers.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!XQ-q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5b1f4646-7ac7-43f8-b8e3-7f12d1112b7e_1280x720.png",
+      "reaction_count": 21,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs 62: World models are the breakthrough AI agents need",
+      "link": "https://www.aiforswes.com/p/62",
+      "pub_date": "Aug 06, 2025",
+      "description": "Welcome to machine learning for software engineers.",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!uidM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a6bfe99-d09e-4d75-a121-43bb073e5b9a_1514x969.png",
+      "reaction_count": 19,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs #61: The secret behind how Google came back",
+      "link": "https://www.aiforswes.com/p/7-29-2025",
+      "pub_date": "Jul 29, 2025",
+      "description": "Curated SWE AI Content, Jobs, and Resources 7-29-2025",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!D9_V!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbcc101d9-35e0-4e38-9331-f2f02f68bdf1_1280x720.png",
+      "reaction_count": 15,
+      "comment_count": 0
+    },
+    {
+      "title": "Digital hygiene part 2",
+      "link": "https://www.aiforswes.com/p/digital-hygiene-part-2",
+      "pub_date": "Jul 25, 2025",
+      "description": "How to be safe, private, and have a good time online",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!mgIv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8680ce58-622e-439f-ab1c-6379b078371b_1280x720.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #60: The skills software engineers should focus on to get involved with AI",
+      "link": "https://www.aiforswes.com/p/7-22-2025",
+      "pub_date": "Jul 22, 2025",
+      "description": "Curated SWE AI Content, Jobs, and Resources 7-22-2025",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!diRz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4fbfc0ec-7eaf-414f-8c4b-df9c4974f55a_1280x720.png",
+      "reaction_count": 18,
+      "comment_count": 1
+    },
+    {
+      "title": "ML for SWEs #59: Why Transformers Aren't the Future of AI",
+      "link": "https://www.aiforswes.com/p/7-15-2025",
+      "pub_date": "Jul 15, 2025",
+      "description": "Curated SWE AI Content, Jobs, and Resources 7-15-2025",
+      "image_url": "https://substack-video.s3.amazonaws.com/video_upload/post/168393430/71cb4951-62ee-4847-b3d3-07e7c03031bc/transcoded-1752592854.png",
+      "reaction_count": 14,
+      "comment_count": 2
+    },
+    {
+      "title": "Spotify ML Case Study: AI Has Fundamentally Changed the Music Industry",
+      "link": "https://www.aiforswes.com/p/spotify-case-study",
+      "pub_date": "Jul 11, 2025",
+      "description": "A case study of Spotify's algorithm, including how it works and the impact it has",
+      "image_url": "https://lh7-rt.googleusercontent.com/docsz/AD_4nXf71q0JYUlylKJXm64BdZz09ePhWL88ZEDZEu1rD2-gpt46XeneIi47iRZjQhhbLwQu3Mwkk4pJkcs-pM5hMnJGiA1EMIk7glZ1ZiHwUlXOewdQZSh0RHV8ePMVHvVNX1-7of-NEw?key=q_Uug9PL4P-qjvlr9iZzfQ",
+      "reaction_count": 27,
+      "comment_count": 10
+    },
+    {
+      "title": "ML for SWEs #58: Stay Married to the Problem, Not the Solution",
+      "link": "https://www.aiforswes.com/p/7-8-25",
+      "pub_date": "Jul 08, 2025",
+      "description": "An AI reading list curated to make you a better engineer: 7-8-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!4a0H!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F54b58c06-f8bc-4a3b-b1cc-5d71d1c691a1_1280x720.heic",
+      "reaction_count": 17,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #57: How do we combat cognitive decline?",
+      "link": "https://www.aiforswes.com/p/7-1-25",
+      "pub_date": "Jul 01, 2025",
+      "description": "An AI reading list curated to make you a better engineer: 7-1-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!vOEs!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F406d7ca9-0940-4a13-94a1-486e80dd1700_1280x720.heic",
+      "reaction_count": 23,
+      "comment_count": 11
+    },
+    {
+      "title": "Weekly ML for SWEs #56: Avoiding brain rot is the key to success",
+      "link": "https://www.aiforswes.com/p/6-24-25",
+      "pub_date": "Jun 24, 2025",
+      "description": "An AI reading list curated to make you a better engineer: 6-24-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!gx-k!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fafc3737d-052f-4ffd-acd1-e51fd1b40a8c_2888x2063.png",
+      "reaction_count": 12,
+      "comment_count": 0
+    },
+    {
+      "title": "Books every machine learning engineer should read",
+      "link": "https://www.aiforswes.com/p/mle-library",
+      "pub_date": "Jun 18, 2025",
+      "description": "Just a quick announcement of a resource addition to the ML for SWEs repo",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!LiP9!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3d846f19-d8d1-4667-9b53-10e7f1e46e35_1260x1511.png",
+      "reaction_count": 25,
+      "comment_count": 0
+    },
+    {
+      "title": "Weekly ML for SWEs #55: The easiest way to keep up with ML and AI research papers",
+      "link": "https://www.aiforswes.com/p/6-17-25",
+      "pub_date": "Jun 17, 2025",
+      "description": "An AI reading list curated to make you a better engineer: 6-17-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5651af47-2c73-4b6e-95ac-d17d15ea86c1_660x378.jpeg",
+      "reaction_count": 16,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWES Weekly #54: The engineer's perspective on Apple's LLM reasoning paper",
+      "link": "https://www.aiforswes.com/p/6-10-25",
+      "pub_date": "Jun 10, 2025",
+      "description": "An AI reading list curated to make you a better engineer: 6-10-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1db6f5ec-1001-49da-8c6c-e38e88bfe7ce_1464x976.png",
+      "reaction_count": 18,
+      "comment_count": 0
+    },
+    {
+      "title": "This book will change the way you think about working in tech",
+      "link": "https://www.aiforswes.com/p/this-book-will-change-the-way-you",
+      "pub_date": "Jun 05, 2025",
+      "description": "5 actionable takeaways from 'No Rules Rules'",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!O9of!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F86b9b86c-91c6-4883-88c7-555f6905b410_1120x630.png",
+      "reaction_count": 20,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs Weekly #53: A New Way for Software Engineers to Learn ML Math",
+      "link": "https://www.aiforswes.com/p/6-2-25",
+      "pub_date": "Jun 02, 2025",
+      "description": "An AI reading list curated for software engineers: 6-2-25",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/b618fe18-9358-4b3e-8944-761278410b74_1280x720.png",
+      "reaction_count": 17,
+      "comment_count": 4
+    },
+    {
+      "title": "How to explain complex machine learning topics",
+      "link": "https://www.aiforswes.com/p/show-dont-tell",
+      "pub_date": "May 29, 2025",
+      "description": "Why it's so incredible important not only for explaining scientific concepts, but also for everyday communication",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/0acf4542-106e-43f6-8446-746d9c14a1bc_1280x720.png",
+      "reaction_count": 15,
+      "comment_count": 0
+    },
+    {
+      "title": "Introducing Machine Learning for Software Engineers!",
+      "link": "https://www.aiforswes.com/p/ml-for-swes",
+      "pub_date": "May 23, 2025",
+      "description": "Get hands-on with machine learning engineering",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8de14f32-c5bc-47a6-9afa-872a0d386477_1042x535.png",
+      "reaction_count": 25,
+      "comment_count": 6
+    },
+    {
+      "title": "Everything developers should know about from Google I/O 2025",
+      "link": "https://www.aiforswes.com/p/google-io-2025",
+      "pub_date": "May 21, 2025",
+      "description": "An overview of important updates and why they're important",
+      "image_url": "https://substackcdn.com/image/youtube/w_728,c_limit/qNrQdZF1pLU",
+      "reaction_count": 28,
+      "comment_count": 3
+    },
+    {
+      "title": "How DeepMind Built AI That Evolves Itself [Breakdowns] ",
+      "link": "https://www.artificialintelligencemadesimple.com/cp/163742617",
+      "pub_date": "May 16, 2025",
+      "description": "From speeding up matrix multiplication to compiler optimization, Google AI's AlphaEvolve shows how discovery is becoming an engineered process.",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0c287728-fdc3-4e83-9f3d-df453f65dec6_568x512.jpeg",
+      "reaction_count": 55,
+      "comment_count": 14
+    },
+    {
+      "title": "How to be an agentic engineer",
+      "link": "https://www.aiforswes.com/p/how-to-be-an-agentic-engineer",
+      "pub_date": "May 12, 2025",
+      "description": "Everyone tells you to be an 'agentic engineer' but no one tells you how",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F721e4ff9-d693-4401-975c-ebdbbb732546_1280x720.png",
+      "reaction_count": 33,
+      "comment_count": 11
+    },
+    {
+      "title": "Help me improve Society's Backend!",
+      "link": "https://www.aiforswes.com/p/feedback-1",
+      "pub_date": "May 07, 2025",
+      "description": "Two simple questions to help make Society's Backend better",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F80fcf279-d2b0-443a-ae4d-50b29831486e_500x500.png",
+      "reaction_count": 5,
+      "comment_count": 9
+    },
+    {
+      "title": "ML for SWEs #52: Now is The Best Time to Be a Software Engineer",
+      "link": "https://www.aiforswes.com/p/5-5-25",
+      "pub_date": "May 05, 2025",
+      "description": "Machine learning for software engineers 5-5-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!l3zN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2a6d112-ac8b-43bf-b4f5-77b0232e5366_1280x720.png",
+      "reaction_count": 16,
+      "comment_count": 0
+    },
+    {
+      "title": "Top AI Articles and Resources April 2025",
+      "link": "https://www.aiforswes.com/p/april-2025",
+      "pub_date": "Apr 30, 2025",
+      "description": "A noise-free curated roundup of the best resources for machine learning engineers",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/42de26fa-9c4b-4cfb-8801-035843be4fa3_1280x720.png",
+      "reaction_count": 7,
+      "comment_count": 0
+    },
+    {
+      "title": "Creative AI Gaining Momentum is More Important Than You Think (ML for SWEs 8)",
+      "link": "https://www.aiforswes.com/p/4-29-25",
+      "pub_date": "Apr 29, 2025",
+      "description": "Machine learning for software engineers 4-29-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!gDAi!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F93dee008-1363-44cb-94a9-5b68ba22ef92_1280x720.png",
+      "reaction_count": 17,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs #51: Eval-driven Model Development?",
+      "link": "https://www.aiforswes.com/p/4-18-25",
+      "pub_date": "Apr 18, 2025",
+      "description": "Machine learning for software engineers 4-18-25",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/e4e3ba48-4564-4e1f-bcf5-9b6a7a48b648_1280x720.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "How much does a 10 million token context window actually cost?",
+      "link": "https://www.aiforswes.com/p/how-much-does-a-10-million-token",
+      "pub_date": "Apr 16, 2025",
+      "description": "Some back-of-the-napkin math for Meta's Llama 4 Scout",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!37vQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9186cd6f-6dd3-49b3-84d4-5fa0e5639fa3_1456x1048.png",
+      "reaction_count": 22,
+      "comment_count": 6
+    },
+    {
+      "title": "ML for SWEs #50: RAG Is Not Dead",
+      "link": "https://www.aiforswes.com/p/4-11-25",
+      "pub_date": "Apr 11, 2025",
+      "description": "Machine learning for software engineers 4-11-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!X8vT!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fee18b6db-2e34-409e-82a0-2880339890ea_1208x688.png",
+      "reaction_count": 12,
+      "comment_count": 0
+    },
+    {
+      "title": "How I Became a Machine Learning Engineer Without an Advanced Degree",
+      "link": "https://www.aiforswes.com/p/how-i-became-an-mle",
+      "pub_date": "Apr 09, 2025",
+      "description": "My path from knowing nothing about software engineering and machine learning to becoming an MLE at Google in 6 years without a master's degree or PhD",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26fa4b38-c6e9-4bd7-b2ae-46a1fe4948a0_800x449.jpeg",
+      "reaction_count": 42,
+      "comment_count": 6
+    },
+    {
+      "title": "ML for SWEs #49: AI for Education is Bigger Than You Think",
+      "link": "https://www.aiforswes.com/p/4-4-25",
+      "pub_date": "Apr 04, 2025",
+      "description": "Machine learning for software engineers 4-4-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F937ebd7a-6e7b-4c48-af96-30853918f0c5_500x500.jpeg",
+      "reaction_count": 13,
+      "comment_count": 0
+    },
+    {
+      "title": "3 Ways You Can Sabotage Your Own Tech Career",
+      "link": "https://www.aiforswes.com/p/dont-sabotage-your-career",
+      "pub_date": "Apr 01, 2025",
+      "description": "What they are and what you need to understand to avoid them",
+      "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/9393e11e-9322-4799-8cbc-274e6355a994_1456x1048.png",
+      "reaction_count": 21,
+      "comment_count": 4
+    },
+    {
+      "title": "ML for SWEs #48: Waymo is the Perfect Example of ML Engineering, Gemini 2.5 Pro is #1, and GPT-4o Image Generation",
+      "link": "https://www.aiforswes.com/p/3-28-25",
+      "pub_date": "Mar 28, 2025",
+      "description": "Machine learning for software engineers 3-28-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!2uAO!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F80fb3c0c-0322-4905-951c-e8512af5a65b_738x612.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #47: AI Can't Be Copyrighted, Don't Fall for Misinformation, and Stay Safe Online",
+      "link": "https://www.aiforswes.com/p/3-21-25",
+      "pub_date": "Mar 21, 2025",
+      "description": "Machine learning for software engineers 3-21-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!EtJM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9ffc7b0a-b69f-445d-b2a5-849b02715f75_680x595.jpeg",
+      "reaction_count": 12,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #46: Wtf is MCP, Manus, and Why You Should Still Learn to Code",
+      "link": "https://www.aiforswes.com/p/3-14-25",
+      "pub_date": "Mar 14, 2025",
+      "description": "Machine learning for software engineers 3-14-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!i7mk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2134de47-0f33-40bc-b746-f930d48073d0_750x500.png",
+      "reaction_count": 15,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #45: Apple Pushing Their AI Back Isn't as Bad as You Think",
+      "link": "https://www.aiforswes.com/p/3-7-25",
+      "pub_date": "Mar 07, 2025",
+      "description": "Machine learning for software engineers 3-7-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F45e9c1ba-c5a8-4045-8b52-4e8e62d6ed45_500x500.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "Why You Should Never Let AI Debug for You",
+      "link": "https://www.aiforswes.com/p/why-you-should-never-let-ai-debug",
+      "pub_date": "Mar 05, 2025",
+      "description": "And 3 ways you should be using AI to code",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!zgVS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff09722c2-fb02-43d4-8b79-696e3925ccf8_500x500.jpeg",
+      "reaction_count": 36,
+      "comment_count": 6
+    },
+    {
+      "title": "ML for SWEs #44: Coding with AI is getting even better",
+      "link": "https://www.aiforswes.com/p/02-28-25",
+      "pub_date": "Feb 28, 2025",
+      "description": "ML Engineering resources 02-28-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!j3jY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc21e2068-81ec-4235-94b9-2b206cefd180_1280x720.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #43: Reasoning is here to stay",
+      "link": "https://www.aiforswes.com/p/02-21-25",
+      "pub_date": "Feb 21, 2025",
+      "description": "AI Engineering resources 02-21-25",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!f8Yv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd405288b-6bb6-471b-bb38-9f6c81120375_1280x720.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #42: Companies Make Finding AI Jobs Really Difficult",
+      "link": "https://www.aiforswes.com/p/ai-job-pulse-02-18-25",
+      "pub_date": "Feb 18, 2025",
+      "description": "AI engineering and related jobs 02-18-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1a424b1-d769-4d91-95a2-f5a210245c88_500x500.png",
+      "reaction_count": 21,
+      "comment_count": 4
+    },
+    {
+      "title": "ML for SWEs #41: Are LLMs the Future?, OpenAI's Model Spec, How AI Will Impact Law Firms, and More",
+      "link": "https://www.aiforswes.com/p/2-14-25",
+      "pub_date": "Feb 14, 2025",
+      "description": "Important resources for 2-14-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1a424b1-d769-4d91-95a2-f5a210245c88_500x500.png",
+      "reaction_count": 7,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #41: Understanding Reasoning LLMs, How AI Companies Get Around Regulation, Understanding AI Engineering, and More",
+      "link": "https://www.aiforswes.com/p/2-6-25",
+      "pub_date": "Feb 07, 2025",
+      "description": "Must-reads for 2-6-25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1a424b1-d769-4d91-95a2-f5a210245c88_500x500.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "What is Federated Machine Learning?",
+      "link": "https://www.aiforswes.com/p/federated-learning",
+      "pub_date": "Feb 05, 2025",
+      "description": "And how AI companies use it to get around privacy regulations",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!61H6!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F89f025c3-d1b8-43ca-a8d8-a33a2ecfec4f_854x480.gif",
+      "reaction_count": 14,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs #40: Why Medical AI is Garbage, Realistic Perspectives on DeepSeek Models, Understanding Reasoning Models, and More",
+      "link": "https://www.aiforswes.com/p/1-31-25",
+      "pub_date": "Jan 31, 2025",
+      "description": "An AI engineer's must-reads for 1/31/25",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F411ac71d-84d1-4437-8bb8-f3976ab6f588_1600x1280.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #39: Open AI beats OpenAI, Understand Scaling Laws, Commerce in the Age of AI Agents, and More",
+      "link": "https://www.aiforswes.com/p/01-24-2025",
+      "pub_date": "Jan 24, 2025",
+      "description": "Society's Backend Reading List 01-24-2025",
+      "image_url": "https://substackcdn.com/image/youtube/w_728,c_limit/snkOMOjiVOk",
+      "reaction_count": 8,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #38: Multimodal Biometric Authentication, Noteworthy AI Research Papers of 2024, 5 Common Mistakes to Avoid When Training LLMs, and more",
+      "link": "https://www.aiforswes.com/p/01-17-2025",
+      "pub_date": "Jan 17, 2025",
+      "description": "Society's Backend Reading List 01-17-2025",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fdac67d87-1456-4626-93c5-89a4767b0e3d_1000x800.png",
+      "reaction_count": 8,
+      "comment_count": 0
+    },
+    {
+      "title": "Call of Duty has a data science problem",
+      "link": "https://www.aiforswes.com/p/call-of-duty-has-a-data-science-problem",
+      "pub_date": "Jan 16, 2025",
+      "description": "A lesson in why data science matters and what makes it so complex",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!WVRL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ba12aac-a6de-4cf9-b2ab-6ee169366ce0_1280x720.png",
+      "reaction_count": 8,
+      "comment_count": 0
+    },
+    {
+      "title": "Machine Learning Infrastructure: The Bridge Between Software Engineering and AI",
+      "link": "https://www.aiforswes.com/p/machine-learning-infra",
+      "pub_date": "Jan 14, 2025",
+      "description": "What makes machine learning infra so important and why I find it so interesting",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!gcvL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc1f0acb1-3649-4ef3-a84b-26a673038315_1280x720.png",
+      "reaction_count": 123,
+      "comment_count": 9
+    },
+    {
+      "title": "ML for SWEs #37: Scaling Laws for LLMs, the Actual Cost of Frontier Models, 3 Key Principles for AI at Scale, and More",
+      "link": "https://www.aiforswes.com/p/01-10-2025",
+      "pub_date": "Jan 10, 2025",
+      "description": "Society's Backend Reading List 01-10-2025",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4a7253fc-93d6-4075-9ff0-f188e527ab37_1000x800.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "3 Key Principles for AI at Scale [Part 2]",
+      "link": "https://www.aiforswes.com/p/3-key-principles-for-ai-at-scale",
+      "pub_date": "Jan 03, 2025",
+      "description": "The key to how large AI companies outcompete",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Y2Om!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fab85a120-9210-44b1-86d6-7d479f314edd_1080x1080.png",
+      "reaction_count": 8,
+      "comment_count": 0
+    },
+    {
+      "title": "5 Highlights From Society's Backend in 2024",
+      "link": "https://www.aiforswes.com/p/2024",
+      "pub_date": "Jan 01, 2025",
+      "description": "The top 5 articles and resources",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!7BcJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3fad3bad-27e0-436e-a15b-b81967f91c4f_1024x768.png",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #36: Resources to Get a Job in ML, Post-Transformer Architectures, What's in Store for 2025, and More",
+      "link": "https://www.aiforswes.com/p/12-30-2024",
+      "pub_date": "Dec 30, 2024",
+      "description": "Society's Backend Reading List 12-30-2024",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!dn-w!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d4a1422-c799-40cd-95cf-fda9f1fc7370_1600x816.png",
+      "reaction_count": 14,
+      "comment_count": 2
+    },
+    {
+      "title": "ML for SWEs #35: Google Leads New AI Releases, OpenAI Gives First Glimpse of AGI with o3, AI Policy Will Be Interesting Going Forward, and More",
+      "link": "https://www.aiforswes.com/p/12-23-2024",
+      "pub_date": "Dec 24, 2024",
+      "description": "Society's Backend Reading List 12-23-2024",
+      "image_url": "https://substackcdn.com/image/youtube/w_728,c_limit/ctWfv4WUp2I",
+      "reaction_count": 11,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #34: MASSIVE New Model Releases from Google, OpenAI, and Meta Change the AI Landscape",
+      "link": "https://www.aiforswes.com/p/12-16-2024",
+      "pub_date": "Dec 16, 2024",
+      "description": "Society's Backend Reading List 12-16-2024",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Pw7u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7be6091b-ef28-496d-b9dd-b759f0dd1ae6_904x533.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #33: LLM Research Recap of 2024, Fine-tuning LLM Judges, Amazon's Nova Models, Google's Genie 2, and More",
+      "link": "https://www.aiforswes.com/p/12-10-2024",
+      "pub_date": "Dec 10, 2024",
+      "description": "Society's Backend Reading List 12-10-2024",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffd21aedc-0175-4995-9dc7-37150ba68e85_869x591.png",
+      "reaction_count": 9,
+      "comment_count": 0
+    },
+    {
+      "title": "A Fundamental Overview of Machine Learning Experimentation [Part 1]",
+      "link": "https://www.aiforswes.com/p/ml-experimentation",
+      "pub_date": "Dec 04, 2024",
+      "description": "And how it differs from the software development you're familiar with",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!HCKC!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed5ab625-e600-4429-9be3-56616595213c_1080x1080.png",
+      "reaction_count": 23,
+      "comment_count": 7
+    },
+    {
+      "title": "ML for SWEs #32: Allen AI and DeepSeek are Taking Off, Professional Advice for Working in AI, Agentic Web Design, and More",
+      "link": "https://www.aiforswes.com/p/12-2-2024",
+      "pub_date": "Dec 02, 2024",
+      "description": "Society's Backend Reading List 12-2-2024",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69bac23b-f7b9-4b41-a81c-86c87558d45f_1000x661.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #31: Chinese AI is Less Expensive, What it's Like to Work in AI, an Evaluation Framework for Voice Agents, and More",
+      "link": "https://www.aiforswes.com/p/11-18-24",
+      "pub_date": "Nov 18, 2024",
+      "description": "Society's Backend Reading List 11-18-2024",
+      "image_url": "https://substackcdn.com/image/youtube/w_728,c_limit/JiwiqYGw4iU",
+      "reaction_count": 6,
+      "comment_count": 0
+    },
+    {
+      "title": "What it's Like to Work in AI and Advice from 10 AI Professionals",
+      "link": "https://www.aiforswes.com/p/what-its-like-to-work-in-ai",
+      "pub_date": "Nov 15, 2024",
+      "description": "I asked 10 AI professionals 4 questions about their work in AI and the qualifications required for their job",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!2ULS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4958f0de-7966-4b9e-8c61-14334f065960_2048x2048.jpeg",
+      "reaction_count": 53,
+      "comment_count": 12
+    },
+    {
+      "title": "ML for SWEs #30: Side Projects to Get a Job in ML, a Survey of Small Language Models, How to Build ML Pipelines, and More",
+      "link": "https://www.aiforswes.com/p/11-11-24",
+      "pub_date": "Nov 11, 2024",
+      "description": "Society's Backend Reading List 11-11-2024",
+      "image_url": "https://substackcdn.com/image/youtube/w_728,c_limit/xXCBz_8hM9w",
+      "reaction_count": 13,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #29: Digitizing Smell, Automatic Prompt Optimization, Targeted AI Regulation, an Intro to AI Agents, and More",
+      "link": "https://www.aiforswes.com/p/11-04-2024",
+      "pub_date": "Nov 04, 2024",
+      "description": "Society's Backend Reading List 11-04-2024",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0acced4d-17a8-4000-97a1-02ac4d89b567_1000x661.png",
+      "reaction_count": 10,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #28: State of the Job Market, Apple's Private Cloud Compute Released for Auditing, AI Generated Video Games, and More",
+      "link": "https://www.aiforswes.com/p/10-28-2024",
+      "pub_date": "Oct 29, 2024",
+      "description": "Society's Backend Reading List 10-28-2024",
+      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3553e7f1-22f0-47d2-9541-0c12ce1da154_1000x661.png",
+      "reaction_count": 5,
+      "comment_count": 0
+    },
+    {
+      "title": "ML for SWEs #27: Meta's Self-Taught Evaluator, AI for Cancer Diagnosis, and a Technical Perspective on Google Search",
+      "link": "https://www.aiforswes.com/p/10-21-2024",
+      "pub_date": "Oct 21, 2024",
+      "description": "Society's Backend Reading List 10-21-2024",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!QHTQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7abba4f9-6945-46b1-878c-c2fd985c0316_2048x2048.jpeg",
+      "reaction_count": 4,
+      "comment_count": 0
+    },
+    {
+      "title": "A Technical Perspective: Has Google Search Gotten Worse?",
+      "link": "https://www.aiforswes.com/p/a-technical-perspective-has-google",
+      "pub_date": "Oct 20, 2024",
+      "description": "Providing a technical perspective for a more educated assessment of a complaint I hear quite frequently",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!KYcK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1eb76d69-d792-4748-aa46-1ed558d6a9fb_2041x1564.jpeg",
+      "reaction_count": 21,
+      "comment_count": 5
     }
   ],
   "projects": {
@@ -188,7 +908,7 @@
       "stars": 1308,
       "forks": 156,
       "html_url": "https://github.com/loganthorneloe/ml-basics",
-      "image_url": "static/mlbasics_logo.png"
+      "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
     },
     "loganthorneloe/awesome-ml-ai-engineering-books": {
       "name": "awesome-ml-ai-engineering-books",
@@ -203,7 +923,7 @@
       "stars": 3,
       "forks": 1,
       "html_url": "https://github.com/loganthorneloe/swsh-pokemon-breeder",
-      "image_url": "static/pokemon_logo.png"
+      "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/swsh-pokemon-breeder"
     }
   }
 }
