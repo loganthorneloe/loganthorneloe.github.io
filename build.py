@@ -324,7 +324,7 @@ def main():
         if not featured:
             featured = posts[:2]
             
-        remaining = [p for p in posts if p not in featured]
+        remaining = [p for p in posts if p not in featured][:5]
         
         featured_posts_html = "\n".join(render_post_card(p, has_image=True) for p in featured)
         
