@@ -19,8 +19,7 @@ CACHE_FILE = "cache.json"
 
 # Key articles to feature on the blog page
 FEATURED_POST_SLUGS = [
-    "machine-learning-infra",
-    "the-real-way-to-make-agentic-development"
+    "machine-learning-infra"
 ]
 
 # Manual projects (incorporating the newsletter) with visual assets
