@@ -7,20 +7,20 @@ Fetches Substack JSON archive API and GitHub API to build index.html, projects.h
 import os
 import json
 import urllib.request
+import urllib.parse
 import datetime
 import re
 
 SUBSTACK_JSON_BASE_URL = "https://aiforswes.com/api/v1/archive?limit=20"
+SUBSTACK_TOP_JSON_BASE_URL = "https://aiforswes.com/api/v1/archive?sort=top&limit=20"
 GITHUB_REPOS = [
     "loganthorneloe/ml-roadmap",
     "loganthorneloe/swsh-pokemon-breeder"
 ]
 CACHE_FILE = "cache.json"
 
-# Key articles to feature on the blog page
-FEATURED_POST_SLUGS = [
-    "machine-learning-infra"
-]
+FEATURED_POST_COUNT = 5
+ARTICLE_LIST_COUNT = 5
 
 # Manual projects (incorporating the newsletter) with visual assets
 MANUAL_PROJECTS = [
@@ -88,6 +88,8 @@ def fetch_substack_posts(base_url):
                 image_url = item.get('cover_image', '')
                 reaction_count = item.get('reaction_count', 0)
                 comment_count = item.get('comment_count', 0)
+                hidden = item.get('hidden', False)
+                restacked_post_id = item.get('restacked_post_id')
                 
                 # Format date: "2026-05-26T14:03:40.450Z" -> "May 26, 2026"
                 pub_date = post_date_raw
@@ -106,7 +108,9 @@ def fetch_substack_posts(base_url):
                     "description": description,
                     "image_url": image_url,
                     "reaction_count": reaction_count,
-                    "comment_count": comment_count
+                    "comment_count": comment_count,
+                    "hidden": hidden,
+                    "restacked_post_id": restacked_post_id
                 })
             # Brief sleep to avoid hammer warning
             time.sleep(0.2)
@@ -215,6 +219,22 @@ def render_project_card(proj):
       </div>
     </a>"""
 
+def post_performance_key(post):
+    return (
+        int(post.get("reaction_count", 0) or 0),
+        int(post.get("comment_count", 0) or 0),
+        post.get("raw_date", "")
+    )
+
+def is_article_candidate(post):
+    link = post.get("link", "")
+    host = urllib.parse.urlparse(link).netloc.lower()
+    return (
+        host in {"aiforswes.com", "www.aiforswes.com"}
+        and not post.get("hidden")
+        and not post.get("restacked_post_id")
+    )
+
 def build_page(page_name, title, description, content_html):
     # Read base template
     with open("templates/base.html", "r") as f:
@@ -246,6 +266,9 @@ def main():
     else:
         posts = cache.get("posts", [])
         print("Using cached Substack posts.")
+    top_posts = fetch_substack_posts(SUBSTACK_TOP_JSON_BASE_URL)
+    if not top_posts:
+        print("Top Substack posts unavailable; falling back to archive performance.")
         
     # 2. Compile projects list (incorporating manual project)
     projects = []
@@ -318,13 +341,20 @@ def main():
     articles_list_html = ""
     
     if posts:
-        # Match featured articles by their URL slugs
-        featured = [p for p in posts if any(slug in p["link"] for slug in FEATURED_POST_SLUGS)]
-        # Fallback to the first 2 posts if none match
-        if not featured:
-            featured = posts[:2]
+        featured_pool = [p for p in top_posts if is_article_candidate(p)]
+        if not featured_pool:
+            featured_pool = sorted(
+                (p for p in posts if is_article_candidate(p)),
+                key=post_performance_key,
+                reverse=True
+            )
+        featured = featured_pool[:FEATURED_POST_COUNT]
+        featured_links = {p.get("link", "") for p in featured}
             
-        remaining = [p for p in posts if p not in featured][:5]
+        remaining = [
+            p for p in posts
+            if p.get("link", "") not in featured_links and is_article_candidate(p)
+        ][:ARTICLE_LIST_COUNT]
         
         featured_posts_html = "\n".join(render_post_card(p, has_image=True) for p in featured)
         

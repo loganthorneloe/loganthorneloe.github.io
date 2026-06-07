@@ -39,6 +39,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  padding-top: 4.5rem;
 }
 
 /* Custom Scrollbar */
@@ -63,19 +64,23 @@ body {
   padding: 0 1.5rem;
 }
 
-/* Sticky Header with Frosted Glass */
+/* Fixed Header with Liquid Glass */
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(16, 21, 39, 0.7);
-  border-bottom: 1px solid var(--border-color);
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(28px) saturate(1.35) contrast(1.03);
+  -webkit-backdrop-filter: blur(28px) saturate(1.35) contrast(1.03);
+  background-color: rgba(16, 21, 39, 0.34);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
   transition: var(--transition-smooth);
 }
 
 .nav-wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -551,10 +556,10 @@ footer {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(16, 21, 39, 0.98);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid var(--border-color);
+    background-color: rgba(16, 21, 39, 0.58);
+    backdrop-filter: blur(28px) saturate(1.35) contrast(1.03);
+    -webkit-backdrop-filter: blur(28px) saturate(1.35) contrast(1.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.055);
     display: none;
     flex-direction: column;
     padding: 1.5rem;
