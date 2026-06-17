@@ -1203,11 +1203,11 @@
   ],
   "projects": {
     "loganthorneloe/ml-roadmap": {
-      "name": "ml-basics",
+      "name": "logans-guide",
       "description": "The fastest way to get up-to-speed on machine learning fundamentals for free.",
       "stars": 1320,
       "forks": 159,
-      "html_url": "https://github.com/loganthorneloe/ml-basics",
+      "html_url": "https://github.com/loganthorneloe/logans-guide",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
     },
     "loganthorneloe/awesome-ml-ai-engineering-books": {
