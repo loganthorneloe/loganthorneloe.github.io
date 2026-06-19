@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "title": "How to Know What to Learn in AI",
+      "link": "https://www.aiforswes.com/p/how-to-know-what-to-learn-in-ai",
+      "pub_date": "Jun 18, 2026",
+      "raw_date": "2026-06-18T14:02:37.925Z",
+      "description": "There's a disconnect in AI as far back as knowing what to learn\u2014this is how to overcome it",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!Ecwv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bc56758-2b8a-4aac-8000-27e8781ba09c_1280x720.png",
+      "reaction_count": 0,
+      "comment_count": 0,
+      "hidden": true,
+      "restacked_post_id": null
+    },
+    {
       "title": "Can We Run Data Centers in Space?",
       "link": "https://www.aiforswes.com/p/can-we-run-data-centers-in-space",
       "pub_date": "Jun 10, 2026",
@@ -67,7 +79,7 @@
       "raw_date": "2026-03-31T13:48:27.823Z",
       "description": "Common patterns used to create the most effective LLM evaluation datasets...",
       "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/56cd7776-e590-4fe6-82ca-34a65900b409_2124x1192.png",
-      "reaction_count": 109,
+      "reaction_count": 110,
       "comment_count": 3,
       "hidden": false,
       "restacked_post_id": 190515363
@@ -1186,18 +1198,6 @@
       "reaction_count": 4,
       "comment_count": 0,
       "hidden": true,
-      "restacked_post_id": null
-    },
-    {
-      "title": "A Technical Perspective: Has Google Search Gotten Worse?",
-      "link": "https://www.aiforswes.com/p/a-technical-perspective-has-google",
-      "pub_date": "Oct 20, 2024",
-      "raw_date": "2024-10-20T03:54:39.907Z",
-      "description": "Providing a technical perspective for a more educated assessment of a complaint I hear quite frequently",
-      "image_url": "https://substackcdn.com/image/fetch/$s_!KYcK!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1eb76d69-d792-4748-aa46-1ed558d6a9fb_2041x1564.jpeg",
-      "reaction_count": 21,
-      "comment_count": 5,
-      "hidden": false,
       "restacked_post_id": null
     }
   ],
