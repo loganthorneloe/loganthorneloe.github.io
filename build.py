@@ -19,6 +19,11 @@ GITHUB_REPOS = [
 ]
 CACHE_FILE = "cache.json"
 
+PROJECT_NAME_OVERRIDES = {
+    "loganthorneloe/ml-roadmap": "AI Foundations for Software Engineers",
+    "loganthorneloe/logans-guide": "AI Foundations for Software Engineers",
+}
+
 FEATURED_POST_COUNT = 5
 ARTICLE_LIST_COUNT = 5
 
@@ -26,7 +31,7 @@ ARTICLE_LIST_COUNT = 5
 MANUAL_PROJECTS = [
     {
         "name": "AI for Software Engineers",
-        "description": "A technical newsletter read by over 13,000 software engineers, covering the systems, architecture, and infrastructure behind modern production AI.",
+        "description": "A technical newsletter read by over 13,000 software engineers, getting SWEs hands-on with AI through systems, architecture, and infrastructure.",
         "custom_stat": "13,000+ subscribers",
         "html_url": "https://aiforswes.com",
         "image_url": "https://substackcdn.com/image/fetch/w_256,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F656213f4-4ebe-4864-9979-a2b65a21f3e3%2Fapple-touch-icon-1024x1024.png"
@@ -278,6 +283,8 @@ def main():
     for repo in GITHUB_REPOS:
         proj_data = fetch_github_project(repo)
         if proj_data:
+            if repo in PROJECT_NAME_OVERRIDES:
+                proj_data["name"] = PROJECT_NAME_OVERRIDES[repo]
             # Map visual asset URLs dynamically to GitHub Open Graph previews
             proj_data["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
                 
@@ -286,6 +293,8 @@ def main():
         else:
             cached_proj = cache.get("projects", {}).get(repo)
             if cached_proj:
+                if repo in PROJECT_NAME_OVERRIDES:
+                    cached_proj["name"] = PROJECT_NAME_OVERRIDES[repo]
                 cached_proj["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
                 projects.append(cached_proj)
                 print(f"Using cached stats for {repo}.")

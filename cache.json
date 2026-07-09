@@ -1203,11 +1203,11 @@
   ],
   "projects": {
     "loganthorneloe/ml-roadmap": {
-      "name": "logans-guide",
-      "description": "The fastest way to get up-to-speed on machine learning fundamentals for free.",
+      "name": "AI Foundations for Software Engineers",
+      "description": "AI foundations for software engineers.",
       "stars": 1324,
       "forks": 159,
-      "html_url": "https://github.com/loganthorneloe/logans-guide",
+      "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
     },
     "loganthorneloe/awesome-ml-ai-engineering-books": {
