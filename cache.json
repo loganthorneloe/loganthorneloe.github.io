@@ -1,13 +1,25 @@
 {
   "posts": [
     {
+      "title": "Striving for Greatness in All You Do",
+      "link": "https://www.aiforswes.com/p/striving-for-greatness-in-all-you",
+      "pub_date": "Jul 08, 2026",
+      "raw_date": "2026-07-08T15:07:59.497Z",
+      "description": "Why Dr. Richard W. Hamming's short essay applies to engineering just as much as it does to research",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!3PD8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb859f4cc-bcd3-455a-9623-3d7a07ccfce9_1280x720.png",
+      "reaction_count": 1,
+      "comment_count": 0,
+      "hidden": true,
+      "restacked_post_id": null
+    },
+    {
       "title": "How to Know What to Learn in AI",
       "link": "https://www.aiforswes.com/p/how-to-know-what-to-learn-in-ai",
       "pub_date": "Jun 18, 2026",
       "raw_date": "2026-06-18T14:02:37.925Z",
       "description": "There's a disconnect in AI as far back as knowing what to learn\u2014this is how to overcome it",
       "image_url": "https://substackcdn.com/image/fetch/$s_!Ecwv!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9bc56758-2b8a-4aac-8000-27e8781ba09c_1280x720.png",
-      "reaction_count": 12,
+      "reaction_count": 14,
       "comment_count": 0,
       "hidden": false,
       "restacked_post_id": null
@@ -1184,18 +1196,6 @@
       "description": "Society's Backend Reading List 10-28-2024",
       "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3553e7f1-22f0-47d2-9541-0c12ce1da154_1000x661.png",
       "reaction_count": 5,
-      "comment_count": 0,
-      "hidden": true,
-      "restacked_post_id": null
-    },
-    {
-      "title": "ML for SWEs #27: Meta's Self-Taught Evaluator, AI for Cancer Diagnosis, and a Technical Perspective on Google Search",
-      "link": "https://www.aiforswes.com/p/10-21-2024",
-      "pub_date": "Oct 21, 2024",
-      "raw_date": "2024-10-21T16:33:30.666Z",
-      "description": "Society's Backend Reading List 10-21-2024",
-      "image_url": "https://substackcdn.com/image/fetch/$s_!QHTQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7abba4f9-6945-46b1-878c-c2fd985c0316_2048x2048.jpeg",
-      "reaction_count": 4,
       "comment_count": 0,
       "hidden": true,
       "restacked_post_id": null
