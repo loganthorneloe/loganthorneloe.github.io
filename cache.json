@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "title": "AI Foundations for Software Engineers",
+      "link": "https://www.aiforswes.com/p/ai-foundations-for-software-engineers",
+      "pub_date": "Jul 10, 2026",
+      "raw_date": "2026-07-10T15:01:42.944Z",
+      "description": "A streamlined guide for busy professionals",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!shS1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb13b144f-ba33-4aec-a1fe-81383d98049e_1280x720.png",
+      "reaction_count": 4,
+      "comment_count": 0,
+      "hidden": false,
+      "restacked_post_id": null
+    },
+    {
       "title": "Striving for Greatness in All You Do",
       "link": "https://www.aiforswes.com/p/striving-for-greatness-in-all-you",
       "pub_date": "Jul 08, 2026",
@@ -148,7 +160,7 @@
       "title": "What you should know about AI speculation",
       "link": "https://www.aiforswes.com/p/what-you-should-know-about-ai-speculation",
       "pub_date": "Feb 24, 2026",
-      "raw_date": "2026-02-24T16:49:39.427Z",
+      "raw_date": "2026-02-24T16:49:39.426Z",
       "description": "Thoughts on software engineering careers looking forward",
       "image_url": "https://substackcdn.com/image/fetch/$s_!Xym-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4d13f1ce-6565-4a82-acff-e426076d231d_1280x720.png",
       "reaction_count": 20,
@@ -376,7 +388,7 @@
       "title": "ML for SWEs 69: This is how top AI research labs will make money",
       "link": "https://www.aiforswes.com/p/69",
       "pub_date": "Oct 08, 2025",
-      "raw_date": "2025-10-08T22:03:18.530Z",
+      "raw_date": "2025-10-08T22:03:18.529Z",
       "description": "My thoughts on OpenAI's Dev Day killing startups and monetizing top AI research labs",
       "image_url": "https://substackcdn.com/image/fetch/$s_!kKkV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7a70c3b1-a070-4c86-b73a-a5cd85050bf0_717x348.jpeg",
       "reaction_count": 13,
@@ -460,7 +472,7 @@
       "title": "The Strange Reality of AI and SWE Hiring in 2025",
       "link": "https://www.aiforswes.com/p/the-strange-reality-of-ai-hiring-2025",
       "pub_date": "Aug 22, 2025",
-      "raw_date": "2025-08-22T13:51:50.595Z",
+      "raw_date": "2025-08-22T13:51:50.594Z",
       "description": "Understanding the job market beyond 'the market is bad' is",
       "image_url": "https://substackcdn.com/image/fetch/$s_!Y5gd!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe1ebed63-87e0-4a26-970d-8d30ca6feed0_1280x720.png",
       "reaction_count": 13,
@@ -1187,26 +1199,14 @@
       "comment_count": 0,
       "hidden": true,
       "restacked_post_id": null
-    },
-    {
-      "title": "ML for SWEs #28: State of the Job Market, Apple's Private Cloud Compute Released for Auditing, AI Generated Video Games, and More",
-      "link": "https://www.aiforswes.com/p/10-28-2024",
-      "pub_date": "Oct 29, 2024",
-      "raw_date": "2024-10-29T14:16:23.815Z",
-      "description": "Society's Backend Reading List 10-28-2024",
-      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3553e7f1-22f0-47d2-9541-0c12ce1da154_1000x661.png",
-      "reaction_count": 5,
-      "comment_count": 0,
-      "hidden": true,
-      "restacked_post_id": null
     }
   ],
   "projects": {
     "loganthorneloe/ml-roadmap": {
       "name": "AI Foundations for Software Engineers",
       "description": "AI foundations for software engineers.",
-      "stars": 1324,
-      "forks": 159,
+      "stars": 1336,
+      "forks": 161,
       "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
     },
