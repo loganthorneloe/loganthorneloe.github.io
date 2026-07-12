@@ -7,7 +7,7 @@
       "raw_date": "2026-07-10T15:01:42.944Z",
       "description": "A streamlined guide for busy professionals",
       "image_url": "https://substackcdn.com/image/fetch/$s_!shS1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb13b144f-ba33-4aec-a1fe-81383d98049e_1280x720.png",
-      "reaction_count": 4,
+      "reaction_count": 9,
       "comment_count": 0,
       "hidden": false,
       "restacked_post_id": null
@@ -352,7 +352,7 @@
       "title": "AI for SWEs 72: Gemini 3 Pro, Claude Opus 4.5, and Olmo 3",
       "link": "https://www.aiforswes.com/p/72",
       "pub_date": "Nov 25, 2025",
-      "raw_date": "2025-11-25T14:49:19.296Z",
+      "raw_date": "2025-11-25T14:49:19.295Z",
       "description": "Intelligence just got a whole lot smarter",
       "image_url": "https://substack-post-media.s3.amazonaws.com/public/images/b7a1fecd-53d6-4394-83fc-eafedac56620_1280x720.png",
       "reaction_count": 20,
@@ -1205,7 +1205,7 @@
     "loganthorneloe/ml-roadmap": {
       "name": "AI Foundations for Software Engineers",
       "description": "AI foundations for software engineers.",
-      "stars": 1336,
+      "stars": 1343,
       "forks": 161,
       "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
