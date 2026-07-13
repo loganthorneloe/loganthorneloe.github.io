@@ -820,7 +820,7 @@
       "title": "How I Became a Machine Learning Engineer Without an Advanced Degree",
       "link": "https://www.aiforswes.com/p/how-i-became-an-mle",
       "pub_date": "Apr 09, 2025",
-      "raw_date": "2025-04-09T12:09:32.549Z",
+      "raw_date": "2025-04-09T12:09:32.548Z",
       "description": "My path from knowing nothing about software engineering and machine learning to becoming an MLE at Google in 6 years without a master's degree or PhD",
       "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26fa4b38-c6e9-4bd7-b2ae-46a1fe4948a0_800x449.jpeg",
       "reaction_count": 42,
@@ -1205,7 +1205,7 @@
     "loganthorneloe/ml-roadmap": {
       "name": "AI Foundations for Software Engineers",
       "description": "AI foundations for software engineers.",
-      "stars": 1343,
+      "stars": 1346,
       "forks": 161,
       "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
