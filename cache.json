@@ -7,7 +7,7 @@
       "raw_date": "2026-07-10T15:01:42.944Z",
       "description": "A streamlined guide for busy professionals",
       "image_url": "https://substackcdn.com/image/fetch/$s_!shS1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb13b144f-ba33-4aec-a1fe-81383d98049e_1280x720.png",
-      "reaction_count": 9,
+      "reaction_count": 10,
       "comment_count": 0,
       "hidden": false,
       "restacked_post_id": null
@@ -19,7 +19,7 @@
       "raw_date": "2026-07-08T15:07:59.497Z",
       "description": "Why Dr. Richard W. Hamming's short essay applies to engineering just as much as it does to research",
       "image_url": "https://substackcdn.com/image/fetch/$s_!3PD8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb859f4cc-bcd3-455a-9623-3d7a07ccfce9_1280x720.png",
-      "reaction_count": 1,
+      "reaction_count": 2,
       "comment_count": 0,
       "hidden": true,
       "restacked_post_id": null
@@ -1205,7 +1205,7 @@
     "loganthorneloe/ml-roadmap": {
       "name": "AI Foundations for Software Engineers",
       "description": "AI foundations for software engineers.",
-      "stars": 1346,
+      "stars": 1348,
       "forks": 161,
       "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
