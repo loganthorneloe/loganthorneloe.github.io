@@ -28,21 +28,6 @@ PRIVATE_FRAGMENTS = (
     "lime connect",
     "sensitive-data",
     "privacy constraints",
-    "priority inversion",
-    "antigravity",
-    "proxy-task",
-)
-
-CURRENT_ROLE_PRIVATE_FRAGMENTS = (
-    "agent-impact",
-    "google deepmind",
-    "infrastructure priorities",
-    "large-scale ux",
-    "leadership reporting",
-    "platform datastore",
-    "research trajectory",
-    "technical leads",
-    "user journey",
 )
 
 EMAIL_RE = re.compile(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", re.I)
@@ -51,7 +36,6 @@ SECRET_RE = re.compile(r"\b(?:github_pat_|gh[oprsu]_|sk-)[A-Za-z0-9_-]+\b")
 LOCATION_RE = re.compile(
     r"^(?:Remote|[A-Z][A-Za-z .'-]+,\s*(?:[A-Z]{2}|[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?))\s*$"
 )
-NUMBER_RE = re.compile(r"\d")
 
 HEADER = """# Logan Thorneloe
 
@@ -115,22 +99,10 @@ def sanitize_summary(content: str) -> str:
 
 def sanitize_work_experience(content: str) -> str:
     lines: list[str] = []
-    current_role = ""
 
     for line in content.splitlines():
-        stripped = line.strip()
-        if stripped.startswith("### "):
-            current_role = stripped[4:].lower()
-
         if is_location(line) or contains_private_fragment(line):
             continue
-
-        if stripped.startswith("- ") and current_role.startswith("google ads"):
-            lowered = stripped.lower()
-            if NUMBER_RE.search(stripped):
-                continue
-            if any(fragment in lowered for fragment in CURRENT_ROLE_PRIVATE_FRAGMENTS):
-                continue
 
         lines.append(line)
 
