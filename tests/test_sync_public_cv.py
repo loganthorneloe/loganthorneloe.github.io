@@ -75,6 +75,7 @@ class PublicCvTests(unittest.TestCase):
         public_cv = build_public_cv(SOURCE)
 
         self.assertIn("Public summary.", public_cv)
+        self.assertIn("Built an internal system serving 100 teams.", public_cv)
         self.assertIn("Support researchers", public_cv)
         self.assertIn("Built a public project.", public_cv)
         self.assertIn("Public academic award", public_cv)
@@ -82,7 +83,6 @@ class PublicCvTests(unittest.TestCase):
         self.assertNotIn("555-555-1234", public_cv)
         self.assertNotIn("Austin, Texas", public_cv)
         self.assertNotIn("Los Alamos, New Mexico", public_cv)
-        self.assertNotIn("100 teams", public_cv)
         self.assertNotIn("sensitive-data", public_cv)
         self.assertNotIn("Lime", public_cv)
         self.assertNotIn("Need-based", public_cv)

@@ -8,6 +8,8 @@
 
 AI and machine learning infrastructure engineer co-developing an MLE Agent with Google DeepMind for Google Ads' continuous machine learning platform. Builds a research context engine by collecting and summarizing platform operations, model information, metrics, and prior experimentation so the agent can analyze research trajectories and make previous work easier to discover.
 
+Develops agentic tools for ML research by integrating ML platform resources into Antigravity through MCP and building Skills that help modelers and infrastructure engineers automate experimentation and platform troubleshooting. Focused on bringing research to production, optimizing research workflows and infrastructure, and improving the user experience of AI and machine learning applications and developer tools.
+
 Publishes AI for Software Engineers, delivering weekly briefings on ML infrastructure, systems, operations, AI engineering, developer AI tools, and the ML concepts engineers need to ship production AI systems. Rapidly grew the community to 13,000+ members and has received recommendations from 40+ AI writers.
 
 ## Work Experience
@@ -16,8 +18,18 @@ Publishes AI for Software Engineers, delivering weekly briefings on ML infrastru
 **Software Engineer**
 June 2022 - Present
 
+- Co-develop a **Machine Learning Engineering (MLE) Agent** with Google DeepMind by building an ML research context engine that collects and summarizes platform operations, model information, metrics, and prior experimentation across **100,000+ experiments**, helping the agent find, vet, and compile prior research directions, analyze research trajectories, and make previous work easier to discover across research teams (**C++**, **Flume**, **Python**).
+- Integrate ML platform resources and development tools into **Antigravity** through **MCP** and develop agent **Skills**, giving modelers and infrastructure developers access to platform capabilities and enabling **50+ ML research teams** and **200+ infrastructure engineers** to automate experimentation, troubleshooting, and analysis inside their developer environment.
 - Partner with modelers and researchers to bring agentic research tooling into production and optimize experimentation workflows and infrastructure; triage feature requests, debug developer-AI workflows, and translate user needs into UX improvements across AI and machine learning applications and developer tools.
+- Build **user journey** tracking infrastructure that translates **ML infra signals** into metrics that quantify developer velocity, surface user-experience bottlenecks, measure how agentic MLE workflows affect the platform, and motivate **large-scale UX improvements**.
+- Collaborate across research and infrastructure teams to assess proxy-task work and shape an agentic approach for evaluating and advancing future ML research directions.
 - Draft technical guidance on agent safety for production ML infrastructure, explaining why agentic workflows require stronger safety practices in ML development environments.
+- Created a **20+ TB** machine learning event store capable of processing **over one million events per hour** across the **full ML stack—data and feature engineering, training, and serving**—increasing logged platform milestones by **over 50%** and connecting user journeys for **200+ users** across **40+ client teams** (SQL, Python, C++).
+- Improved event logging reliability so journey metrics, leadership reporting, and agent-impact measurement remain dependable as platform use scales.
+- Diagnosed a critical priority inversion issue by introducing **10+ key metrics** that showed low-priority models blocking important training jobs; resolution decreased concept-to-idea validation and training times for high-priority models, improving fleet-wide efficiency.
+- Measured production ML system changes that delivered **2x** faster automation operations with **~50%** fewer failures and quantified platform growth to **tens of thousands more model training runs per quarter**.
+- Used **Gemini** and platform datastore analytics to automate metric exploration, charting, and visualization from natural-language questions, giving leadership clearer views into platform velocity.
+- Presented platform-velocity progress and agent-impact analyses to technical leads, translating experimentation, throughput, latency, and bandwidth trade-offs into decisions about infrastructure priorities.
 - Engineered an exporter to convert continuous monitoring data into discrete time events, enabling robust analysis of system behavior from existing observability tools (Go).
 
 ---
