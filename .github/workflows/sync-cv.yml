@@ -55,7 +55,15 @@ jobs:
           git add CV.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync public CV [skip ci]"
-            git push
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push; then
+                exit 0
+              fi
+              echo "Push attempt ${attempt} lost a race; retrying"
+            done
+            echo "Unable to push CV after 3 attempts"
+            exit 1
           else
             echo "CV is already current"
           fi
