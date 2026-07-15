@@ -1,0 +1,65 @@
+name: Sync Public CV
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - resume-cv-updated
+
+concurrency:
+  group: sync-public-cv
+  cancel-in-progress: false
+
+jobs:
+  sync-cv:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      HAS_RESUME_REPO_SSH_KEY: ${{ secrets.RESUME_REPO_SSH_KEY != '' }}
+
+    steps:
+      - name: Checkout website repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Checkout private resume source
+        if: ${{ env.HAS_RESUME_REPO_SSH_KEY == 'true' }}
+        uses: actions/checkout@v4
+        with:
+          repository: loganthorneloe/resume
+          ssh-key: ${{ secrets.RESUME_REPO_SSH_KEY }}
+          path: .resume-source
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Test privacy exporter
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate public CV
+        if: ${{ env.HAS_RESUME_REPO_SSH_KEY == 'true' }}
+        run: python scripts/sync_public_cv.py .resume-source/CV.md CV.md
+
+      - name: Commit updated CV
+        if: ${{ env.HAS_RESUME_REPO_SSH_KEY == 'true' }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add CV.md
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: sync public CV [skip ci]"
+            git push
+          else
+            echo "CV is already current"
+          fi
+
+      - name: Note disabled synchronization
+        if: ${{ env.HAS_RESUME_REPO_SSH_KEY != 'true' }}
+        run: echo "CV sync is disabled until RESUME_REPO_SSH_KEY is configured."
