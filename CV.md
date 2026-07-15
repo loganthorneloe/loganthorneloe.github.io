@@ -6,20 +6,18 @@
 
 ## Professional Summary
 
-ML infrastructure engineer improving the research experience across Google Ads' continuous machine learning platform. Partners directly with researchers to steer user experience improvements, ship tools to accelerate developer velocity, and quantify how AI tooling reshapes their workflows.
+AI and machine learning infrastructure engineer co-developing an MLE Agent with Google DeepMind for Google Ads' continuous machine learning platform. Builds a research context engine by collecting and summarizing platform operations, model information, metrics, and prior experimentation so the agent can analyze research trajectories and make previous work easier to discover.
 
-Publishes Machine Learning for Software Engineers, delivering weekly briefings on ML infrastructure, systems, operations, AI engineering, developer AI tools, and the ML concepts engineers need to ship production AI systems. Rapidly grew the community to 13,000+ members and has received recommendations from 40+ AI writers.
+Publishes AI for Software Engineers, delivering weekly briefings on ML infrastructure, systems, operations, AI engineering, developer AI tools, and the ML concepts engineers need to ship production AI systems. Rapidly grew the community to 13,000+ members and has received recommendations from 40+ AI writers.
 
 ## Work Experience
 
-### Google Ads - Machine Learning Infrastructure, User Experience & Developer AI
+### Google Ads - Machine Learning Infrastructure and User Experience
 **Software Engineer**
 June 2022 - Present
 
-- Created ML experimentation journey-tracking infrastructure to quantify developer velocity, surface user-experience bottlenecks, and measure how agentic MLE workflows affect the platform.
-- Support modelers and researchers by triaging feature requests, debugging developer-AI workflows, and translating client needs into agent and tooling improvements.
-- Building an ML research context engine that helps agentic workflows find, vet, and compile prior research directions while making previous work easier to discover across research teams.
-- Drafted technical guidance on agent safety for production ML infrastructure, explaining why agentic workflows require stronger safety practices in ML development environments.
+- Partner with modelers and researchers to bring agentic research tooling into production and optimize experimentation workflows and infrastructure; triage feature requests, debug developer-AI workflows, and translate user needs into UX improvements across AI and machine learning applications and developer tools.
+- Draft technical guidance on agent safety for production ML infrastructure, explaining why agentic workflows require stronger safety practices in ML development environments.
 - Engineered an exporter to convert continuous monitoring data into discrete time events, enabling robust analysis of system behavior from existing observability tools (Go).
 
 ---
@@ -28,10 +26,10 @@ June 2022 - Present
 **Founder, Author & Technical Educator**
 2023 - Present
 
-- Author weekly **technical deep dives** on AI in production topics, educating **hundreds of thousands of developers** worldwide.
-- Scaled newsletter to **13,000+ subscribers**; received recommendations from **40+ top AI writers** on Substack.
-- **100+ paid supporters**; achieved **Substack bestseller** status, frequently ranking among the highest-growing technology publications on Substack.
-- Curated a free, comprehensive roadmap from ML fundamentals to ML/AI engineering, including original hands-on guides; 1000+ GitHub stars and continuously updated.
+- Author weekly **technical deep dives** on ML infrastructure, systems, engineering, and operations, educating **hundreds of thousands of developers** worldwide.
+- Scaled newsletter to **13,000+ subscribers**; received recommendations from **40+ top AI writers and educators** on Substack.
+- Reached **Substack bestseller** status with **100+ paid subscribers**, frequently ranking among the highest-growing technology publications on Substack.
+- Curate a machine learning and AI resource repository designed to help developers learn key AI concepts through original hands-on guides; 1000+ GitHub stars and continuously updated.
 - Established industry thought leadership, resulting in speaking invitations at AI meetups, requests for media commentary, and invitations to author guest posts for large AI newsletters (such as AI Made Simple and AI Supremacy, each with over 200,000 subscribers).
 - Build and manage a multi-platform community across **Substack, LinkedIn, and X** to foster a knowledge-sharing ecosystem for engineers.
 
@@ -42,7 +40,7 @@ June 2022 - Present
 May 2020 - May 2022
 
 - Accelerated ML model development by connecting Azure ML Pipelines to a new asset sharing service (**C#**, **.NET**), enabling data scientists to reuse ML features and model outputs across projects.
-- Designed and built a microservice (**Kubernetes**, **Azure**) that abstracted compute access for the ML platform, significantly reducing future development time for infrastructure engineers to add and support new compute types.
+- Designed and built a microservice on Azure (**Kubernetes**) that abstracted compute access for the ML platform, significantly reducing future development time for infrastructure engineers to add and support new compute types.
 - Partnered directly with data scientists and program managers to gather feedback and drive customer-centered improvements, increasing the platform's ease-of-use and reducing experiment setup time.
 
 ---
@@ -63,7 +61,7 @@ May 2019 - August 2019
 May 2017 - April 2020
 
 - Authored research analyzing the feature space of CNNs (**Python**, **TensorFlow**) to reduce data labeling requirements by hundreds of man-hours; findings were published at an international conference (ISMRM) and received a Magna Cum Laude Award (Top 15%).
-- Managed a team of 4 engineers on an NIH-funded project exploring a novel application of MRI for muscle activation detection, comparing 3D Cones Sodium imaging, T2-weighted imaging, and T2 mapping techniques; findings were published at an international conference (ISMRM).
+- Managed a team of 4 engineers on an **NIH-funded MRI research** project exploring a novel application of MRI for muscle activation detection, comparing 3D Cones Sodium imaging, T2-weighted imaging, and T2 mapping techniques; findings were published at an international conference (ISMRM).
 - Independently secured personal research funding by authoring multiple successful grant proposals.
 - Programmed clinical MRI scanners to implement custom imaging protocols (**C++**).
 
