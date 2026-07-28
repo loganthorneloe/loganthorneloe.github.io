@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "title": "The Importance of an Open AI Ecosystem | AI for Software Engineers 84",
+      "link": "https://www.aiforswes.com/p/the-importance-of-an-open-ai-ecosystem",
+      "pub_date": "Jul 27, 2026",
+      "raw_date": "2026-07-27T15:22:06.571Z",
+      "description": "And more on the future of agentic engineering",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!IGey!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d823843-102b-4189-a160-d2a832e14276_1584x396.png",
+      "reaction_count": 8,
+      "comment_count": 0,
+      "hidden": false,
+      "restacked_post_id": null
+    },
+    {
       "title": "AI Foundations for Software Engineers",
       "link": "https://www.aiforswes.com/p/ai-foundations-for-software-engineers",
       "pub_date": "Jul 10, 2026",
@@ -19,7 +31,7 @@
       "raw_date": "2026-07-08T15:07:59.497Z",
       "description": "Why Dr. Richard W. Hamming's short essay applies to engineering just as much as it does to research",
       "image_url": "https://substackcdn.com/image/fetch/$s_!3PD8!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb859f4cc-bcd3-455a-9623-3d7a07ccfce9_1280x720.png",
-      "reaction_count": 10,
+      "reaction_count": 11,
       "comment_count": 0,
       "hidden": false,
       "restacked_post_id": null
@@ -1187,25 +1199,13 @@
       "comment_count": 0,
       "hidden": true,
       "restacked_post_id": null
-    },
-    {
-      "title": "ML for SWEs #29: Digitizing Smell, Automatic Prompt Optimization, Targeted AI Regulation, an Intro to AI Agents, and More",
-      "link": "https://www.aiforswes.com/p/11-04-2024",
-      "pub_date": "Nov 04, 2024",
-      "raw_date": "2024-11-04T14:45:42.330Z",
-      "description": "Society's Backend Reading List 11-04-2024",
-      "image_url": "https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0acced4d-17a8-4000-97a1-02ac4d89b567_1000x661.png",
-      "reaction_count": 10,
-      "comment_count": 0,
-      "hidden": true,
-      "restacked_post_id": null
     }
   ],
   "projects": {
     "loganthorneloe/ml-roadmap": {
       "name": "AI Foundations for Software Engineers",
       "description": "AI foundations for software engineers.",
-      "stars": 1353,
+      "stars": 1354,
       "forks": 161,
       "html_url": "https://github.com/loganthorneloe/ai-for-software-engineers",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/ml-roadmap"
