@@ -245,11 +245,6 @@ def build_page(page_name, title, description, content_html):
     with open("templates/base.html", "r") as f:
         base_html = f.read()
     
-    # Replace navigation active classes
-    base_html = base_html.replace("{% if active_page == 'about' %}active{% endif %}", "active" if page_name == "about" else "")
-    base_html = base_html.replace("{% if active_page == 'projects' %}active{% endif %}", "active" if page_name == "projects" else "")
-    base_html = base_html.replace("{% if active_page == 'articles' %}active{% endif %}", "active" if page_name == "articles" else "")
-    
     # Replace placeholders
     page_html = base_html.replace("{{ title }}", title)
     page_html = page_html.replace("{{ description }}", description)
@@ -262,125 +257,15 @@ def build_page(page_name, title, description, content_html):
     print(f"Successfully generated {output_filename}")
 
 def main():
-    cache = load_cache()
-    
-    # 1. Fetch Substack newsletter feed via JSON API
-    posts = fetch_substack_posts(SUBSTACK_JSON_BASE_URL)
-    if posts:
-        cache["posts"] = posts
-    else:
-        posts = cache.get("posts", [])
-        print("Using cached Substack posts.")
-    top_posts = fetch_substack_posts(SUBSTACK_TOP_JSON_BASE_URL)
-    if not top_posts:
-        print("Top Substack posts unavailable; falling back to archive performance.")
-        
-    # 2. Compile projects list (incorporating manual project)
-    projects = []
-    for p in MANUAL_PROJECTS:
-        projects.append(p)
-        
-    for repo in GITHUB_REPOS:
-        proj_data = fetch_github_project(repo)
-        if proj_data:
-            if repo in PROJECT_NAME_OVERRIDES:
-                proj_data["name"] = PROJECT_NAME_OVERRIDES[repo]
-            # Map visual asset URLs dynamically to GitHub Open Graph previews
-            proj_data["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
-                
-            cache["projects"][repo] = proj_data
-            projects.append(proj_data)
-        else:
-            cached_proj = cache.get("projects", {}).get(repo)
-            if cached_proj:
-                if repo in PROJECT_NAME_OVERRIDES:
-                    cached_proj["name"] = PROJECT_NAME_OVERRIDES[repo]
-                cached_proj["image_url"] = f"https://opengraph.githubassets.com/1/{repo}"
-                projects.append(cached_proj)
-                print(f"Using cached stats for {repo}.")
-            else:
-                projects.append({
-                    "name": repo.split("/")[-1],
-                    "description": "Open source repository maintained by Logan Thorneloe.",
-                    "stars": 0,
-                    "forks": 0,
-                    "html_url": f"https://github.com/{repo}"
-                })
-                
-    save_cache(cache)
-    
-    # Ensure build output matches template configs
-    if not posts:
-        print("Warning: No blog posts available to render.")
-    if not projects:
-        print("Warning: No projects available to render.")
-        
-    # 3. Render and compile pages
-    
-    # Homepage / About (index.html)
+    # 1. Render homepage (index.html)
     with open("templates/about.html", "r") as f:
         about_template = f.read()
     
     build_page(
         page_name="about",
-        title="About",
+        title="Logan Thorneloe",
         description="Logan Thorneloe - ML Infrastructure & Agents Engineer at Google.",
         content_html=about_template
-    )
-    
-    # Projects Page (projects.html)
-    with open("templates/projects.html", "r") as f:
-        projects_template = f.read()
-        
-    projects_list_html = "\n".join(render_project_card(p) for p in projects)
-    projects_content = projects_template.replace("{{ projects_list }}", projects_list_html)
-    
-    build_page(
-        page_name="projects",
-        title="Projects",
-        description="Open source projects and development libraries built by Logan Thorneloe.",
-        content_html=projects_content
-    )
-    
-    # Articles Page (articles.html)
-    with open("templates/articles.html", "r") as f:
-        articles_template = f.read()
-        
-    featured_posts_html = ""
-    articles_list_html = ""
-    
-    if posts:
-        featured_pool = [p for p in top_posts if is_article_candidate(p)]
-        if not featured_pool:
-            featured_pool = sorted(
-                (p for p in posts if is_article_candidate(p)),
-                key=post_performance_key,
-                reverse=True
-            )
-        featured = featured_pool[:FEATURED_POST_COUNT]
-        featured_links = {p.get("link", "") for p in featured}
-            
-        remaining = [
-            p for p in posts
-            if p.get("link", "") not in featured_links and is_article_candidate(p)
-        ][:ARTICLE_LIST_COUNT]
-        
-        featured_posts_html = "\n".join(render_post_card(p, has_image=True) for p in featured)
-        
-        posts_html = "\n".join(render_post_card(p, has_image=True) for p in remaining)
-        articles_list_html = f"""
-        <div class="card-grid">
-          {posts_html}
-        </div>"""
-        
-    articles_content = articles_template.replace("{{ featured_posts }}", featured_posts_html)
-    articles_content = articles_content.replace("{{ blog_list }}", articles_list_html)
-    
-    build_page(
-        page_name="articles",
-        title="Articles",
-        description="Read the latest articles from AI for Software Engineers by Logan Thorneloe.",
-        content_html=articles_content
     )
 
 if __name__ == "__main__":
