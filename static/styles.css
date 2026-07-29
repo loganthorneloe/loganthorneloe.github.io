@@ -102,11 +102,6 @@ header {
   transition: var(--transition-smooth);
 }
 
-.logo-link:hover .wordmark-logo {
-  transform: rotate(5deg) scale(1.05);
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
-}
-
 nav ul {
   display: flex;
   list-style: none;
