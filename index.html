@@ -3,181 +3,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logan Thorneloe | Logan Thorneloe</title>
+  <title>Logan Thorneloe</title>
   <meta name="description" content="Logan Thorneloe - ML Infrastructure & Agents Engineer at Google.">
-  <!-- Sora Font from Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Stylesheet -->
+  <meta name="theme-color" content="#101527">
   <link rel="stylesheet" href="static/styles.css">
   <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header>
-    <div class="container nav-wrapper">
-      <a href="index.html" class="logo-link" id="logo-link">
-        <img src="static/small_logo_transparent.svg" alt="Logan Thorneloe Logo" class="wordmark-logo" style="width: 32px; height: 32px; vertical-align: middle;">
+  <header class="site-header">
+    <div class="shell nav-wrapper">
+      <a href="index.html" class="logo-link" aria-label="Logan Thorneloe — home">
         <span>Logan Thorneloe</span>
       </a>
-      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
-      <input type="checkbox" id="menu-toggle" style="display: none;">
-      <label for="menu-toggle" class="menu-button-container">
-        <div class="menu-button"></div>
-      </label>
-      
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer" class="nav-articles">Articles</a></li>
-        </ul>
+      <nav aria-label="Primary navigation">
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Articles</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="about-content animate-fade-in" style="padding: 3.5rem 0;">
-  <p style="color: var(--text-primary); margin-bottom: 1rem;">
-    I am an ML infrastructure engineer at Google focused on improving the ML user experience and increasing research velocity. I work to accelerate high-impact research applications and build intuitive AI.
-  </p>
-  <p style="color: var(--text-primary); margin-bottom: 1rem;">
-    I am also the author of <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">AI for Software Engineers</a>, a publication that explains the engineering behind AI and is read by over 13,000 developers.
-  </p>
-  <p style="color: var(--text-primary); margin-bottom: 2.5rem;">
-    You can find me on <a href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>, <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>, and <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>, or chat by shooting me an <a href="mailto:logan@thorneloe.ai">email</a>.
-  </p>
-  
-  <div class="about-section">
-    <h2>My Current Focus</h2>
-    <ul class="about-list">
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Developing an MLE agent with Google DeepMind.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Building an ML research context engine to discover high-impact research directions.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Building agentic developer tooling to streamline ML and research workflows.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Publishing <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">AI for Software Engineers</a>.</span>
-        </span>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="about-section">
-    <h2>What I've Done</h2>
-    <ul class="about-list">
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Created developer tools to improve the bulk inference user experience for Gemini in Ads.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Built analysis tooling to understand the Google Ads ML platform user experience and improve ML developer velocity.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Created <a href="https://learn.aiforswes.com" target="_blank" rel="noopener noreferrer">a foundational guide to AI</a> for Software Engineers.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Built an asset management service for Microsoft Azure ML pipelines to enable compute and ML asset sharing across users.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Developed open-source hardware monitoring systems in Rust for Microsoft Azure cloud infrastructure security.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Applied convolutional neural networks to MRI to reduce the data necessary for automated image segmentation.</span>
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Used sodium MRI to measure muscle function.</span>
-        </span>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="about-section">
-    <h2>Core Values</h2>
-    <ul class="about-list">
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Open is better.</span>
-          In life, optionality is an awesome thing to have on your side. In tech, we don't need closed standards where open standards exist.
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Software and technology are user problems.</span>
-          Software designed around the user experience succeeds. Anything else is an uphill battle. This is even more important when building machine learning systems.
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">The future of AI requires incredible engineers.</span>
-          The impact of AI relies on how well we can apply it. Additionally, we don't truly understand that which we can't build with.
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">You can just do things, but don't do too much.</span>
-          It's better to take a step back and ensure you're headed in the right direction.
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Always be yourself.</span>
-          In work, life, and relationships, everything tends to work out better when you do. Also, everything's more fun with a bit of whimsy.
-        </span>
-      </li>
-      <li class="about-item">
-        <span class="about-bullet">&bull;</span>
-        <span>
-          <span style="color: var(--text-primary);">Ask for help.</span>
-          The best way to get better at something is to learn from others. Most people will be willing to help.
-        </span>
-      </li>
-    </ul>
+  <main id="main-content">
+    <section class="hero-scene" aria-labelledby="page-title">
+  <img class="hero-art" src="static/orbital-landscape.webp" alt="A lone explorer stands in a wireframe landscape beneath a monumental cel-shaded planet." width="1670" height="941" fetchpriority="high">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="shell hero-inner">
+    <div class="hero-copy">
+      <h1 id="page-title">Hi, I’m Logan <img class="wave" src="static/cel-shaded-space-wave-v2.webp" alt="" aria-hidden="true" width="115" height="96"></h1>
+      <p>I am an ML infrastructure engineer at Google focused on improving the ML user experience and increasing research velocity. I work to accelerate high-impact research applications and build intuitive AI.</p>
+      <p>You can find me on <a class="inline-link" href="https://x.com/loganthorneloe" target="_blank" rel="noopener noreferrer">X</a>, <a class="inline-link" href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>, and <a class="inline-link" href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Substack</a>, or chat by shooting me an <a class="inline-link" href="mailto:logan@thorneloe.ai">email</a>.</p>
+    </div>
   </div>
 </section>
+
+<div class="shell page-content">
+  <section class="editorial-section" aria-labelledby="work-heading">
+    <h2 id="work-heading">My Current Work</h2>
+    <ul class="focus-list">
+      <li><span>01</span><p>Developing an MLE agent with Google DeepMind.</p></li>
+      <li><span>02</span><p>Building an ML research context engine to discover high-impact research directions.</p></li>
+      <li><span>03</span><p>Building developer tooling to streamline ML and research workflows.</p></li>
+    </ul>
+  </section>
+</div>
+
+<section class="newsletter-feature" aria-labelledby="newsletter-heading">
+  <div class="newsletter-feature-visual">
+    <img class="newsletter-feature-art" src="static/ai-for-software-engineers-v4.webp" alt="A cel-shaded red accelerator with three oversized cooling fans sits in the foreground of a receding wireframe compute landscape." width="2560" height="1440" loading="lazy">
+    <div class="newsletter-feature-overlay" aria-hidden="true"></div>
+    <div class="shell newsletter-feature-content">
+      <div class="newsletter-feature-copy">
+        <p class="newsletter-eyebrow">Publication</p>
+        <div class="newsletter-heading-lockup">
+          <span class="newsletter-duck"><img src="static/dark_model_filled.svg" alt="" width="64" height="64"></span>
+          <h2 id="newsletter-heading">AI for Software Engineers</h2>
+        </div>
+        <p>The most important engineering concepts in AI, distilled to what you need to know. Read by 13,000+ developers.</p>
+        <a class="newsletter-cta" href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Read AI for Software Engineers <span aria-hidden="true">&#8599;</span></a>
+      </div>
+    </div>
+  </div>
+
+  <section class="shell newsletter-articles" aria-labelledby="articles-heading">
+    <h3 class="newsletter-eyebrow newsletter-articles-heading" id="articles-heading">Articles</h3>
+    <a class="newsletter-article" href="https://www.aiforswes.com/p/you-dont-need-to-spend-100mo-on-claude" target="_blank" rel="noopener noreferrer">
+        <img src="https://substackcdn.com/image/fetch/$s_!NA8U!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F48e42e69-242b-409d-9b0a-b1af36ead2a9_1280x720.png" alt="" loading="lazy">
+        <div>
+          <h3>[Revised] You Don’t Need to Spend $100/mo on Claude Code: Your Guide to Local Coding Models</h3>
+          <span>Read article <b aria-hidden="true">&#8599;</b></span>
+        </div>
+      </a>
+      <a class="newsletter-article" href="https://www.aiforswes.com/p/machine-learning-infra" target="_blank" rel="noopener noreferrer">
+        <img src="https://substackcdn.com/image/fetch/$s_!NIlS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd7131796-8771-4612-a86a-4797b3c462e7_1280x720.png" alt="" loading="lazy">
+        <div>
+          <h3>Machine Learning Infrastructure: The Bridge Between Software Engineering and AI</h3>
+          <span>Read article <b aria-hidden="true">&#8599;</b></span>
+        </div>
+      </a>
+      <a class="newsletter-article" href="https://www.aiforswes.com/p/devin-has-exposed-software-engineers" target="_blank" rel="noopener noreferrer">
+        <img src="https://substackcdn.com/image/fetch/$s_!2O9S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F787505d0-f544-4ba2-a1b3-61b26133324a_698x462.jpeg" alt="" loading="lazy">
+        <div>
+          <h3>Devin Has Exposed a Major Issue with Software Engineering</h3>
+          <span>Read article <b aria-hidden="true">&#8599;</b></span>
+        </div>
+      </a>
+  </section>
+</section>
+
+<div class="shell page-content">
+
+  <section class="editorial-section" aria-labelledby="done-heading">
+    <h2 id="done-heading">What I've Done</h2>
+    <ul class="line-list">
+      <li><span>01</span><p>Created developer tools to improve the bulk inference user experience for Gemini in Ads.</p></li>
+      <li><span>02</span><p>Built analysis tooling to understand the Google Ads ML platform user experience and improve ML developer velocity.</p></li>
+      <li><span>03</span><p>Created <a class="inline-link" href="https://learn.aiforswes.com" target="_blank" rel="noopener noreferrer">a foundational guide to AI</a> for Software Engineers.</p></li>
+      <li><span>04</span><p>Built an asset management service for Microsoft Azure ML pipelines to enable compute and ML asset sharing across users.</p></li>
+      <li><span>05</span><p>Developed open-source hardware monitoring systems in Rust for Microsoft Azure cloud infrastructure security.</p></li>
+      <li><span>06</span><p>Applied convolutional neural networks to MRI to reduce the data necessary for automated image segmentation.</p></li>
+      <li><span>07</span><p>Used sodium MRI to measure muscle function.</p></li>
+    </ul>
+  </section>
+
+  <section class="editorial-section" aria-labelledby="values-heading">
+    <h2 id="values-heading">Core Values</h2>
+    <ul class="values-list">
+      <li><span>01</span><p><strong>Software and technology are user problems.</strong> Software designed around the user experience succeeds. Anything else is an uphill battle. This is even more important when building machine learning systems.</p></li>
+      <li><span>02</span><p><strong>The future of AI requires incredible engineers.</strong> The impact of AI relies on how well we can apply it. Additionally, we don't truly understand that which we can't build with.</p></li>
+      <li><span>03</span><p><strong>You can just do things, but don't do too much.</strong> It's better to take a step back and ensure you're headed in the right direction.</p></li>
+      <li><span>04</span><p><strong>Always be yourself.</strong> In work, life, and relationships, everything tends to work out better when you do. Also, everything's more fun with a bit of whimsy.</p></li>
+      <li><span>05</span><p><strong>Ask for help.</strong> The best way to get better at something is to learn from others. Most people will be willing to help.</p></li>
+    </ul>
+  </section>
+</div>
 
   </main>
 
   <footer>
-    <div class="container footer-wrapper">
+    <div class="shell footer-wrapper">
       <p>&copy; 2026 Logan Thorneloe.</p>
       <div class="footer-socials">
         <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -186,6 +129,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

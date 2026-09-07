@@ -1225,5 +1225,28 @@
       "html_url": "https://github.com/loganthorneloe/swsh-pokemon-breeder",
       "image_url": "https://opengraph.githubassets.com/1/loganthorneloe/swsh-pokemon-breeder"
     }
-  }
+  },
+  "top_posts": [
+    {
+      "title": "[Revised] You Don\u2019t Need to Spend $100/mo on Claude Code: Your Guide to Local Coding Models",
+      "link": "https://www.aiforswes.com/p/you-dont-need-to-spend-100mo-on-claude",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!NA8U!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F48e42e69-242b-409d-9b0a-b1af36ead2a9_1280x720.png",
+      "hidden": false,
+      "restacked_post_id": null
+    },
+    {
+      "title": "Machine Learning Infrastructure: The Bridge Between Software Engineering and AI",
+      "link": "https://www.aiforswes.com/p/machine-learning-infra",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!NIlS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd7131796-8771-4612-a86a-4797b3c462e7_1280x720.png",
+      "hidden": false,
+      "restacked_post_id": null
+    },
+    {
+      "title": "Devin Has Exposed a Major Issue with Software Engineering",
+      "link": "https://www.aiforswes.com/p/devin-has-exposed-software-engineers",
+      "image_url": "https://substackcdn.com/image/fetch/$s_!2O9S!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F787505d0-f544-4ba2-a1b3-61b26133324a_698x462.jpeg",
+      "hidden": false,
+      "restacked_post_id": null
+    }
+  ]
 }

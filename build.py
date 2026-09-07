@@ -10,6 +10,7 @@ import urllib.request
 import urllib.parse
 import datetime
 import re
+import html
 
 SUBSTACK_JSON_BASE_URL = "https://aiforswes.com/api/v1/archive?limit=20"
 SUBSTACK_TOP_JSON_BASE_URL = "https://aiforswes.com/api/v1/archive?sort=top&limit=20"
@@ -26,6 +27,7 @@ PROJECT_NAME_OVERRIDES = {
 
 FEATURED_POST_COUNT = 5
 ARTICLE_LIST_COUNT = 5
+TOP_ARTICLE_COUNT = 3
 
 # Manual projects (incorporating the newsletter) with visual assets
 MANUAL_PROJECTS = [
@@ -45,7 +47,7 @@ def load_cache():
                 return json.load(f)
         except Exception as e:
             print(f"Warning: Failed to load cache: {e}")
-    return {"posts": [], "projects": {}}
+    return {"posts": [], "projects": {}, "top_posts": []}
 
 def save_cache(cache_data):
     try:
@@ -124,6 +126,52 @@ def fetch_substack_posts(base_url):
             break
             
     return posts if posts else None
+
+def fetch_top_articles():
+    print("Fetching top AI for Software Engineers articles...")
+    req = urllib.request.Request(
+        SUBSTACK_TOP_JSON_BASE_URL,
+        headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as response:
+            data = json.loads(response.read().decode())
+
+        articles = []
+        for item in data:
+            article = {
+                "title": item.get("title", "").strip(),
+                "link": item.get("canonical_url", "").strip(),
+                "image_url": item.get("cover_image", "").strip(),
+                "hidden": item.get("hidden", False),
+                "restacked_post_id": item.get("restacked_post_id"),
+            }
+            if article["title"] and article["image_url"] and is_article_candidate(article):
+                articles.append(article)
+            if len(articles) == TOP_ARTICLE_COUNT:
+                break
+
+        return articles if len(articles) == TOP_ARTICLE_COUNT else None
+    except Exception as e:
+        print(f"Warning: Failed to fetch top articles: {e}")
+        return None
+
+def render_top_article_cards(posts):
+    cards = []
+    for post in posts[:TOP_ARTICLE_COUNT]:
+        title = html.escape(post.get("title", ""))
+        link = html.escape(post.get("link", ""), quote=True)
+        image_url = html.escape(post.get("image_url", ""), quote=True)
+        if not title or not link or not image_url:
+            continue
+        cards.append(f"""<a class="newsletter-article" href="{link}" target="_blank" rel="noopener noreferrer">
+        <img src="{image_url}" alt="" loading="lazy">
+        <div>
+          <h3>{title}</h3>
+          <span>Read article <b aria-hidden="true">&#8599;</b></span>
+        </div>
+      </a>""")
+    return "\n      ".join(cards)
 
 def fetch_github_project(repo):
     print(f"Fetching GitHub repo stats for {repo}...")
@@ -257,9 +305,21 @@ def build_page(page_name, title, description, content_html):
     print(f"Successfully generated {output_filename}")
 
 def main():
+    cache = load_cache()
+    top_articles = fetch_top_articles()
+    if top_articles:
+        cache["top_posts"] = top_articles
+        save_cache(cache)
+    else:
+        top_articles = cache.get("top_posts", [])
+        if len(top_articles) < TOP_ARTICLE_COUNT:
+            candidates = [post for post in cache.get("posts", []) if post.get("image_url") and is_article_candidate(post)]
+            top_articles = sorted(candidates, key=post_performance_key, reverse=True)[:TOP_ARTICLE_COUNT]
+
     # 1. Render homepage (index.html)
     with open("templates/about.html", "r") as f:
         about_template = f.read()
+    about_template = about_template.replace("{{ top_articles }}", render_top_article_cards(top_articles))
     
     build_page(
         page_name="about",

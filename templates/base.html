@@ -3,44 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }} | Logan Thorneloe</title>
+  <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
-  <!-- Sora Font from Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Stylesheet -->
+  <meta name="theme-color" content="#101527">
   <link rel="stylesheet" href="static/styles.css">
   <link rel="icon" type="image/svg+xml" href="static/favicon.svg">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <header>
-    <div class="container nav-wrapper">
-      <a href="index.html" class="logo-link" id="logo-link">
-        <img src="static/small_logo_transparent.svg" alt="Logan Thorneloe Logo" class="wordmark-logo" style="width: 32px; height: 32px; vertical-align: middle;">
+  <header class="site-header">
+    <div class="shell nav-wrapper">
+      <a href="index.html" class="logo-link" aria-label="Logan Thorneloe — home">
         <span>Logan Thorneloe</span>
       </a>
-      <!-- Checkbox Hack for Pure CSS Hamburger Menu -->
-      <input type="checkbox" id="menu-toggle" style="display: none;">
-      <label for="menu-toggle" class="menu-button-container">
-        <div class="menu-button"></div>
-      </label>
-      
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer" class="nav-articles">Articles</a></li>
-        </ul>
+      <nav aria-label="Primary navigation">
+        <a href="https://aiforswes.com" target="_blank" rel="noopener noreferrer">Articles</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <main id="main-content">
     {{ content }}
   </main>
 
   <footer>
-    <div class="container footer-wrapper">
+    <div class="shell footer-wrapper">
       <p>&copy; 2026 Logan Thorneloe.</p>
       <div class="footer-socials">
         <a href="https://github.com/loganthorneloe" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -49,6 +37,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
