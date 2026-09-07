@@ -175,7 +175,7 @@ nav a:hover::after,
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(9, 13, 25, 0.88) 0%, rgba(9, 13, 25, 0.58) 40%, rgba(9, 13, 25, 0.08) 70%),
+    linear-gradient(270deg, rgba(9, 13, 25, 0.9) 0%, rgba(9, 13, 25, 0.6) 42%, rgba(9, 13, 25, 0.06) 74%),
     linear-gradient(0deg, rgba(9, 13, 25, 0.82) 0%, transparent 48%);
 }
 
@@ -185,6 +185,7 @@ nav a:hover::after,
   display: flex;
   min-height: min(820px, 94svh);
   align-items: end;
+  justify-content: flex-end;
   padding-bottom: clamp(62px, 9vw, 100px);
 }
 
@@ -350,11 +351,10 @@ nav a:hover::after,
 
 .newsletter-feature-content {
   display: flex;
-  justify-content: flex-start;
 }
 
 .newsletter-feature-copy {
-  max-width: 520px;
+  width: 100%;
   padding: clamp(26px, 4vw, 42px);
   border: 1px solid rgba(138, 154, 172, 0.34);
   background: var(--panel);
@@ -472,8 +472,25 @@ nav a:hover::after,
 
 .line-list p,
 .values-list p { max-width: 650px; }
-.values-list p { color: var(--muted); }
-.values-list strong { color: var(--white); font-weight: 500; }
+.values-list p { color: var(--white); }
+.values-list strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.values-feature {
+  background: var(--panel);
+}
+
+.values-feature-content {
+  position: relative;
+}
+
+.values-section {
+  max-width: 700px;
+}
 
 footer {
   padding: 46px 0;
@@ -506,7 +523,7 @@ body > header:not(.site-header) .nav-wrapper { display: flex; min-height: 72px; 
 
 @media (max-width: 760px) {
   .hero-art { object-position: 64% center; }
-  .hero-overlay { background: linear-gradient(90deg, rgba(9, 13, 25, 0.88), rgba(9, 13, 25, 0.12)), linear-gradient(0deg, rgba(9, 13, 25, 0.9), transparent 62%); }
+  .hero-overlay { background: linear-gradient(270deg, rgba(9, 13, 25, 0.88), rgba(9, 13, 25, 0.12)), linear-gradient(0deg, rgba(9, 13, 25, 0.9), transparent 62%); }
 }
 
 @media (max-width: 560px) {
@@ -530,6 +547,7 @@ body > header:not(.site-header) .nav-wrapper { display: flex; min-height: 72px; 
   .hero-inner {
     min-height: 0;
     align-items: flex-start;
+    justify-content: flex-start;
     padding-top: clamp(318px, 90vw, 374px);
     padding-bottom: 48px;
   }
