@@ -590,13 +590,66 @@ body > header:not(.site-header) .nav-wrapper { display: flex; min-height: 72px; 
 
 @media (max-width: 560px) {
   .shell, .container { width: min(100% - 28px, 1040px); }
-  .hero-scene, .hero-inner { min-height: 780px; }
-  .hero-inner { padding-bottom: 42px; }
-  .hero-copy { width: 100%; padding: 24px; }
-  .hero-copy h1 { font-size: clamp(2.55rem, 12vw, 3.7rem); }
+
+  /* Give the artwork its own stage on phones. The copy only overlaps the
+     lower edge, so the illustration still reads as a scene instead of a
+     texture behind a nearly full-width panel. */
+  .hero-scene { min-height: 0; }
+  .hero-art,
+  .hero-overlay {
+    height: clamp(360px, 104vw, 430px);
+    bottom: auto;
+  }
+  .hero-art { object-position: 30% center; }
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(9, 13, 25, 0.02) 42%, rgba(16, 21, 39, 0.98) 100%),
+      linear-gradient(90deg, rgba(9, 13, 25, 0.24), transparent 58%);
+  }
+  .hero-inner {
+    min-height: 0;
+    align-items: flex-start;
+    padding-top: clamp(318px, 90vw, 374px);
+    padding-bottom: 48px;
+  }
+  .hero-copy {
+    width: 100%;
+    padding: 24px;
+    background: rgba(16, 21, 39, 0.91);
+    box-shadow: 0 -18px 46px rgba(0, 0, 0, 0.3);
+  }
+  .hero-copy h1 { font-size: clamp(2.15rem, 9.5vw, 2.55rem); }
+  .hero-copy .wave {
+    width: 1em;
+    height: 0.86em;
+    margin-left: 0.04em;
+  }
   .editorial-section { padding: 64px 18px; }
-  .newsletter-feature-content { align-items: end; padding-bottom: 28px; }
-  .newsletter-feature-copy { width: 100%; padding: 24px; }
+
+  .newsletter-feature-visual { min-height: 0; }
+  .newsletter-feature-art,
+  .newsletter-feature-overlay {
+    height: clamp(300px, 82vw, 360px);
+    bottom: auto;
+  }
+  .newsletter-feature-art { object-position: 78% center; }
+  .newsletter-feature-overlay {
+    background:
+      linear-gradient(180deg, rgba(16, 21, 39, 0.02) 44%, rgba(16, 21, 39, 0.98) 100%),
+      linear-gradient(90deg, rgba(16, 21, 39, 0.18), transparent 64%);
+  }
+  .newsletter-feature-content {
+    min-height: 0;
+    align-items: flex-start;
+    padding-top: clamp(258px, 72vw, 310px);
+    padding-bottom: 42px;
+  }
+  .newsletter-feature-copy {
+    width: 100%;
+    padding: 24px;
+    background: rgba(16, 21, 39, 0.92);
+    box-shadow: 0 -18px 46px rgba(0, 0, 0, 0.3);
+  }
   .newsletter-heading-lockup { gap: 12px; }
   .focus-list li { grid-template-columns: 38px 1fr; gap: 12px; }
   .line-list li, .values-list li { grid-template-columns: 36px 1fr; gap: 10px; }
