@@ -27,3 +27,5 @@ A normal build refreshes the public newsletter RSS feed, caches five posts in `d
 The existing GitHub Actions workflow runs on main pushes and daily at midnight UTC, rebuilds the pages, and commits changed generated pages, article metadata, and the cover image. Publishing still uses the repository's existing hosting setup.
 
 The public CV remains in [CV.md](CV.md).
+
+Cloudflare DNS, redirects, and Worker ownership are documented in [domain setup](DOMAIN_SETUP.md).
