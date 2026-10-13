@@ -4,7 +4,7 @@ Personal website for https://thorneloe.ai.
 
 The homepage contains projects and the five latest AI for Software Engineers articles. AI Jobs and Stockboy use `/jobs/` and `/stockboy/` on `thorneloe.ai`. `/roadmap` redirects to the existing learning site; the newsletter remains at `aiforswes.com`. Unpublished projects are not clickable. Only the newest article has a cover image.
 
-`/about/` contains Now, experience, and principles. The shared navigation links directly to the About page. The legacy `projects.html` and `articles.html` URLs redirect to their homepage sections. `CNAME` sets the canonical personal domain to `thorneloe.ai`. Cloudflare permanently redirects `loganthorneloe.com` and the former `logan.tools` links to their matching new URLs. The existing `logan-tools/` directory is separate from this personal-site build.
+`/about/` contains Now, experience, and principles. The shared navigation links directly to the About page. The legacy `projects.html` and `articles.html` URLs redirect to their homepage sections. `CNAME` sets the canonical personal domain to `thorneloe.ai`. Cloudflare permanently redirects `loganthorneloe.com` to its matching new URLs. The former tools domain is retired; the `logan-tools/` directory is an inactive archive.
 
 ## Edit and preview
 
