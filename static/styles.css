@@ -146,7 +146,7 @@ footer{margin-top:72px;border-top:1px solid var(--line);padding:30px 0 40px;disp
 
 /* Text links use red; linked tiles use a surface change. */
 a{transition:color 150ms ease,background-color 150ms ease,text-decoration-color 150ms ease}
-a:not(.card):not(.article-link):is(:hover,:focus-visible),.hero-secondary a:is(:hover,:focus-visible),.about-item a:is(:hover,:focus-visible){color:var(--red);text-decoration-color:currentColor}
+a:not(.wordmark):not(.card):not(.article-link):is(:hover,:focus-visible),.hero-secondary a:is(:hover,:focus-visible),.about-item a:is(:hover,:focus-visible){color:var(--red);text-decoration-color:currentColor}
 a.card:is(:hover,:focus-visible),.article-link:is(:hover,:focus-visible){color:var(--ink);background:var(--surface)}
 .hero-secondary a,.about-item a,.hero-links a{font-weight:600}
 .hero-secondary a,.about-item a{text-decoration-color:currentColor;text-decoration-thickness:1px;text-underline-offset:3px}
@@ -160,3 +160,7 @@ nav .link-arrow{margin-left:.2em}
 /* Featured surface follows Stockboy Health and AI Jobs Open roles. */
 .grid>a.card[data-tool=newsletter]{background:var(--featured-bg)}
 .grid>a.card[data-tool=newsletter]:is(:hover,:focus-visible){background:var(--featured-hover)}
+
+/* Home wordmarks retain their brand colors in every interaction state. */
+a.wordmark:is(:hover,:focus-visible,:active){color:var(--ink);background:transparent;text-decoration:none}
+a.wordmark:focus-visible{outline-color:var(--ink)}
