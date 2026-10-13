@@ -14,7 +14,7 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent
 FEED_URL = "https://www.aiforswes.com/feed"
-SITE_URL = "https://loganthorneloe.com"
+SITE_URL = "https://thorneloe.ai"
 
 
 def fetch(url):
