@@ -1,24 +1,29 @@
 # loganthorneloe.github.io
 
-Logan Thorneloe's personal website and portfolio.
+Personal website for https://loganthorneloe.com.
 
-## Features
+The homepage contains projects and the five latest AI for Software Engineers articles. AI Jobs and Stockboy link to their apps on `logan.tools`; the newsletter and roadmap link to their own sites. Unpublished projects are not clickable. Only the newest article has a cover image.
 
-- **About Me**: Professional summary and links.
-- **Public CV**: A Markdown CV is available in [CV.md](CV.md).
-- **Projects**: Dynamically updated showcase of open-source projects using GitHub API stats.
-- **Articles**: Dynamically pulled articles from the [AI for Software Engineers](https://aiforswes.com) Substack newsletter.
+`/about/` contains Now, experience, and principles. The shared navigation links directly to the About page. The legacy `projects.html` and `articles.html` URLs redirect to their homepage sections. `CNAME` retains the personal domain. The existing `logan-tools/` directory is separate from this personal-site build.
 
-## How it Works
+## Edit and preview
 
-The site is built as a static site generator utilizing Python:
-- **Build Script**: `build.py` handles fetching posts from the Substack JSON API, fetching repository details from the GitHub API, caching the results, and rendering the final HTML pages from templates.
-- **GitHub Actions**: A daily cron job (`build-deploy.yml`) runs the builder at midnight UTC to keep the content updated, commits the changes, and pushes them back to the repository.
+Edit `templates/home.html`, `templates/about.html`, and the shared `templates/base.html`. Styling, scripts, fonts, and images live in `static/`. HTML pages are generated; edit templates rather than generated files.
 
-## Local Development
-
-To run the build script locally:
-
-```bash
-python build.py
+```sh
+python3 build.py --offline
+python3 -m http.server 8768 --bind 127.0.0.1
 ```
+
+Open http://127.0.0.1:8768/. The offline build uses the committed article cache and requires no network or additional Python packages.
+
+```sh
+python3 build.py
+python3 -m unittest discover -s tests
+```
+
+A normal build refreshes the public newsletter RSS feed, caches five posts in `data/latest-articles.json`, and saves the first cover to `static/article-cover.jpg`. If the feed is unavailable, it retains cached articles. Styles and scripts use content hashes to invalidate browser caches. No GitHub API is used.
+
+The existing GitHub Actions workflow runs on main pushes and daily at midnight UTC, rebuilds the pages, and commits changed generated pages, article metadata, and the cover image. Publishing still uses the repository's existing hosting setup.
+
+The public CV remains in [CV.md](CV.md).

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Stockboy</title>
+  <g stroke="#f3f5f8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="32" r="24"/>
+    <path d="M8.5 27C22 29 35 23 41 15C42 22 48 27 55.5 27"/>
+    <path stroke="#ed7777" d="M21 39C21 34 29 34 29 39M35 39C35 34 43 34 43 39"/>
+  </g>
+</svg>
