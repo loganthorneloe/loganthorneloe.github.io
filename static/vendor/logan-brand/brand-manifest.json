@@ -1,7 +1,7 @@
 {
   "name": "logan-brand",
   "source": "logan-style",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "sha256": {
     "brand.css": "63c8a3930bc07b3b6533ce318bdbc74f860fb7fc6e77de8435c90d2b1b4301f5",
     "fonts.css": "884d39bd2204efe8f580a30e149079ca277bb69638e4b1d1ce80408dc8fc46f5",
@@ -12,6 +12,6 @@
     "fonts/Inter-Medium.ttf": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
     "fonts/Sora-OFL.txt": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9",
     "fonts/Inter-OFL.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
-    "tokens.css": "cc3e97be1dabe7f7cf9c281c60268d20c5eecf02d795444fe47897f58bfd1e16"
+    "tokens.css": "0e7a149e51216773a6c6a49c85f35850a9144a6f00e769c3093dc0bbf4cdd9fc"
   }
 }

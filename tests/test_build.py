@@ -47,7 +47,7 @@ class SiteBuildTests(unittest.TestCase):
             for folder in ['templates', 'data', 'static']:
                 shutil.copytree(build.ROOT / folder, root / folder)
             with patch.object(build, 'fetch', side_effect=AssertionError('Network access')):
-                build.build(root, offline=True)
+                build.build(root, offline=True, prebuilt_brand=True)
             home = (root / 'index.html').read_text()
             now = (root / 'now/index.html').read_text()
             about = (root / 'about/index.html').read_text()

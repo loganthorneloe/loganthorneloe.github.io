@@ -3,6 +3,10 @@
 Canonical site: https://thorneloe.ai. GitHub Pages publishes this repository;
 `CNAME`, canonical metadata, robots.txt, and sitemap.xml use that domain.
 
+Pages Source must be **GitHub Actions**. The prepared workflow publishes an allowlisted artifact from
+`package_site.py` and uses committed brand assets; it does not fetch the private
+`logan-style` submodule. Branch-based Pages builds cannot fetch that dependency.
+
 ## Cloudflare DNS
 
 - `thorneloe.ai`: proxied apex CNAME to `loganthorneloe.github.io` (flattened by Cloudflare).

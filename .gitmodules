@@ -1,0 +1,4 @@
+[submodule "vendor/logan-style"]
+	path = vendor/logan-style
+	url = git@github.com:loganthorneloe/logan-style.git
+	branch = main

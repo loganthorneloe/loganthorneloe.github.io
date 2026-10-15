@@ -10,6 +10,10 @@ on:
   workflow_dispatch:
     # Allow manual triggering from the Actions tab
 
+concurrency:
+  group: personal-site-pages
+  cancel-in-progress: false
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -21,6 +25,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -31,7 +36,9 @@ jobs:
         run: python -m unittest discover -s tests
 
       - name: Run static site builder
-        run: python build.py
+        # Newsletter refreshes use the reviewed, committed brand build.
+        # The private submodule is pulled locally when explicitly updating style.
+        run: python build.py --prebuilt-brand
 
       - name: Commit and push changes
         run: |
@@ -45,3 +52,25 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Package public site files
+        run: python package_site.py .pages
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .pages
+
+  deploy:
+    needs: build-and-deploy
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy built site
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -2,6 +2,7 @@
 """Build the personal homepage and Now page using only Python's standard library."""
 
 import argparse
+from brand import build_brand
 import datetime as dt
 import hashlib
 import html
@@ -97,7 +98,9 @@ def render_articles(posts):
     return "\n".join(cards)
 
 
-def build(root=ROOT, offline=False):
+def build(root=ROOT, offline=False, prebuilt_brand=False):
+    if not prebuilt_brand:
+        build_brand(root)
     posts = load_posts(root, offline)
     base = (root / "templates/base.html").read_text()
     versions = {name: hashlib.sha256((root / "static" / filename).read_bytes()).hexdigest()[:12]
@@ -141,4 +144,7 @@ def build(root=ROOT, offline=False):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--offline", action="store_true", help="Build from the committed article cache")
-    build(offline=parser.parse_args().offline)
+    parser.add_argument("--prebuilt-brand", action="store_true",
+                        help="Use committed brand assets for newsletter-only CI builds")
+    args = parser.parse_args()
+    build(offline=args.offline, prebuilt_brand=args.prebuilt_brand)
