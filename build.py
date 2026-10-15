@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the personal homepage and About page using only Python's standard library."""
+"""Build the personal homepage and Now page using only Python's standard library."""
 
 import argparse
 import datetime as dt
@@ -108,7 +108,7 @@ def build(root=ROOT, offline=False):
     pages = [
         ("home.html", "index.html", "Logan Thorneloe — Work, writing & projects", "/",
          "I build AI systems, write AI for Software Engineers, and build other projects on the side."),
-        ("about.html", "about/index.html", "Now & About — Logan Thorneloe", "/about",
+        ("now.html", "now/index.html", "Now — Logan Thorneloe", "/now/",
          "What Logan Thorneloe is working on, his experience, and what he believes."),
     ]
     for template, destination, title, route, description in pages:
@@ -124,14 +124,17 @@ def build(root=ROOT, offline=False):
         target.write_text(page)
         print(f"Built {destination}")
     # Preserve old inbound links without retaining the superseded frontends.
-    for old, anchor in [("projects.html", "projects"), ("articles.html", "writing")]:
-        target = f"/#{anchor}"
-        (root / old).write_text(
+    for old, target, label in [("projects.html", "/#projects", "projects"),
+                               ("articles.html", "/#writing", "writing"),
+                               ("about/index.html", "/now/", "Now")]:
+        destination = root / old
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(
             '<!doctype html><html lang="en"><head><meta charset="utf-8">'
             f'<meta http-equiv="refresh" content="0;url={target}">'
-            f'<link rel="canonical" href="{SITE_URL}/{"#" + anchor}">'
-            f'<title>Logan Thorneloe — {anchor.title()}</title></head>'
-            f'<body><a href="{target}">Continue to {anchor}</a></body></html>\n'
+            f'<link rel="canonical" href="{SITE_URL}{target}">'
+            f'<title>Logan Thorneloe — {label.title()}</title></head>'
+            f'<body><a href="{target}">Continue to {label}</a></body></html>\n'
         )
 
 

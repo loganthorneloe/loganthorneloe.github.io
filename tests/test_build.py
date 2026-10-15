@@ -49,13 +49,17 @@ class SiteBuildTests(unittest.TestCase):
             with patch.object(build, 'fetch', side_effect=AssertionError('Network access')):
                 build.build(root, offline=True)
             home = (root / 'index.html').read_text()
+            now = (root / 'now/index.html').read_text()
             about = (root / 'about/index.html').read_text()
-            self.assertNotIn('{{', home + about)
-            self.assertIn('https://thorneloe.ai/about', about)
+            self.assertNotIn('{{', home + now)
+            self.assertIn('https://thorneloe.ai/now/', now)
+            self.assertIn('content="0;url=/now/"', about)
+            for page in [home, now]:
+                self.assertIn('href="/now/">Now</a>', page)
             self.assertIn('href="https://thorneloe.ai/jobs/"', home)
             self.assertIn('href="https://thorneloe.ai/stockboy/"', home)
             self.assertIn('<article class="card lb-tile" data-tool="ml">', home)
-            self.assertIn('href="/#projects"', about)
+            self.assertIn('href="/#projects"', now)
             self.assertEqual(home.count('class="article-image"'), 1)
             self.assertEqual(home.count('class="article-link lb-tile"'), 5)
 
