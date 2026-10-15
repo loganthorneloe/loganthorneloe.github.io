@@ -89,7 +89,7 @@ def render_articles(posts):
             image = (f'<img class="article-image" src="{html.escape(source, quote=True)}" '
                      'alt="" loading="lazy" decoding="async" width="1672" height="941">')
         cards.append(
-            f'<li><a class="article-link" href="{html.escape(post["link"], quote=True)}">'
+            f'<li><a class="article-link lb-tile" href="{html.escape(post["link"], quote=True)}">'
             f'{image}<div class="article-copy"><time datetime="{date.isoformat()}">'
             f'{date:%b} {date.day}, {date.year}</time><h3>{html.escape(post["title"])}</h3>'
             '</div></a></li>'
@@ -101,7 +101,10 @@ def build(root=ROOT, offline=False):
     posts = load_posts(root, offline)
     base = (root / "templates/base.html").read_text()
     versions = {name: hashlib.sha256((root / "static" / filename).read_bytes()).hexdigest()[:12]
-                for name, filename in [("styles_version", "styles.css"), ("script_version", "app.js")]}
+                for name, filename in [("styles_version", "styles.css"), ("script_version", "app.js"),
+                                       ("tokens_version", "vendor/logan-brand/tokens.css"),
+                                       ("fonts_version", "vendor/logan-brand/fonts.css"),
+                                       ("brand_version", "vendor/logan-brand/brand.css")]}
     pages = [
         ("home.html", "index.html", "Logan Thorneloe — Work, writing & projects", "/",
          "I build AI systems, write AI for Software Engineers, and build other projects on the side."),

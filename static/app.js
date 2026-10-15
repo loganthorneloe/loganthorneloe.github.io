@@ -7,7 +7,7 @@ function setTheme(theme, save = false) {
   button.setAttribute('aria-label', label);
   button.setAttribute('aria-pressed', String(dark));
   button.title = label;
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#101527' : '#f5f4f0';
+  document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue('--lb-canvas').trim();
   if (save) try { localStorage.setItem('logan-theme', root.dataset.theme); } catch {}
 }
 setTheme(root.dataset.theme);
@@ -16,6 +16,7 @@ button.addEventListener('click', () => setTheme(root.dataset.theme === 'dark' ? 
 const header = document.querySelector('.header');
 const menuButton = document.querySelector('.menu-toggle');
 const primaryNav = document.querySelector('#primary-nav');
+header.setAttribute('data-lb-enhanced', '');
 function setMenu(open) {
   header.toggleAttribute('data-menu-open', open);
   menuButton.setAttribute('aria-expanded', String(open));
@@ -35,4 +36,7 @@ document.addEventListener('keydown', (event) => {
 document.addEventListener('click', (event) => {
   if (!header.contains(event.target)) setMenu(false);
 });
-window.matchMedia('(max-width:650px)').addEventListener('change', () => setMenu(false));
+window.matchMedia('(max-width:650px)').addEventListener('change', event => {
+  if (event.matches && primaryNav.contains(document.activeElement)) menuButton.focus();
+  setMenu(false);
+});

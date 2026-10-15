@@ -1,0 +1,17 @@
+{
+  "name": "logan-brand",
+  "source": "logan-style",
+  "version": "1.0.4",
+  "sha256": {
+    "brand.css": "63c8a3930bc07b3b6533ce318bdbc74f860fb7fc6e77de8435c90d2b1b4301f5",
+    "fonts.css": "884d39bd2204efe8f580a30e149079ca277bb69638e4b1d1ce80408dc8fc46f5",
+    "controls.js": "c257d09844b79a74bcf17d25a48b992a94683c23ab232e3675e5317b94aba784",
+    "patterns.html": "b0ffa689f33c3513865d516a63e1a44d709d509c16a00340fdc0ef7bdc0e84d6",
+    "fonts/Sora-SemiBold.ttf": "4e79171a1720d04b72eb68bd7604f85888c31c05bb6b432147d4524e9439af30",
+    "fonts/Inter-Regular.ttf": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
+    "fonts/Inter-Medium.ttf": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
+    "fonts/Sora-OFL.txt": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9",
+    "fonts/Inter-OFL.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+    "tokens.css": "cc3e97be1dabe7f7cf9c281c60268d20c5eecf02d795444fe47897f58bfd1e16"
+  }
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" class="lb-root" data-theme="light">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Logan Thorneloe — Work, writing &amp; projects</title>
@@ -7,38 +7,41 @@
 <meta name="description" content="I build AI systems, write AI for Software Engineers, and build other projects on the side.">
 <meta name="theme-color" content="#f5f4f0">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/static/styles.css?v=77d4e064f6ef">
+<link rel="stylesheet" href="/static/vendor/logan-brand/tokens.css?v=cc3e97be1dab">
+<link rel="stylesheet" href="/static/vendor/logan-brand/fonts.css?v=884d39bd2204">
+<link rel="stylesheet" href="/static/vendor/logan-brand/brand.css?v=63c8a3930bc0">
+<link rel="stylesheet" href="/static/styles.css?v=1b16596e0223">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('logan-theme')||'light'}catch{}</script>
-<script src="/static/app.js?v=74e6648550bf" defer></script>
+<script src="/static/app.js?v=ad4cab07b7a8" defer></script>
 </head>
 <body id="top">
-<a class="skip" href="#main">Skip to content</a>
-<div class="shell">
-<header class="header">
-<a href="/#top" class="wordmark">Logan Thorneloe<span>.</span></a>
-<div class="nav-controls"><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button><nav id="primary-nav" aria-label="Primary navigation"><a href="/#projects">Projects</a><a href="/#writing">Writing</a><a href="/about/">About</a></nav>
-<button class="theme" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
-<svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.7 8.7 0 0 1 8.5 3.8 8.8 8.8 0 1 0 20.2 15.5Z"/></svg>
-<svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-</button></div>
+<a class="lb-skip" href="#main">Skip to content</a>
+<div class="lb-shell">
+<header class="header lb-header">
+<a href="/#top" class="wordmark lb-wordmark">Logan Thorneloe<span class="lb-period">.</span></a>
+<button class="menu-toggle lb-menu-toggle lb-icon-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button><nav class="lb-nav" id="primary-nav" aria-label="Primary navigation"><a class="lb-nav-link" href="/#projects">Projects</a><a class="lb-nav-link" href="/#writing">Writing</a><a class="lb-nav-link" href="/about/">About</a></nav>
+<button class="theme lb-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+<svg class="lb-theme-icon lb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.7 8.7 0 0 1 8.5 3.8 8.8 8.8 0 1 0 20.2 15.5Z"/></svg>
+<svg class="lb-theme-icon lb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+</button>
 </header>
 <main id="main">
 <section class="hero" aria-labelledby="hello">
 <div class="hero-copy">
 <h1 id="hello">Hi, I’m Logan<img class="wave" src="/static/cel-shaded-space-wave-v2.webp" alt="" width="64" height="54"></h1>
 <p class="lead">I build autonomous research agents at Google and improve the developer experience of Google’s ads machine learning platform.</p>
-<p class="hero-secondary">I also write <a href="https://aiforswes.com">AI for Software Engineers <span class="link-arrow" aria-hidden="true">↗</span></a> and build other projects on the side. When I’m not learning about AI or tinkering, I’m spending time with my five kids.</p>
-<div class="hero-links"><a class="primary-link" href="/#projects">Explore the projects <span class="link-arrow" aria-hidden="true">↓</span></a><a href="mailto:logan@thorneloe.ai">Get in touch <span class="link-arrow" aria-hidden="true">↗</span></a></div>
+<p class="hero-secondary">I also write <a class="lb-link" href="https://aiforswes.com">AI for Software Engineers <span class="lb-arrow" aria-hidden="true">↗</span></a> and build other projects on the side. When I’m not learning about AI or tinkering, I’m spending time with my five kids.</p>
+<div class="hero-links"><a class="lb-action" href="/#projects">Explore the projects</a><a class="lb-action" href="mailto:logan@thorneloe.ai">Get in touch <span class="lb-arrow" aria-hidden="true">↗</span></a></div>
 </div>
 
 </section>
 <section class="projects-section" id="projects" aria-labelledby="projects-title">
-<div class="section-heading"><div><h2 id="projects-title">Projects<span class="heading-period">.</span></h2></div></div>
-<div class="grid"><a class="card" href="https://www.aiforswes.com/" data-tool="newsletter">
+<div class="section-heading"><div><h2 id="projects-title">Projects<span class="lb-period">.</span></h2></div></div>
+<div class="grid lb-grid"><a class="card lb-tile lb-tile--featured" href="https://www.aiforswes.com/" data-tool="newsletter">
 <div class="cardTop"><span class="icon"><img class="newsletterLogo newsletterLogoLight" src="/static/newsletter-logo-light.svg" alt="" width="32" height="32"><img class="newsletterLogo newsletterLogoDark" src="/static/newsletter-logo-dark.svg" alt="" width="32" height="32"></span></div>
 <div class="cardCopy"><h3>AI for Software Engineers</h3><p>AI's hardest engineering problems, explained.</p></div>
 
-</a><a class="card" href="https://thorneloe.ai/jobs/" data-tool="aijobs">
+</a><a class="card lb-tile" href="https://thorneloe.ai/jobs/" data-tool="aijobs">
 <div class="cardTop">
 <span class="icon">
 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -55,11 +58,11 @@
 <p>Explore engineering jobs in AI and see which skills are in demand.</p>
 </div>
 
-</a><a class="card" href="https://thorneloe.ai/roadmap" data-tool="roadmap">
+</a><a class="card lb-tile" href="https://thorneloe.ai/roadmap" data-tool="roadmap">
 <div class="cardTop"><span class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3"/><circle cx="25" cy="25" r="3"/><path d="M10 7h11a5 5 0 0 1 0 10H11a4 4 0 0 0 0 8h11"/></svg></span></div>
 <div class="cardCopy"><h3>AI Roadmap</h3><p>Build your AI foundations with a curated learning path for software engineers.</p></div>
 
-</a><a class="card" href="https://thorneloe.ai/stockboy/" data-tool="stockboy">
+</a><a class="card lb-tile" href="https://thorneloe.ai/stockboy/" data-tool="stockboy">
 <div class="cardTop">
 <span class="icon">
 <img class="stockboyLogo stockboyLogoLight" src="/static/stockboy-logo-light.svg" alt="" width="32" height="32"><img class="stockboyLogo stockboyLogoDark" src="/static/stockboy-logo-dark.svg" alt="" width="32" height="32">
@@ -74,7 +77,7 @@
 </a></div>
 <section class="wip-section" id="in-progress" aria-labelledby="wip-title">
 <div class="section-heading"><div><h3 id="wip-title">Works in progress</h3></div></div>
-<div class="wip-grid"><article class="card" data-tool="ml">
+<div class="wip-grid lb-grid"><article class="card lb-tile" data-tool="ml">
 <div class="cardTop">
 <span class="icon">
 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -91,25 +94,25 @@
 <p>Learn machine learning one short lesson at a time, with interactive examples.</p>
 </div>
 
-</article><article class="card" data-tool="research">
+</article><article class="card lb-tile" data-tool="research">
 <div class="cardTop"><span class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 27H6V4h15v8M10 10h7M10 15h4M10 20h3"/><circle cx="22" cy="20" r="5"/><path d="m26 24 4 5"/></svg></span></div>
 <div class="cardCopy"><h4>Research workflow</h4><p>A collaborative, curiosity-driven deep research workflow with agents.</p></div>
 </article></div>
 </section>
 </section>
 <section class="writing-section about-row" id="writing" aria-labelledby="writing-title">
-<h2 id="writing-title">Latest articles<span class="heading-period">.</span></h2>
-<ul class="article-list">
-<li><a class="article-link" href="https://www.aiforswes.com/p/jev-in-a-nutshell-and-5-ways-you"><img class="article-image" src="/static/article-cover.jpg" alt="" loading="lazy" decoding="async" width="1672" height="941"><div class="article-copy"><time datetime="2026-09-25">Sep 25, 2026</time><h3>Jev in a Nutshell &amp; 5 Ways You Could Be Using It Right Now</h3></div></a></li>
-<li><a class="article-link" href="https://www.aiforswes.com/p/ai-skills-and-job-market-q3-2026"><div class="article-copy"><time datetime="2026-09-12">Sep 12, 2026</time><h3>AI Skills and Job Market, Q3 2026</h3></div></a></li>
-<li><a class="article-link" href="https://www.aiforswes.com/p/the-future-of-agent-impact-on-media"><div class="article-copy"><time datetime="2026-08-26">Aug 26, 2026</time><h3>The Future of Agent Impact on Media and Research | AI for Software Engineers 85</h3></div></a></li>
-<li><a class="article-link" href="https://www.aiforswes.com/p/writing-skills-for-long-running-agents"><div class="article-copy"><time datetime="2026-08-07">Aug 7, 2026</time><h3>Writing Skills for Long-Running Agents</h3></div></a></li>
-<li><a class="article-link" href="https://www.aiforswes.com/p/the-importance-of-an-open-ai-ecosystem"><div class="article-copy"><time datetime="2026-07-27">Jul 27, 2026</time><h3>The Importance of an Open AI Ecosystem | AI for Software Engineers 84</h3></div></a></li>
+<h2 id="writing-title">Latest articles<span class="lb-period">.</span></h2>
+<ul class="article-list lb-grid" role="list">
+<li><a class="article-link lb-tile" href="https://www.aiforswes.com/p/jev-in-a-nutshell-and-5-ways-you"><img class="article-image" src="/static/article-cover.jpg" alt="" loading="lazy" decoding="async" width="1672" height="941"><div class="article-copy"><time datetime="2026-09-25">Sep 25, 2026</time><h3>Jev in a Nutshell &amp; 5 Ways You Could Be Using It Right Now</h3></div></a></li>
+<li><a class="article-link lb-tile" href="https://www.aiforswes.com/p/ai-skills-and-job-market-q3-2026"><div class="article-copy"><time datetime="2026-09-12">Sep 12, 2026</time><h3>AI Skills and Job Market, Q3 2026</h3></div></a></li>
+<li><a class="article-link lb-tile" href="https://www.aiforswes.com/p/the-future-of-agent-impact-on-media"><div class="article-copy"><time datetime="2026-08-26">Aug 26, 2026</time><h3>The Future of Agent Impact on Media and Research | AI for Software Engineers 85</h3></div></a></li>
+<li><a class="article-link lb-tile" href="https://www.aiforswes.com/p/writing-skills-for-long-running-agents"><div class="article-copy"><time datetime="2026-08-07">Aug 7, 2026</time><h3>Writing Skills for Long-Running Agents</h3></div></a></li>
+<li><a class="article-link lb-tile" href="https://www.aiforswes.com/p/the-importance-of-an-open-ai-ecosystem"><div class="article-copy"><time datetime="2026-07-27">Jul 27, 2026</time><h3>The Importance of an Open AI Ecosystem | AI for Software Engineers 84</h3></div></a></li>
 </ul>
 </section>
 </main>
 
 
-<footer><div><a class="footer-name" href="/#top">Logan Thorneloe<span>.</span></a></div><nav aria-label="Social links"><a href="https://github.com/loganthorneloe">GitHub <span class="link-arrow" aria-hidden="true">↗</span></a><a href="https://x.com/loganthorneloe">X <span class="link-arrow" aria-hidden="true">↗</span></a><a href="https://aiforswes.com">Substack <span class="link-arrow" aria-hidden="true">↗</span></a><a href="mailto:logan@thorneloe.ai">Email <span class="link-arrow" aria-hidden="true">↗</span></a></nav></footer>
+<footer><div><a class="footer-name lb-wordmark" href="/#top">Logan Thorneloe<span class="lb-period">.</span></a></div><nav class="social-links" aria-label="Social links"><a class="lb-link" href="https://github.com/loganthorneloe">GitHub <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="https://x.com/loganthorneloe">X <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="https://aiforswes.com">Substack <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="mailto:logan@thorneloe.ai">Email <span class="lb-arrow" aria-hidden="true">↗</span></a></nav></footer>
 </div>
 </body></html>

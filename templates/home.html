@@ -3,18 +3,18 @@
 <div class="hero-copy">
 <h1 id="hello">Hi, I’m Logan<img class="wave" src="/static/cel-shaded-space-wave-v2.webp" alt="" width="64" height="54"></h1>
 <p class="lead">I build autonomous research agents at Google and improve the developer experience of Google’s ads machine learning platform.</p>
-<p class="hero-secondary">I also write <a href="https://aiforswes.com">AI for Software Engineers <span class="link-arrow" aria-hidden="true">↗</span></a> and build other projects on the side. When I’m not learning about AI or tinkering, I’m spending time with my five kids.</p>
-<div class="hero-links"><a class="primary-link" href="/#projects">Explore the projects <span class="link-arrow" aria-hidden="true">↓</span></a><a href="mailto:logan@thorneloe.ai">Get in touch <span class="link-arrow" aria-hidden="true">↗</span></a></div>
+<p class="hero-secondary">I also write <a class="lb-link" href="https://aiforswes.com">AI for Software Engineers <span class="lb-arrow" aria-hidden="true">↗</span></a> and build other projects on the side. When I’m not learning about AI or tinkering, I’m spending time with my five kids.</p>
+<div class="hero-links"><a class="lb-action" href="/#projects">Explore the projects</a><a class="lb-action" href="mailto:logan@thorneloe.ai">Get in touch <span class="lb-arrow" aria-hidden="true">↗</span></a></div>
 </div>
 
 </section>
 <section class="projects-section" id="projects" aria-labelledby="projects-title">
-<div class="section-heading"><div><h2 id="projects-title">Projects<span class="heading-period">.</span></h2></div></div>
-<div class="grid"><a class="card" href="https://www.aiforswes.com/" data-tool="newsletter">
+<div class="section-heading"><div><h2 id="projects-title">Projects<span class="lb-period">.</span></h2></div></div>
+<div class="grid lb-grid"><a class="card lb-tile lb-tile--featured" href="https://www.aiforswes.com/" data-tool="newsletter">
 <div class="cardTop"><span class="icon"><img class="newsletterLogo newsletterLogoLight" src="/static/newsletter-logo-light.svg" alt="" width="32" height="32"><img class="newsletterLogo newsletterLogoDark" src="/static/newsletter-logo-dark.svg" alt="" width="32" height="32"></span></div>
 <div class="cardCopy"><h3>AI for Software Engineers</h3><p>AI's hardest engineering problems, explained.</p></div>
 
-</a><a class="card" href="https://thorneloe.ai/jobs/" data-tool="aijobs">
+</a><a class="card lb-tile" href="https://thorneloe.ai/jobs/" data-tool="aijobs">
 <div class="cardTop">
 <span class="icon">
 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -31,11 +31,11 @@
 <p>Explore engineering jobs in AI and see which skills are in demand.</p>
 </div>
 
-</a><a class="card" href="https://thorneloe.ai/roadmap" data-tool="roadmap">
+</a><a class="card lb-tile" href="https://thorneloe.ai/roadmap" data-tool="roadmap">
 <div class="cardTop"><span class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="3"/><circle cx="25" cy="25" r="3"/><path d="M10 7h11a5 5 0 0 1 0 10H11a4 4 0 0 0 0 8h11"/></svg></span></div>
 <div class="cardCopy"><h3>AI Roadmap</h3><p>Build your AI foundations with a curated learning path for software engineers.</p></div>
 
-</a><a class="card" href="https://thorneloe.ai/stockboy/" data-tool="stockboy">
+</a><a class="card lb-tile" href="https://thorneloe.ai/stockboy/" data-tool="stockboy">
 <div class="cardTop">
 <span class="icon">
 <img class="stockboyLogo stockboyLogoLight" src="/static/stockboy-logo-light.svg" alt="" width="32" height="32"><img class="stockboyLogo stockboyLogoDark" src="/static/stockboy-logo-dark.svg" alt="" width="32" height="32">
@@ -50,7 +50,7 @@
 </a></div>
 <section class="wip-section" id="in-progress" aria-labelledby="wip-title">
 <div class="section-heading"><div><h3 id="wip-title">Works in progress</h3></div></div>
-<div class="wip-grid"><article class="card" data-tool="ml">
+<div class="wip-grid lb-grid"><article class="card lb-tile" data-tool="ml">
 <div class="cardTop">
 <span class="icon">
 <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -67,15 +67,15 @@
 <p>Learn machine learning one short lesson at a time, with interactive examples.</p>
 </div>
 
-</article><article class="card" data-tool="research">
+</article><article class="card lb-tile" data-tool="research">
 <div class="cardTop"><span class="icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 27H6V4h15v8M10 10h7M10 15h4M10 20h3"/><circle cx="22" cy="20" r="5"/><path d="m26 24 4 5"/></svg></span></div>
 <div class="cardCopy"><h4>Research workflow</h4><p>A collaborative, curiosity-driven deep research workflow with agents.</p></div>
 </article></div>
 </section>
 </section>
 <section class="writing-section about-row" id="writing" aria-labelledby="writing-title">
-<h2 id="writing-title">Latest articles<span class="heading-period">.</span></h2>
-<ul class="article-list">
+<h2 id="writing-title">Latest articles<span class="lb-period">.</span></h2>
+<ul class="article-list lb-grid" role="list">
 {{ articles }}
 </ul>
 </section>

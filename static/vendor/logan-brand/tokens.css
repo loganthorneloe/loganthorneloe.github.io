@@ -1,0 +1,53 @@
+/* Logan Brand 1.0.4. Generated from logan-style/assets/graphics-tokens.json. */
+
+:root {
+  --lb-canvas: #f5f4f0;
+  --lb-surface: #ffffff;
+  --lb-ink: #101527;
+  --lb-muted: #646c77;
+  --lb-border: #cbd0d3;
+  --lb-red: #bf3030;
+  --lb-green: #46734d;
+  --lb-blue: #2f6c9e;
+  --lb-steel: #4682b4;
+  --lb-featured: #e8ecea;
+  --lb-featured-hover: #dfe5e2;
+  --lb-hover: #ffffff;
+  --lb-input-border: #a9afb5;
+  --lb-category-1: #347fd1;
+  --lb-category-2: #efa12d;
+  --lb-category-3: #8a52c6;
+  --lb-category-4: #26afae;
+  --lb-category-5: #d564a8;
+  --lb-category-6: #74ae38;
+  --lb-category-7: #5154ae;
+  --lb-category-8: #e4c43c;
+  --lb-category-9: #40b6dd;
+  --lb-category-10: #21856b;
+}
+
+:root[data-theme="dark"] {
+  --lb-canvas: #101527;
+  --lb-surface: #1e2537;
+  --lb-ink: #f3f5f8;
+  --lb-muted: #adb4c0;
+  --lb-border: #3e4659;
+  --lb-red: #ed7777;
+  --lb-green: #9ac9a2;
+  --lb-blue: #8db7de;
+  --lb-steel: #8db7de;
+  --lb-featured: #252e43;
+  --lb-featured-hover: #323d56;
+  --lb-hover: #222b40;
+  --lb-input-border: #667086;
+  --lb-category-1: #579fe9;
+  --lb-category-2: #ffb84d;
+  --lb-category-3: #ac7ce3;
+  --lb-category-4: #4ad0cb;
+  --lb-category-5: #ed85c2;
+  --lb-category-6: #9cd25d;
+  --lb-category-7: #8484db;
+  --lb-category-8: #f5da62;
+  --lb-category-9: #71d2f1;
+  --lb-category-10: #42ad8e;
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en" class="lb-root" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logan Brand — component reference</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="brand.css">
+  <script src="controls.js"></script>
+</head>
+<body>
+  <a class="lb-skip" href="#main">Skip to content</a>
+  <header class="lb-header lb-shell">
+    <a class="lb-wordmark" href="#main">Logan Brand<span class="lb-period">.</span></a>
+    <nav class="lb-nav" id="primary-nav" aria-label="Primary">
+      <a class="lb-nav-link" href="#tiles">Tiles</a>
+      <a class="lb-nav-link" href="#reading">Reading</a>
+      <a class="lb-nav-link" href="#controls">Controls</a>
+    </nav>
+    <button type="button" class="lb-icon-button lb-menu-toggle" data-lb-menu-toggle aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" hidden>
+      <svg class="lb-theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <button type="button" class="lb-icon-button" data-lb-theme-toggle aria-label="Switch to dark mode" hidden>
+      <svg class="lb-theme-icon lb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.7 8.7 0 0 1 8.5 3.8 8.8 8.8 0 1 0 20.2 15.5Z"/></svg>
+      <svg class="lb-theme-icon lb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+  </header>
+  <main id="main" class="lb-shell" tabindex="-1">
+    <section class="lb-section lb-stack" aria-labelledby="page-title">
+      <h1 id="page-title">A shared foundation<span class="lb-period">.</span></h1>
+      <p class="lb-prose">Sora headings, Inter body text, warm paper, and connected edges. These working patterns share one stylesheet and adapt to both themes.</p>
+      <a class="lb-action" href="#tiles">Explore the components</a>
+    </section>
+
+    <section class="lb-section" id="tiles" aria-labelledby="tiles-title">
+      <h2 id="tiles-title">Connected tiles<span class="lb-period">.</span></h2>
+      <div class="lb-grid lb-grid--mixed">
+        <a class="lb-tile lb-tile--wide lb-tile--featured" href="#reading">
+          <h3>Reading layouts</h3>
+          <p>One readable column, numbered lists, and room for the explanation.</p>
+        </a>
+        <a class="lb-tile lb-tile--tall" href="#controls">
+          <svg class="lb-icon" viewBox="0 0 32 32" aria-hidden="true" style="color:var(--lb-blue)"><path d="M5 8h22M5 16h22M5 24h22M11 5v6M22 13v6M14 21v6"/></svg>
+          <h3>Controls</h3>
+          <p>Square edges, generous touch targets, and visible keyboard focus.</p>
+        </a>
+        <a class="lb-tile lb-tile--small" href="#links">
+          <h3>Links</h3>
+          <p>Distinct treatments for text, navigation, and destinations.</p>
+        </a>
+        <article class="lb-tile lb-tile--medium">
+          <h3>Static content</h3>
+          <p>A tile without a destination remains an ordinary content block.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lb-section lb-prose" id="reading" aria-labelledby="reading-title">
+      <h2 id="reading-title">Reading<span class="lb-period">.</span></h2>
+      <ol class="lb-list" role="list">
+        <li><p><strong>Start with the substance.</strong> Headings sit above the content they introduce. Bold lead-ins stay in the body font.</p></li>
+        <li><p><strong>Keep the page open.</strong> Prose lists use whitespace and hanging indices. Structured rows use thin separators.</p></li>
+        <li><p><strong>Make actions clear.</strong> Links remain recognizable without relying on color alone.</p></li>
+      </ol>
+    </section>
+
+    <section class="lb-section lb-prose" id="links" aria-labelledby="links-title">
+      <h2 id="links-title">Links<span class="lb-period">.</span></h2>
+      <p>Continue to the <a class="lb-link" href="#controls">controls</a> or visit <a class="lb-link" href="https://thorneloe.ai/">Thorneloe.ai<span class="lb-arrow" aria-hidden="true">↗</span></a>.</p>
+      <p>The wordmark keeps its ink color. Navigation uses red on hover without arrows. Linked tiles change their background.</p>
+    </section>
+
+    <section class="lb-section lb-stack" id="controls" aria-labelledby="controls-title">
+      <h2 id="controls-title">Controls<span class="lb-period">.</span></h2>
+      <div class="lb-prose lb-stack">
+        <label class="lb-field">Project name<input class="lb-input" type="text" placeholder="A new project" autocomplete="off"></label>
+        <button class="lb-button" type="button" disabled>Save project</button>
+      </div>
+      <div class="lb-rows">
+        <div class="lb-row"><strong>Typography</strong><span>Sora SemiBold headings; Inter body text and controls.</span></div>
+        <div class="lb-row"><strong>Spacing</strong><span>Shared steps from 4px to 64px.</span></div>
+      </div>
+      <div class="lb-table-wrap" role="region" aria-label="Layout dimensions" tabindex="0">
+        <table class="lb-table">
+          <caption>Layout dimensions</caption>
+          <thead><tr><th scope="col">Pattern</th><th scope="col">Default</th><th scope="col">Narrow screen</th></tr></thead>
+          <tbody><tr><th scope="row">Page</th><td>1200px maximum</td><td>18px minimum gutters</td></tr><tr><th scope="row">Reading column</th><td>720px maximum</td><td>16px body text</td></tr><tr><th scope="row">Controls</th><td>44px minimum height</td><td>44px minimum height</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

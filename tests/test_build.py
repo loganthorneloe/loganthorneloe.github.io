@@ -28,7 +28,7 @@ class SiteBuildTests(unittest.TestCase):
                 'date': '2026-10-12', 'image_url': 'https://example.com/cover.jpg'}
         rendered = build.render_articles([post] * 5)
         self.assertEqual(rendered.count('<img '), 1)
-        self.assertEqual(rendered.count('class="article-link"'), 5)
+        self.assertEqual(rendered.count('class="article-link lb-tile"'), 5)
         self.assertNotIn('<script>', rendered)
         self.assertIn('&lt;script&gt; &amp; title', rendered)
 
@@ -54,10 +54,10 @@ class SiteBuildTests(unittest.TestCase):
             self.assertIn('https://thorneloe.ai/about', about)
             self.assertIn('href="https://thorneloe.ai/jobs/"', home)
             self.assertIn('href="https://thorneloe.ai/stockboy/"', home)
-            self.assertIn('<article class="card" data-tool="ml">', home)
+            self.assertIn('<article class="card lb-tile" data-tool="ml">', home)
             self.assertIn('href="/#projects"', about)
             self.assertEqual(home.count('class="article-image"'), 1)
-            self.assertEqual(home.count('class="article-link"'), 5)
+            self.assertEqual(home.count('class="article-link lb-tile"'), 5)
 
 
 if __name__ == '__main__':

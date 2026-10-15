@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" class="lb-root" data-theme="light">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{{ title }}</title>
@@ -7,23 +7,26 @@
 <meta name="description" content="{{ description }}">
 <meta name="theme-color" content="#f5f4f0">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/vendor/logan-brand/tokens.css?v={{ tokens_version }}">
+<link rel="stylesheet" href="/static/vendor/logan-brand/fonts.css?v={{ fonts_version }}">
+<link rel="stylesheet" href="/static/vendor/logan-brand/brand.css?v={{ brand_version }}">
 <link rel="stylesheet" href="/static/styles.css?v={{ styles_version }}">
 <script>try{document.documentElement.dataset.theme=localStorage.getItem('logan-theme')||'light'}catch{}</script>
 <script src="/static/app.js?v={{ script_version }}" defer></script>
 </head>
 <body id="top">
-<a class="skip" href="#main">Skip to content</a>
-<div class="shell">
-<header class="header">
-<a href="/#top" class="wordmark">Logan Thorneloe<span>.</span></a>
-<div class="nav-controls"><button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button><nav id="primary-nav" aria-label="Primary navigation"><a href="/#projects">Projects</a><a href="/#writing">Writing</a><a href="/about/">About</a></nav>
-<button class="theme" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
-<svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.7 8.7 0 0 1 8.5 3.8 8.8 8.8 0 1 0 20.2 15.5Z"/></svg>
-<svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
-</button></div>
+<a class="lb-skip" href="#main">Skip to content</a>
+<div class="lb-shell">
+<header class="header lb-header">
+<a href="/#top" class="wordmark lb-wordmark">Logan Thorneloe<span class="lb-period">.</span></a>
+<button class="menu-toggle lb-menu-toggle lb-icon-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button><nav class="lb-nav" id="primary-nav" aria-label="Primary navigation"><a class="lb-nav-link" href="/#projects">Projects</a><a class="lb-nav-link" href="/#writing">Writing</a><a class="lb-nav-link" href="/about/">About</a></nav>
+<button class="theme lb-icon-button" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+<svg class="lb-theme-icon lb-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.5A8.7 8.7 0 0 1 8.5 3.8 8.8 8.8 0 1 0 20.2 15.5Z"/></svg>
+<svg class="lb-theme-icon lb-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+</button>
 </header>
 {{ content }}
 
-<footer><div><a class="footer-name" href="/#top">Logan Thorneloe<span>.</span></a></div><nav aria-label="Social links"><a href="https://github.com/loganthorneloe">GitHub <span class="link-arrow" aria-hidden="true">↗</span></a><a href="https://x.com/loganthorneloe">X <span class="link-arrow" aria-hidden="true">↗</span></a><a href="https://aiforswes.com">Substack <span class="link-arrow" aria-hidden="true">↗</span></a><a href="mailto:logan@thorneloe.ai">Email <span class="link-arrow" aria-hidden="true">↗</span></a></nav></footer>
+<footer><div><a class="footer-name lb-wordmark" href="/#top">Logan Thorneloe<span class="lb-period">.</span></a></div><nav class="social-links" aria-label="Social links"><a class="lb-link" href="https://github.com/loganthorneloe">GitHub <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="https://x.com/loganthorneloe">X <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="https://aiforswes.com">Substack <span class="lb-arrow" aria-hidden="true">↗</span></a><a class="lb-link" href="mailto:logan@thorneloe.ai">Email <span class="lb-arrow" aria-hidden="true">↗</span></a></nav></footer>
 </div>
 </body></html>
