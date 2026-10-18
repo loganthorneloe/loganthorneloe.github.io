@@ -58,3 +58,7 @@ removed. Keep this zone disconnected and do not reattach it during deployment.
 The untracked `logan-tools/` directory is an inactive archive. Its Wrangler
 configuration has no routes, no workers.dev URL, and no preview URLs. The
 existing `logan-tools-home` Worker has no public domain or enabled Worker URL.
+
+## IRONWAKE
+
+The `ironwake` Cloudflare Worker serves `thorneloe.ai/ironwake*`. The bare `/ironwake` redirects to `/ironwake/`; the Worker handles only that path prefix and leaves other paths to the personal site. There is no database: random callsigns and saved mechs stay in browser storage. Source and deployments live in the separate public `loganthorneloe/ironwake` repository. The personal site publishes only its WIP link.

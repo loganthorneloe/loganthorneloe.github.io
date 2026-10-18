@@ -78,8 +78,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .wip-section { margin-top: var(--lb-space-8); }
 .wip-section > .section-heading { margin-bottom: var(--lb-space-5); }
 .wip-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
-.wip-grid > [data-tool=ml] { grid-column: span 7; }
-.wip-grid > [data-tool=research] { grid-column: span 5; }
+.wip-grid > .card { grid-column: span 4; }
 .wip-grid .card { min-height: 172px; }
 .wip-grid .cardCopy { margin-top: var(--lb-space-5); }
 .wip-grid p { max-width: 62ch; }
