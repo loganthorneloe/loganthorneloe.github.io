@@ -72,3 +72,5 @@ The scheduled newsletter workflow uses `--prebuilt-brand` to retain the reviewed
 Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions** when configuring hosting. Branch-based Pages builds cannot fetch the private submodule. The artifact workflow explicitly leaves submodules unchecked out and packages only public pages/assets, so it needs no new source-repository credential and never publishes the private kit source.
 
 IRONWAKE is a playable work in progress linked from the homepage at `/ironwake/`. The game is maintained separately in `loganthorneloe/ironwake` and hosted by a Cloudflare Worker.
+
+Sector is a completed project linked from the homepage project grid to `loganthorneloe/sector-watchface`. The public repository includes the Garmin watch-face source, an installable release, and USB cable-install instructions.
