@@ -23,6 +23,7 @@ All rules below use HTTP 301 and preserve query strings:
 | --- | --- | --- |
 | thorneloe.ai | Host `www.thorneloe.ai`, any path | `concat("https://thorneloe.ai", http.request.uri.path)` |
 | thorneloe.ai | Host `thorneloe.ai`, path `/roadmap` or `/roadmap/` | `https://learn.aiforswes.com/` |
+| thorneloe.ai | Host `thorneloe.ai`, path `/tinkerkit` or `/tinkerkit/` | `https://www.aiforswes.com/perks` |
 | loganthorneloe.com | Hosts `loganthorneloe.com` and `www.loganthorneloe.com`, any path | `concat("https://thorneloe.ai", http.request.uri.path)` |
 
 The learning domain currently forwards onward to the existing AI foundations
