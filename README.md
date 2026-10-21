@@ -75,4 +75,4 @@ IRONWAKE is a playable work in progress linked from the homepage at `/ironwake/`
 
 Garmin Watch Faces is a completed project linked from the homepage project grid to `loganthorneloe/garmin-watch`. The public repository houses Sector and Ember in separate face folders, with source, installable releases, and USB cable-install instructions for both.
 
-AI Dev Pass is listed under Works in progress and links to `/devpass`. Cloudflare permanently redirects `/devpass`, `/devpass/`, and the legacy `/tinkerkit` paths to `https://www.aiforswes.com/perks`. Both `aidevpass.com` and `www.aidevpass.com` also redirect there, preserving query strings.
+AI Dev Pass is listed under Works in progress and links to `/devpass`. Cloudflare permanently redirects `/devpass` and `/devpass/` to `https://www.aiforswes.com/perks`. Both `aidevpass.com` and `www.aidevpass.com` also redirect there, preserving query strings.
