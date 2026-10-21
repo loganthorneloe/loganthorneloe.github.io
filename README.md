@@ -75,4 +75,4 @@ IRONWAKE is a playable work in progress linked from the homepage at `/ironwake/`
 
 Sector is a completed project linked from the homepage project grid to `loganthorneloe/sector-watchface`. The public repository includes the Garmin watch-face source, an installable release, and USB cable-install instructions.
 
-AI Tinker Kit is listed under Works in progress and links to `https://www.aiforswes.com/perks`. Cloudflare also redirects `/tinkerkit` and `/tinkerkit/` to that page.
+AI DevPass is listed under Works in progress and links to `https://www.aiforswes.com/perks`. Cloudflare also redirects `/tinkerkit` and `/tinkerkit/` to that page.
