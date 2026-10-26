@@ -59,8 +59,6 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .card[data-tool=garmin-watch] { --accent: var(--lb-category-10); }
 .card[data-tool=devpass] { --accent: var(--lb-category-3); }
 .card[data-tool=ironwake] { --accent: color-mix(in srgb, var(--lb-category-2) 78%, var(--ink)); }
-.card[data-tool=ml] { --accent: var(--green); }
-.card[data-tool=research] { --accent: var(--lb-category-5); }
 .cardTop { display: flex; align-items: center; gap: var(--lb-space-4); }
 .icon { display: grid; place-items: center; color: var(--accent); width: 36px; height: 36px; }
 .icon svg, .icon img { width: 32px; height: 32px; object-fit: contain; }
