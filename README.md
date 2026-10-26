@@ -32,7 +32,7 @@ The site loads `static/vendor/logan-brand/{tokens,fonts,brand}.css` before its
 own stylesheet. The shared kit supplies typography, colors, navigation,
 controls, connected tiles, links, and numbered reading lists. Keep its files
 unchanged; `static/styles.css` owns the hero artwork and page composition.
-Project icons have individual accents from the shared, theme-aware palette: blue jobs, red roadmap, teal watches, purple developer pass, and amber IRONWAKE. AI Dev Pass uses a code-ticket symbol to distinguish it from the jobs briefcase. These assignments live in `static/styles.css`; the existing newsletter and Stockboy logos retain their original artwork.
+Project icons have individual accents from the shared, theme-aware palette: blue jobs, red roadmap, teal watches, purple developer pass, amber IRONWAKE, green ML, and rose research. AI Dev Pass uses a code-ticket symbol to distinguish it from the jobs briefcase. These assignments live in `static/styles.css`; the existing newsletter and Stockboy logos retain their original artwork.
 
 `static/app.js` preserves the `logan-theme` preference and mobile menu behavior.
 The build hashes each imported stylesheet to refresh cached assets on updates.
