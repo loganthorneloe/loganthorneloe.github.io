@@ -78,9 +78,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .grid > [data-tool=devpass] { grid-column: 7/13; grid-row: 1; }
 .grid > [data-tool=aijobs] { grid-column: 10/13; grid-row: 2; }
 .grid > [data-tool=roadmap] { grid-column: 7/10; grid-row: 2; }
-.grid > [data-tool=stockboy] { grid-column: 6/10; grid-row: 3; }
-.grid > [data-tool=garmin-watch] { grid-column: 10/13; grid-row: 3; }
-.grid > [data-tool=research] { grid-column: 1/6; grid-row: 3; }
+.grid > [data-tool=stockboy] { grid-column: 5/9; grid-row: 3; }
+.grid > [data-tool=garmin-watch] { grid-column: 9/13; grid-row: 3; }
+.grid > [data-tool=research] { grid-column: 1/5; grid-row: 3; }
 .grid > [data-tool=newsletter] .cardCopy { margin-top: auto; padding-top: var(--lb-space-6); }
 .grid > [data-tool=newsletter] h3 { font-size: 30px; }
 .grid > [data-tool=newsletter] p { font-size: 14px; max-width: 34ch; }
