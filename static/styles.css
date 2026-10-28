@@ -16,9 +16,8 @@
 body { -webkit-font-smoothing: antialiased; }
 a, button { -webkit-tap-highlight-color: transparent; }
 ::selection { background: var(--red); color: var(--paper); }
-.header { min-height: 98px; z-index: 3; }
+.header { z-index: 3; }
 .wordmark { white-space: nowrap; }
-.theme { margin-left: var(--lb-space-3); }
 .menu-toggle svg { width: 22px; height: 22px; }
 
 /* Preserve the landscape and astronaut behind the introduction. */
@@ -46,12 +45,12 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .hero-copy h1 { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; letter-spacing: -.065em; }
 .wave { width: 53px; height: auto; flex: none; }
 .lead { font-size: 17px; line-height: 1.7; max-width: 50ch; }
-.hero-secondary { font-size: 13px; line-height: 1.85; color: var(--muted); margin: var(--lb-space-5) 0 26px; max-width: 61ch; }
+.hero-secondary { font-size: 17px; line-height: 1.7; color: var(--muted); margin: var(--lb-space-5) 0 26px; max-width: 50ch; }
 .hero-links { display: flex; flex-wrap: wrap; gap: var(--lb-space-6); align-items: center; }
 
 .projects-section { border-top: 1px solid var(--line); padding-top: var(--lb-space-8); }
 .section-heading { margin-bottom: 28px; }
-.card { --accent: var(--ink); gap: 0; padding: var(--lb-space-6) 28px; }
+.card { --accent: var(--ink); gap: 0; padding: 28px 28px 24px; }
 /* Project identities use the shared palette, including its dark-theme variants. */
 .card[data-tool=aijobs] { --accent: var(--blue); }
 .card[data-tool=stockboy] { --accent: var(--green); }
@@ -69,7 +68,7 @@ a, button { -webkit-tap-highlight-color: transparent; }
 [data-theme=dark] .icon .newsletterLogoLight, [data-theme=dark] .icon .stockboyLogoLight { display: none; }
 [data-theme=dark] .icon .newsletterLogoDark, [data-theme=dark] .icon .stockboyLogoDark { display: block; }
 .cardCopy { margin-top: var(--lb-space-6); }
-.cardCopy h3, .cardCopy h4 { font-size: 22px; margin-bottom: 9px; }
+.cardCopy h3, .cardCopy h4 { font-size: 19px; margin-bottom: 9px; }
 .cardCopy p { font-size: 12px; line-height: 1.8; color: var(--muted); max-width: 48ch; }
 
 /* Lead with the publication, developer pass, and foundations roadmap. */
@@ -81,9 +80,9 @@ a, button { -webkit-tap-highlight-color: transparent; }
 .grid > [data-tool=stockboy] { grid-column: 6/13; grid-row: 3; }
 .grid > [data-tool=research] { grid-column: 1/6; grid-row: 3; }
 .grid > [data-tool=newsletter] .cardCopy { margin-top: auto; padding-top: var(--lb-space-6); }
-.grid > [data-tool=newsletter] h3 { font-size: 30px; }
+.grid > [data-tool=newsletter] h3 { font-size: 26px; }
 .grid > [data-tool=newsletter] p { font-size: 14px; max-width: 34ch; }
-.grid > [data-tool=roadmap] h3, .grid > [data-tool=aijobs] h3, .grid > [data-tool=stockboy] h3, .grid > [data-tool=garmin-watch] h3, .grid > [data-tool=research] h3 { font-size: 20px; }
+.grid > [data-tool=roadmap] h3, .grid > [data-tool=aijobs] h3, .grid > [data-tool=stockboy] h3, .grid > [data-tool=garmin-watch] h3, .grid > [data-tool=research] h3 { font-size: 18px; }
 .wip-section { margin-top: var(--lb-space-8); }
 .wip-section > .section-heading { margin-bottom: var(--lb-space-5); }
 .wip-grid { grid-template-columns: repeat(12, minmax(0, 1fr)); }
@@ -127,7 +126,7 @@ footer { margin-top: 72px; border-top: 1px solid var(--line); padding: 30px 0 40
   .hero-copy h1 { font-size: 39px; gap: 10px; }
   .wave { width: 42px; }
   .lead { font-size: 15px; }
-  .hero-secondary { font-size: 12px; }
+  .hero-secondary { font-size: 15px; }
   .card, .article-copy { padding: 22px; }
   .article-link h3 { font-size: 20px; }
   .article-list li:first-child h3 { font-size: 26px; }
@@ -138,16 +137,14 @@ footer { margin-top: 72px; border-top: 1px solid var(--line); padding: 30px 0 40
   .grid > [data-tool=roadmap] h3, .grid > [data-tool=aijobs] h3, .grid > [data-tool=stockboy] h3, .grid > [data-tool=garmin-watch] h3, .grid > [data-tool=research] h3 { font-size: 18px; }
 }
 @media (max-width: 650px) {
-  .header { min-height: 76px; }
   .wordmark { font-size: clamp(15px, 4.4vw, 20px); }
-  .theme { margin-left: 0; }
   .hero { min-height: 0; padding: 36px 0 calc((100vw - 2 * var(--lb-page-gutter)) * .563 - 8px); background-position: center calc(100% + 24px); }
   .hero-copy { width: 100%; max-width: none; }
   .hero::before { inset: auto 0 0; height: calc((100vw - 2 * var(--lb-page-gutter)) * .563); background: linear-gradient(180deg, var(--paper) 0%, transparent 35%); }
   .hero-copy h1 { font-size: clamp(30px, 8vw, 43px); margin-bottom: 18px; }
   .wave { width: 46px; }
   .lead { font-size: 16px; }
-  .hero-secondary { font-size: 13px; margin: var(--lb-space-4) 0 19px; }
+  .hero-secondary { font-size: 16px; margin: var(--lb-space-4) 0 19px; }
   .hero-links { gap: var(--lb-space-4); }
   .section-heading { margin-bottom: 23px; }
   .projects-section > .grid, .wip-grid, .article-list { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
