@@ -1,10 +1,16 @@
 [
   {
+    "title": "My Skill for More Productive Deep Research",
+    "link": "https://www.aiforswes.com/p/my-skill-for-more-productive-deep",
+    "date": "2026-10-27",
+    "image_url": "https://substackcdn.com/image/fetch/$s_!L1oU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff0d5ac38-d4d6-424a-bf66-463e7be0b485_1672x941.png",
+    "local_image": "/static/article-cover.jpg"
+  },
+  {
     "title": "Jev in a Nutshell & 5 Ways You Could Be Using It Right Now",
     "link": "https://www.aiforswes.com/p/jev-in-a-nutshell-and-5-ways-you",
     "date": "2026-09-25",
-    "image_url": "https://substackcdn.com/image/fetch/$s_!cJXJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffb6806c7-4fee-4340-9567-0d7830bf043d_1672x941.png",
-    "local_image": "/static/article-cover.jpg"
+    "image_url": "https://substackcdn.com/image/fetch/$s_!cJXJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffb6806c7-4fee-4340-9567-0d7830bf043d_1672x941.png"
   },
   {
     "title": "AI Skills and Job Market, Q3 2026",
@@ -23,11 +29,5 @@
     "link": "https://www.aiforswes.com/p/writing-skills-for-long-running-agents",
     "date": "2026-08-07",
     "image_url": "https://substackcdn.com/image/fetch/$s_!QQsL!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb2e8f674-e6d6-47ea-92d6-da7b7fc18016_1672x941.png"
-  },
-  {
-    "title": "The Importance of an Open AI Ecosystem | AI for Software Engineers 84",
-    "link": "https://www.aiforswes.com/p/the-importance-of-an-open-ai-ecosystem",
-    "date": "2026-07-27",
-    "image_url": "https://substackcdn.com/image/fetch/$s_!IGey!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7d823843-102b-4189-a160-d2a832e14276_1584x396.png"
   }
 ]
