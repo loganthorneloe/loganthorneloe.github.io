@@ -75,6 +75,6 @@ Set **Settings → Pages → Build and deployment → Source** to **GitHub Actio
 
 IRONWAKE is a playable work in progress linked from the homepage at `/ironwake/`. The game is maintained separately in `loganthorneloe/ironwake` and hosted by a Cloudflare Worker.
 
-Garmin Watch Faces is a completed project linked from the homepage project grid to `loganthorneloe/garmin-watch`. The public repository houses Sector and Ember in separate face folders, with source, installable releases, and USB cable-install instructions for both.
+Garmin Watch Faces (`loganthorneloe/garmin-watch`) is a completed project whose homepage tile is temporarily hidden in a comment in `templates/home.html`. The public repository houses Sector and Ember in separate face folders, with source, installable releases, and USB cable-install instructions for both.
 
 AI for Software Engineers, AI Dev Pass, and AI Foundations Roadmap lead the homepage project grid. AI Dev Pass links to `/devpass`. Cloudflare permanently redirects `/devpass` and `/devpass/` to `https://www.aiforswes.com/perks`. Both `aidevpass.com` and `www.aidevpass.com` also redirect there, preserving query strings.
