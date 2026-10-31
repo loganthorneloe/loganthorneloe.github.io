@@ -13,7 +13,6 @@
   --lb-space-12: 48px;
   --lb-space-16: 64px;
   --lb-page-width: 1200px;
-  --lb-reading-width: 720px;
   --lb-page-gutter: clamp(18px, 4vw, 40px);
   --lb-text-small: 0.75rem;
   --lb-text-control: 0.875rem;
@@ -123,7 +122,7 @@ a.lb-tile--featured:is(:hover, :focus-visible) { background: var(--lb-featured-h
 .lb-grid--mixed > .lb-tile--small { grid-column: 1 / 4; }
 .lb-grid--mixed > .lb-tile--medium { grid-column: 4 / 8; }
 .lb-metric { font: 600 clamp(2rem, 4vw, 3rem)/1.1 var(--lb-font-heading); letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
-.lb-prose { max-width: var(--lb-reading-width); font-size: var(--lb-text-reading); line-height: 1.8; overflow-wrap: anywhere; }
+.lb-prose { font-size: var(--lb-text-reading); line-height: 1.8; overflow-wrap: anywhere; }
 .lb-prose > * + * { margin-top: var(--lb-space-5); }
 .lb-prose :where(strong, b) { font-family: var(--lb-font-body); font-size: inherit; font-weight: 600; }
 .lb-list { list-style: none; counter-reset: lb-item; margin: 0; padding: 0; }

@@ -1,9 +1,9 @@
 {
   "name": "logan-brand",
   "source": "logan-style",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "sha256": {
-    "brand.css": "dfa49ad8110d36d0573dd74e3211322f0284edad80fd998027dd2d2874911492",
+    "brand.css": "e1fab534697a081238b46f88f8a05f65e45d5fa337a049c021b04aad2a677c04",
     "fonts.css": "884d39bd2204efe8f580a30e149079ca277bb69638e4b1d1ce80408dc8fc46f5",
     "controls.js": "c257d09844b79a74bcf17d25a48b992a94683c23ab232e3675e5317b94aba784",
     "patterns.html": "72bd38300df308a93762a4980d9a588911c0b19ad8fc6513519c461e6b7310bf",
@@ -12,6 +12,6 @@
     "fonts/Inter-Medium.ttf": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
     "fonts/Sora-OFL.txt": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9",
     "fonts/Inter-OFL.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
-    "tokens.css": "138feb09f29dfb57a931be3a9a7a514b0c5c7b5ff0ce7db57acd841ef560fe35"
+    "tokens.css": "152b9d2dd05ad12f8fcf089395fa3f83f8752e87329a28b15b377e7aa3ee1de3"
   }
 }
