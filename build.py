@@ -107,7 +107,8 @@ def build(root=ROOT, offline=False, prebuilt_brand=False):
                 for name, filename in [("styles_version", "styles.css"), ("script_version", "app.js"),
                                        ("tokens_version", "vendor/logan-brand/tokens.css"),
                                        ("fonts_version", "vendor/logan-brand/fonts.css"),
-                                       ("brand_version", "vendor/logan-brand/brand.css")]}
+                                       ("brand_version", "vendor/logan-brand/brand.css"),
+                                       ("dot_grid_version", "vendor/logan-brand/dot-grid.js")]}
     pages = [
         ("home.html", "index.html", "Logan Thorneloe — Work, writing & projects", "/",
          "I build AI systems, write AI for Software Engineers, and build other projects on the side."),

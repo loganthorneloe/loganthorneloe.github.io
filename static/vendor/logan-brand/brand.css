@@ -160,6 +160,14 @@ a.lb-tile--featured:is(:hover, :focus-visible) { background: var(--lb-featured-h
   .lb-prose { font-size: var(--lb-text-body); line-height: 1.75; }
   .lb-row { grid-template-columns: minmax(0, 1fr); gap: var(--lb-space-2); }
 }
+/* Optional dot-grid canvas. Add lb-dot-grid to <html>; dot-grid.js bends the dots around the pointer. */
+.lb-root.lb-dot-grid {
+  --lb-dot-grid: color-mix(in srgb, var(--lb-ink) 11%, transparent);
+  background-image: radial-gradient(circle, var(--lb-dot-grid) 1.2px, transparent 1.4px); background-size: 20px 20px;
+}
+.lb-root.lb-dot-grid[data-theme="dark"] { --lb-dot-grid: color-mix(in srgb, var(--lb-ink) 9%, transparent); }
+.lb-root.lb-dot-grid[data-lb-dot-grid-live] { background-image: none; }
+.lb-dot-grid-canvas { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
 @media (prefers-reduced-motion: reduce) {
   .lb-root { --lb-duration: 0ms; scroll-behavior: auto; }
 }
