@@ -1,4 +1,4 @@
-/* Optional dot-grid motion. Redraws the .lb-dot-grid background so dots near the pointer bend away from it. */
+/* Optional dot-grid motion. Redraws the .lb-dot-grid background so dots near the pointer bend away from it and grow darker and larger. */
 (() => {
   const root = document.documentElement;
   if (!root.classList.contains('lb-dot-grid')) return;
@@ -8,13 +8,16 @@
   const context = canvas.getContext('2d');
   if (!context) return;
   const spacing = 20, radius = 140, push = 16;
+  const baseSize = 1.25, boldSize = 2.8;
   const pointer = { x: 0, y: 0, active: false }, lens = { x: 0, y: 0, strength: 0 };
-  let width = 0, height = 0, color = '', frame = 0;
+  let width = 0, height = 0, rgb = [0, 0, 0], baseAlpha = 0.11, boldAlpha = 0.7, frame = 0;
 
   const readColor = () => {
     const hex = getComputedStyle(root).getPropertyValue('--lb-ink').trim().replace('#', '');
-    const [r, g, b] = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
-    color = `rgba(${r}, ${g}, ${b}, ${root.dataset.theme === 'dark' ? 0.09 : 0.11})`;
+    rgb = [0, 2, 4].map(i => parseInt(hex.slice(i, i + 2), 16));
+    const dark = root.dataset.theme === 'dark';
+    baseAlpha = dark ? 0.09 : 0.11;
+    boldAlpha = dark ? 0.6 : 0.7;
   };
   const resize = () => {
     const ratio = devicePixelRatio || 1;
@@ -28,7 +31,9 @@
     lens.y += (pointer.y - lens.y) * 0.2;
     lens.strength += (Number(pointer.active) - lens.strength) * 0.12;
     context.clearRect(0, 0, width, height);
-    context.fillStyle = color;
+    const [r, g, b] = rgb;
+    const lensDots = [];
+    context.fillStyle = `rgba(${r}, ${g}, ${b}, ${baseAlpha})`;
     context.beginPath();
     // Match the CSS background, which centers one dot in each 20px tile of the document.
     const offsetY = -(scrollY % spacing);
@@ -37,15 +42,24 @@
         let px = x, py = y;
         const dx = x - lens.x, dy = y - lens.y, distance = Math.hypot(dx, dy);
         if (distance < radius && distance > 0) {
-          const falloff = (1 - distance / radius) ** 2 * push * lens.strength;
-          px += (dx / distance) * falloff;
-          py += (dy / distance) * falloff;
+          const t = (1 - distance / radius) ** 2 * lens.strength;
+          px += (dx / distance) * t * push;
+          py += (dy / distance) * t * push;
+          if (t > 0.01) { lensDots.push(px, py, t); continue; }
         }
-        context.moveTo(px + 1.25, py);
-        context.arc(px, py, 1.25, 0, Math.PI * 2);
+        context.moveTo(px + baseSize, py);
+        context.arc(px, py, baseSize, 0, Math.PI * 2);
       }
     }
     context.fill();
+    // Dots in the lens grow and darken with how far they are pushed, so the motion is easy to see.
+    for (let i = 0; i < lensDots.length; i += 3) {
+      const t = Math.sqrt(lensDots[i + 2]);
+      context.fillStyle = `rgba(${r}, ${g}, ${b}, ${baseAlpha + (boldAlpha - baseAlpha) * t})`;
+      context.beginPath();
+      context.arc(lensDots[i], lensDots[i + 1], baseSize + (boldSize - baseSize) * t, 0, Math.PI * 2);
+      context.fill();
+    }
     const settling = Math.abs(pointer.x - lens.x) + Math.abs(pointer.y - lens.y) > 0.5
       || Math.abs(Number(pointer.active) - lens.strength) > 0.01;
     if (settling) schedule();
