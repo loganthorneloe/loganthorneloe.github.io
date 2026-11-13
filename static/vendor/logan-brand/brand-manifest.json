@@ -1,18 +1,18 @@
 {
   "name": "logan-brand",
   "source": "logan-style",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "sha256": {
-    "brand.css": "c122c9b35f3904630c2d82295e0170a305a0f13fe6ddc0a0c6443bb9ded7691b",
+    "brand.css": "06f25c408c00d4f270880924c181567cdc8a2c50ce7c568e7c49a70284a35385",
     "fonts.css": "884d39bd2204efe8f580a30e149079ca277bb69638e4b1d1ce80408dc8fc46f5",
     "controls.js": "c257d09844b79a74bcf17d25a48b992a94683c23ab232e3675e5317b94aba784",
     "dot-grid.js": "35fcbd2050a45483e67773de0e742a904fca1993219a1fdc93030dff7c2c9472",
-    "patterns.html": "27e33153ca0e57e3b932419c87bc9464dba575b34d91396edfb84b56078e6f2d",
+    "patterns.html": "33c990b85db5b8496dedf902181705ff25dc0fa62e0f1e0fea59f835aaca6731",
     "fonts/Sora-SemiBold.ttf": "4e79171a1720d04b72eb68bd7604f85888c31c05bb6b432147d4524e9439af30",
     "fonts/Inter-Regular.ttf": "1b08e7fc267a5c7e1d614100f604b83e7e8a0be241f0f288faa2b3ac93a683ba",
     "fonts/Inter-Medium.ttf": "8c883f63b2c4157d997319f2c8bc6995ed4357ef371940d31ca159004a4aae63",
     "fonts/Sora-OFL.txt": "1ec9623d38c445eb4dfe5fcc783e0f0ee728cc97ca157ce1f8cb2b3bf9d9b0d9",
     "fonts/Inter-OFL.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
-    "tokens.css": "69cee1c7425faaa4e0af58b79f5252d1c2bbe11f51015ca7dd2b5ee0a4233ed1"
+    "tokens.css": "09f18522cbc76beadb5249c0a7283ee9c1184538f8dc9ce6852e2e42c8a5ed9c"
   }
 }
