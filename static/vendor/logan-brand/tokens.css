@@ -1,4 +1,4 @@
-/* Logan Brand 1.2.2. Generated from logan-style/assets/graphics-tokens.json. */
+/* Logan Brand 1.3.0. Generated from logan-style/assets/graphics-tokens.json. */
 
 :root {
   --lb-canvas: #f5f4f0;
@@ -12,7 +12,7 @@
   --lb-steel: #4682b4;
   --lb-featured: #e8ecea;
   --lb-featured-hover: #dfe5e2;
-  --lb-hover: #ffffff;
+  --lb-hover: #f5f4f0;
   --lb-input-border: #a9afb5;
   --lb-category-1: #347fd1;
   --lb-category-2: #efa12d;
@@ -38,7 +38,7 @@
   --lb-steel: #8db7de;
   --lb-featured: #252e43;
   --lb-featured-hover: #323d56;
-  --lb-hover: #222b40;
+  --lb-hover: #101527;
   --lb-input-border: #667086;
   --lb-category-1: #579fe9;
   --lb-category-2: #ffb84d;
